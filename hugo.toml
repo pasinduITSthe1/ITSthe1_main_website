@@ -1,0 +1,137 @@
+baseURL = 'https://www.itsthe1.com'
+languageCode = 'en-us'
+title = 'ITSthe1 - IT & Telecom Solutions'
+theme = 'itsthe1'
+
+[params]
+  description = 'Leading provider of IT and Telecom solutions, specializing in Digital Transformation, Cyber Security, Cloud Services, Web & Mobile applications, and Hospitality Solutions.'
+  keywords = 'IT solutions, telecom services, digital transformation, cyber security, cloud services, hospitality solutions'
+  author = 'ITSthe1 Solutions'
+  email = 'info@itsthe1.com'
+  phone = '+971 4 295 2705'
+  
+  # Brand colors
+  primaryColor = '#FF6B35'  # Orange from your brand
+  secondaryColor = '#2C3E50' # Dark blue-gray
+  accentColor = '#F39C12'   # Lighter orange
+  backgroundColor = '#FFFFFF'
+  textColor = '#333333'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Products'
+    url = '/products/'
+    weight = 20
+    hasChildren = true
+  [[menu.main]]
+    name = 'Solutions'
+    url = '/solutions/'
+    weight = 30
+    hasChildren = true
+  [[menu.main]]
+    name = 'Services'
+    url = '/services/'
+    weight = 40
+    hasChildren = true
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 50
+  [[menu.main]]
+    name = 'Contact'
+    url = '/contact/'
+    weight = 60
+
+# Products submenu
+  [[menu.products]]
+    name = 'TV - IPTV for Enterprise & Hospitality'
+    url = '/products/iptv/'
+    weight = 10
+  [[menu.products]]
+    name = 'DSMM - Digital Signage & Meeting Room'
+    url = '/products/digital-signage/'
+    weight = 20
+  [[menu.products]]
+    name = 'ID - Passport & ID Scanning'
+    url = '/products/id-scanning/'
+    weight = 30
+  [[menu.products]]
+    name = 'Hotel - Hospitality App for Guests and Staff'
+    url = '/products/hospitality-app/'
+    weight = 40
+  [[menu.products]]
+    name = 'Menu – Digital Menu'
+    url = '/products/digital-menu/'
+    weight = 50
+  [[menu.products]]
+    name = 'Support – Helpdesk Ticketing App'
+    url = '/products/helpdesk/'
+    weight = 60
+  [[menu.products]]
+    name = 'AI – AI Helper for Hospitality Staff'
+    url = '/products/ai-helper/'
+    weight = 70
+  [[menu.products]]
+    name = 'ERP – ERP for the Garment Industry'
+    url = '/products/erp-garment/'
+    weight = 80
+  [[menu.products]]
+    name = 'CRM – CRM for SME'
+    url = '/products/crm-sme/'
+    weight = 90
+
+# Solutions submenu
+  [[menu.solutions]]
+    name = 'Digital Transformation'
+    url = '/solutions/digital-transformation/'
+    weight = 10
+  [[menu.solutions]]
+    name = 'Cyber Security'
+    url = '/solutions/cyber-security/'
+    weight = 20
+  [[menu.solutions]]
+    name = 'Cloud Services'
+    url = '/solutions/cloud-services/'
+    weight = 30
+  [[menu.solutions]]
+    name = 'Data Analytics'
+    url = '/solutions/data-analytics/'
+    weight = 40
+  [[menu.solutions]]
+    name = 'IoT Solutions'
+    url = '/solutions/iot/'
+    weight = 50
+
+# Services submenu
+  [[menu.services]]
+    name = 'IT Support & Maintenance'
+    url = '/services/it-support/'
+    weight = 10
+  [[menu.services]]
+    name = 'Technology Consulting'
+    url = '/services/consulting/'
+    weight = 20
+  [[menu.services]]
+    name = 'Microsoft Solutions'
+    url = '/services/microsoft/'
+    weight = 30
+  [[menu.services]]
+    name = 'Web & Mobile Development'
+    url = '/services/development/'
+    weight = 40
+  [[menu.services]]
+    name = 'System Integration'
+    url = '/services/integration/'
+    weight = 50
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']

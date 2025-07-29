@@ -1,0 +1,13 @@
+name = 'ITSthe1 Theme'
+license = 'MIT'
+licenselink = 'https://github.com/itsthe1/website/blob/main/LICENSE'
+description = 'A modern, responsive theme for ITSthe1 IT solutions company'
+homepage = 'https://www.itsthe1.com'
+demosite = 'https://www.itsthe1.com'
+tags = ['responsive', 'business', 'clean', 'modern']
+features = ['responsive', 'seo-ready', 'performance-optimized']
+min_version = '0.112.0'
+
+[author]
+  name = 'ITSthe1 Team'
+  homepage = 'https://www.itsthe1.com'

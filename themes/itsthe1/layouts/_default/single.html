@@ -1,0 +1,97 @@
+{{ define "main" }}
+<div class="page-header">
+    <div class="container">
+        <div class="page-header-content">
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{ if .Params.subtitle }}
+            <p class="page-subtitle">{{ .Params.subtitle }}</p>
+            {{ end }}
+            
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="{{ "/" | relURL }}">Home</a></li>{{- range .Ancestors.Reverse -}}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{- end -}}<li class="is-active"><span>{{ .Title }}</span></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="container">
+        <div class="content-wrapper">
+            <article class="main-content">
+                {{ if .Params.featured_image }}
+                <div class="featured-image">
+                    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" />
+                </div>
+                {{ end }}
+                
+                <div class="content">
+                    {{ .Content }}
+                </div>
+                
+                {{ if .Params.tags }}
+                <div class="tags-section">
+                    <h3>Tags</h3>
+                    <div class="tags">
+                        {{ range .Params.tags }}
+                        <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                
+                {{ if .Params.share }}
+                <div class="share-section">
+                    <h3>Share this page</h3>
+                    <div class="share-buttons">
+                        <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" 
+                           class="share-btn twitter" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" 
+                           class="share-btn linkedin" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" 
+                           class="share-btn facebook" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                    </div>
+                </div>
+                {{ end }}
+            </article>
+            
+            {{ if or .Params.sidebar .Site.Params.sidebar }}
+            <aside class="sidebar">
+                {{ if .Params.toc }}
+                <div class="sidebar-widget">
+                    <h3>Table of Contents</h3>
+                    {{ .TableOfContents }}
+                </div>
+                {{ end }}
+                
+                <div class="sidebar-widget">
+                    <h3>Related Services</h3>
+                    <ul class="related-links">
+                        <li><a href="/services/it-support/">IT Support & Outsourcing</a></li>
+                        <li><a href="/services/consulting/">Co-managed IT Services</a></li>
+                        <li><a href="/services/security/">IT Security & Compliance</a></li>
+                        <li><a href="/services/microsoft/">Microsoft 365</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-widget cta-widget">
+                    <h3>Need Help?</h3>
+                    <p>Contact our experts for personalized solutions.</p>
+                    <a href="{{ "/contact/" | relURL }}" class="btn btn-primary btn-block">
+                        <i class="fas fa-phone"></i> Contact Us
+                    </a>
+                </div>
+            </aside>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

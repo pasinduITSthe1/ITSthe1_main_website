@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang | default "en-US" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    <meta name="keywords" content="{{ site.Params.keywords }}">
+    <meta name="author" content="{{ site.Params.author }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}">
+    <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    
+    <!-- Custom CSS Variables -->
+    <style>
+        :root {
+            --primary-color: {{ site.Params.primaryColor | default "#FF6B35" }};
+            --secondary-color: {{ site.Params.secondaryColor | default "#2C3E50" }};
+            --accent-color: {{ site.Params.accentColor | default "#F39C12" }};
+            --background-color: {{ site.Params.backgroundColor | default "#FFFFFF" }};
+            --text-color: {{ site.Params.textColor | default "#333333" }};
+        }
+    </style>
+</head>
+<body>
+    {{ partial "header.html" . }}
+    
+    <main id="main" role="main">
+        {{ block "main" . }}{{ end }}
+    </main>
+    
+    {{ partial "footer.html" . }}
+    
+    <!-- JavaScript -->
+    <script src="{{ "/js/main.js" | relURL }}"></script>
+    
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</body>
+</html>

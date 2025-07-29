@@ -1,0 +1,91 @@
+<header class="header" id="header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item logo" href="{{ "/" | relURL }}">
+                    <img src="/images/logo.svg" alt="{{ site.Title }}" class="logo-img">
+                </a>
+                
+                <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    {{ range site.Menus.main }}
+                    {{ if .Params.hasChildren }}
+                    <div class="navbar-item has-dropdown">
+                        {{ $isActive := false }}
+                        {{ $currentPath := $.RelPermalink }}
+                        {{ $menuPath := .URL }}
+                        
+                        {{ if eq $menuPath "/" }}
+                            {{ $isActive = $.IsHome }}
+                        {{ else }}
+                            {{ $isActive = or (hasPrefix $currentPath $menuPath) (eq $currentPath $menuPath) }}
+                        {{ end }}
+                        
+                        <a class="navbar-link {{ if $isActive }}active{{ end }}" 
+                           href="{{ .URL | relURL }}">
+                            {{ .Name }}
+                            <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        
+                        <div class="navbar-dropdown">
+                            {{ $menuName := .Name | lower }}
+                            {{ if eq $menuName "products" }}
+                                {{ range site.Menus.products }}
+                                <a class="navbar-dropdown-item" href="{{ .URL | relURL }}">
+                                    {{ .Name }}
+                                </a>
+                                {{ end }}
+                            {{ else if eq $menuName "solutions" }}
+                                {{ range site.Menus.solutions }}
+                                <a class="navbar-dropdown-item" href="{{ .URL | relURL }}">
+                                    {{ .Name }}
+                                </a>
+                                {{ end }}
+                            {{ else if eq $menuName "services" }}
+                                {{ range site.Menus.services }}
+                                <a class="navbar-dropdown-item" href="{{ .URL | relURL }}">
+                                    {{ .Name }}
+                                </a>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ else }}
+                    {{ $isActive := false }}
+                    {{ $currentPath := $.RelPermalink }}
+                    {{ $menuPath := .URL }}
+                    
+                    {{ if eq $menuPath "/" }}
+                        {{ $isActive = $.IsHome }}
+                    {{ else }}
+                        {{ $isActive = eq $currentPath $menuPath }}
+                    {{ end }}
+                    
+                    <a class="navbar-item {{ if $isActive }}active{{ end }}" 
+                       href="{{ .URL | relURL }}">
+                        {{ .Name }}
+                    </a>
+                    {{ end }}
+                    {{ end }}
+                    
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary" href="{{ "/contact/" | relURL }}">
+                                <strong>Get a Demo</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

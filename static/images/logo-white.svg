@@ -1,0 +1,9 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- ITSthe1 Text in White -->
+  <text x="10" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">its the</text>
+  <text x="10" y="55" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="white">solutions</text>
+  
+  <!-- Orange Square with "1" -->
+  <rect x="140" y="5" width="50" height="50" rx="8" fill="#FF6B35"/>
+  <text x="165" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">1</text>
+</svg>

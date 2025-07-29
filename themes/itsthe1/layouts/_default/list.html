@@ -1,0 +1,134 @@
+{{ define "main" }}
+<!-- Enhanced Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="page-header-content">
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{ if .Params.subtitle }}
+            <p class="page-subtitle">{{ .Params.subtitle }}</p>
+            {{ else if .Content }}
+            <div class="page-description">{{ .Content }}</div>
+            {{ else }}
+            <p class="page-subtitle">Discover our innovative solutions designed to transform your business</p>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="page-content">
+    <div class="container">
+        {{ if .Pages }}
+        <!-- Product Stats (if products page) -->
+        {{ if eq .Section "products" }}
+        <div class="products-stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">{{ len .Pages }}</div>
+                    <div class="stat-label">Products</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        
+        <!-- Enhanced Content Grid -->
+        <div class="content-grid">
+            {{ range .Pages }}
+            <article class="content-card" data-aos="fade-up" data-aos-delay="{{ mul .Weight 100 }}">
+                {{ if .Params.featured_image }}
+                <div class="card-image">
+                    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" loading="lazy" />
+                </div>
+                {{ else }}
+                <!-- Default gradient background if no image -->
+                <div class="card-image">
+                    <div class="card-image-placeholder">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                </div>
+                {{ end }}
+                
+                <div class="card-content">
+                    <h2 class="card-title">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h2>
+                    
+                    {{ if .Params.excerpt }}
+                    <p class="card-excerpt">{{ .Params.excerpt }}</p>
+                    {{ else }}
+                    <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+                    {{ end }}
+                    
+                    <div class="card-bottom">
+                        <div class="card-meta">
+                            {{ if .Date }}
+                            <span class="card-date">
+                                <i class="fas fa-calendar"></i>
+                                {{ .Date.Format "Jan 2, 2006" }}
+                            </span>
+                            {{ end }}
+                            
+                            {{ if .Params.tags }}
+                            <div class="card-tags">
+                                {{ range first 3 .Params.tags }}
+                                <span class="tag">{{ . }}</span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+                        
+                        <a href="{{ .RelPermalink }}" class="card-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="page-cta">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Get in touch with our experts to discuss how our solutions can help your organization grow.</p>
+                <div class="cta-buttons">
+                    <a href="{{ "/contact/" | relURL }}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i>
+                        Contact Us
+                    </a>
+                    <a href="{{ "/solutions/" | relURL }}" class="btn btn-outline btn-lg">
+                        <i class="fas fa-eye"></i>
+                        View Solutions
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        {{ else }}
+        <!-- Enhanced No Content State -->
+        <div class="no-content">
+            <div class="no-content-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <h2>No Content Available</h2>
+            <p>We're working on adding more content to this section. Please check back soon!</p>
+            <a href="{{ "/" | relURL }}" class="btn btn-primary">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

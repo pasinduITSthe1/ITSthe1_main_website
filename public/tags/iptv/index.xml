@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IPTV on ITSthe1 - IT &amp; Telecom Solutions</title>
+    <link>http://localhost:1313/tags/iptv/</link>
+    <description>Recent content in IPTV on ITSthe1 - IT &amp; Telecom Solutions</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/iptv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TV - IPTV for Enterprise &amp; Hospitality</title>
+      <link>http://localhost:1313/products/iptv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/iptv/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Our IPTV solution provides scalable, high-quality video streaming for enterprise and hospitality environments. Perfect for hotels, hospitals, corporate offices, and educational institutions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multi-channel Broadcasting&lt;/strong&gt;: Support for live TV, on-demand content, and custom channels&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Content Management&lt;/strong&gt;: Easy-to-use dashboard for managing programming and schedules&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Interactive Services&lt;/strong&gt;: Weather, news, local information, and custom messaging&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quality Assurance&lt;/strong&gt;: HD/4K streaming with adaptive bitrate technology&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Enhance guest experience with premium entertainment options&lt;/li&gt;&#xA;&lt;li&gt;Reduce operational costs compared to traditional cable systems&lt;/li&gt;&#xA;&lt;li&gt;Centralized content control across all locations&lt;/li&gt;&#xA;&lt;li&gt;Professional presentation of corporate communications&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Protocols&lt;/strong&gt;: HTTP, RTSP, RTP, UDP multicast&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Formats&lt;/strong&gt;: H.264, H.265, MP4, MPEG-2&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bandwidth&lt;/strong&gt;: Optimized for various network conditions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Devices&lt;/strong&gt;: Smart TVs, set-top boxes, mobile devices, tablets&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
