@@ -2,7 +2,7 @@
 title: "Cloud & Hybrid Solutions"
 subtitle: "Scalable, secure, and future-ready cloud infrastructure"
 description: "Comprehensive cloud and hybrid solutions including migration, security, disaster recovery, and multi-cloud management to enhance performance, security, and operational flexibility."
-featured_image: "/images/solutions/cloud-services.jpg"
+featured_image: "/images/solutions/Cloud & Hybrid Solutions.png"
 tags: ["cloud services", "hybrid cloud", "cloud migration", "azure", "aws", "multi-cloud", "cloud security"]
 date: 2024-01-03
 draft: false

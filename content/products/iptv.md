@@ -1,7 +1,7 @@
 ---
 title: "1.TV - IPTV for Enterprise & Hospitality"
 subtitle: "Comprehensive IPTV platform transforming TVs into interactive digital experience hubs"
-featured_image: "/images/products/product-2.svg"
+featured_image: "/images/products2/IPTV.png"
 excerpt: "Enterprise-grade IPTV middleware platform designed for hotels, hospitals, cruise ships, universities, and corporate facilities. More than entertainment—enhancing engagement, driving revenue, and strengthening brand identity."
 tags: ["IPTV", "Entertainment", "Hospitality", "Interactive Display", "Hotel Tech", "Guest Services", "Digital Transformation", "Technology Consulting"]
 weight: 10

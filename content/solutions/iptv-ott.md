@@ -2,7 +2,7 @@
 title: "IPTV & OTT Solutions"
 subtitle: "Next-generation streaming for businesses and telecom operators"
 description: "Advanced IPTV and OTT streaming solutions for content delivery, monetization, and multi-device compatibility. Custom middleware, platform development, and content optimization services."
-featured_image: "/images/solutions/iptv-ott.jpg"
+featured_image: "/images/solutions/IPTV2.png"
 tags: ["iptv", "ott", "streaming", "content delivery", "monetization", "multi-device", "middleware"]
 date: 2024-01-06
 draft: false

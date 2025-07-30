@@ -1,7 +1,7 @@
 ---
 title: "1.DS & 1.MS - Digital Signage Solutions"
 subtitle: "Transforming displays into dynamic communication hubs with intelligent signage and meeting room management"
-featured_image: "/images/products/product-1.svg"
+featured_image: "/images/products2/Digital Signage.png"
 excerpt: "Comprehensive digital signage platform and intelligent meeting room solutions designed to enhance viewer engagement, operational efficiency, and visitor experience across diverse industries."
 tags: ["Digital Signage", "Meeting Rooms", "Interactive Display", "Communication", "Enterprise", "Marketing Automation"]
 weight: 20

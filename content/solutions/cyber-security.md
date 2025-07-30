@@ -2,7 +2,7 @@
 title: "Cyber Security"
 subtitle: "Protect your business with comprehensive cybersecurity solutions"
 description: "Advanced cybersecurity services including threat management, vulnerability assessments, and security consulting to protect your business from evolving cyber threats."
-featured_image: "/images/solutions/cyber-security.jpg"
+featured_image: "/images/solutions/Cyber Security.png"
 tags: ["cyber security", "threat management", "security consulting", "vulnerability assessment"]
 date: 2024-01-02
 draft: false

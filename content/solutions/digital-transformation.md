@@ -2,7 +2,7 @@
 title: "Digital Transformation"
 subtitle: "Modernize your business with strategic digital solutions"
 description: "Transform your business processes and operations with ITSthe1's comprehensive digital transformation services."
-featured_image: "/images/solutions/digital-transformation.jpg"
+featured_image: "/images/solutions/Digital Transformation.png"
 tags: ["digital transformation", "automation", "process optimization", "technology consulting"]
 date: 2024-01-01
 draft: false

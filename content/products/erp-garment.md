@@ -1,7 +1,7 @@
 ---
 title: "ERP - ERP for the Garment Industry"
 subtitle: "Specialized enterprise resource planning for garment manufacturing"
-featured_image: "/images/products/product-3.svg"
+featured_image: "/images/products2/ERP.png"
 excerpt: "Comprehensive ERP solution tailored specifically for garment manufacturers, covering production planning to supply chain management."
 tags: ["ERP", "Garment Industry", "Manufacturing", "Supply Chain"]
 weight: 80

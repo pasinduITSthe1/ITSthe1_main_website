@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Entertainment on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:1313/tags/entertainment/</link>
+    <link>http://localhost:3199/tags/entertainment/</link>
     <description>Recent content in Entertainment on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/entertainment/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3199/tags/entertainment/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.TV - IPTV for Enterprise &amp; Hospitality</title>
-      <link>http://localhost:1313/products/iptv/</link>
+      <link>http://localhost:3199/products/iptv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/iptv/</guid>
+      <guid>http://localhost:3199/products/iptv/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Introducing &lt;strong&gt;1.TV by ITSthe1 Solutions&lt;/strong&gt;—a comprehensive IPTV platform tailored for the hospitality, healthcare, education, maritime, and multi-dwelling unit (MDU) sectors. Designed to enhance guest and resident experiences while unlocking new revenue streams, 1.TV seamlessly integrates entertainment, information, and interactive services into a unified interface.&lt;/p&gt;&#xA;&lt;p&gt;1.TV is an enterprise-grade IPTV middleware platform that transforms ordinary TVs into interactive digital experience hubs, delivering much more than entertainment—it enhances engagement, drives upselling, and strengthens your brand identity.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,7 +2,7 @@
 title: "Web & Mobile App Development"
 subtitle: "Transforming digital experiences with cutting-edge applications"
 description: "Professional web and mobile application development services providing high-performing, scalable solutions to enhance customer engagement and drive digital transformation."
-featured_image: "/images/solutions/web-mobile.jpg"
+featured_image: "/images/solutions/Web & Mobile.png"
 tags: ["web development", "mobile apps", "custom applications", "ui/ux design", "e-commerce", "progressive web apps"]
 date: 2024-01-04
 draft: false
