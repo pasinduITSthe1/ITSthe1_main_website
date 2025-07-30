@@ -383,9 +383,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(-45deg, #FF6B35, #F39C12, #E74C3C, #9B59B6, #3498DB);
-    background-size: 400% 400%;
-    animation: gradientShift 8s ease infinite;
+    background: #1a1a1a;
     z-index: -2;
 }
 
@@ -435,6 +433,8 @@ p {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-image {
@@ -446,6 +446,52 @@ p {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Video Background Styles */
+.hero-video-background .hero-background {
+    z-index: -2;
+}
+
+.hero-background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    z-index: -3;
+    opacity: 0.3;
+    filter: blur(3px);
+}
+
+.hero-video-background .hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -2;
+}
+
+/* Enhanced text shadows for video background */
+.hero-video-background .hero-title {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-video-background .hero-subtitle {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive adjustments for video background */
+@media (max-width: 768px) {
+    .hero-background-video {
+        min-width: 150%;
+        min-height: 100%;
+    }
+    
+    .hero-video-background .hero-overlay {
+        background: rgba(0, 0, 0, 0.6);
+    }
 }
 
 .hero-scroll-indicator {
@@ -1861,6 +1907,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 0.5rem;
     list-style: none;
     margin: 0;
@@ -1870,6 +1917,7 @@ section {
 .breadcrumb li {
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .breadcrumb li:not(:last-child)::after {
@@ -1883,6 +1931,9 @@ section {
     text-decoration: none;
     transition: color 0.3s ease;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .breadcrumb a:hover {
@@ -1894,6 +1945,25 @@ section {
     color: white;
     font-weight: 600;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive breadcrumb */
+@media (max-width: 768px) {
+    .breadcrumb ul {
+        justify-content: flex-start;
+        font-size: 0.9rem;
+    }
+    
+    .breadcrumb a {
+        max-width: 120px;
+    }
+    
+    .breadcrumb .is-active span {
+        max-width: 150px;
+    }
 }
 
 /* Page Content */

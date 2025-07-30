@@ -10,7 +10,21 @@
             <!-- Breadcrumb -->
             <nav class="breadcrumb" aria-label="breadcrumbs">
                 <ul>
-                    <li><a href="{{ "/" | relURL }}">Home</a></li>{{- range .Ancestors.Reverse -}}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{- end -}}<li class="is-active"><span>{{ .Title }}</span></li>
+                    <li><a href="{{ "/" | relURL }}">Home</a></li>
+                    {{ range .Ancestors.Reverse }}
+                    {{ if not (eq .Kind "home") }}
+                    {{ $title := .Title }}
+                    {{ if eq .Section "products" }}
+                        {{ $title = "Our Products" }}
+                    {{ else if eq .Section "services" }}
+                        {{ $title = "Our Services" }}
+                    {{ else if eq .Section "solutions" }}
+                        {{ $title = "Our Solutions" }}
+                    {{ end }}
+                    <li><a href="{{ .RelPermalink }}">{{ $title }}</a></li>
+                    {{ end }}
+                    {{ end }}
+                    <li class="is-active"><span>{{ .Title }}</span></li>
                 </ul>
             </nav>
         </div>
