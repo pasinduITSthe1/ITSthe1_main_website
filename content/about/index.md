@@ -1,91 +1,87 @@
 ---
 title: "About ITSthe1"
-subtitle: "Your trusted partner in IT & Telecom solutions since 1999"
-description: "Learn about ITSthe1's journey, mission, and vision in providing cutting-edge IT solutions across the Middle East, North Africa & Indian Ocean Region."
+subtitle: "Your premier partner for IT, Telecom & Hospitality Solutions"
+description: "ITSthe1 - Your trusted technology partner since 1999, serving the Middle East, North A  frica & Indian Ocean Islands with innovative solutions that drive digital transformation."
 featured_image: "/images/about-hero.jpg"
 date: 2024-01-01
 draft: false
-toc: true
-sidebar: true
+toc: false
+sidebar: false
+layout: "about"
+
+# Stats for the stats section
+stats:
+  - number: "25+"
+    label: "Years of Experience"
+  - number: "1000+"
+    label: "Projects Completed"
+  - number: "3"
+    label: "Global Offices"
+  - number: "50+"
+    label: "Expert Team Members"
+
+# Core Values
+values:
+  - title: "Innovation"
+    icon: "fas fa-lightbulb"
+    description: "Pioneering cutting-edge technology solutions that transform businesses and create competitive advantages for our clients."
+  - title: "Excellence"
+    icon: "fas fa-award"
+    description: "Delivering superior quality in every project through rigorous testing, best practices, and continuous improvement."
+  - title: "Partnership"
+    icon: "fas fa-handshake"
+    description: "Building long-term relationships based on trust, transparency, and mutual success with our clients and partners."
+  - title: "Reliability"
+    icon: "fas fa-shield-alt"
+    description: "Ensuring consistent, dependable service delivery with 24/7 support and proactive maintenance across all solutions."
+
+# Company Timeline
+timeline:
+  - year: "1999"
+    title: "Foundation in USA"
+    description: "ITSthe1 was established in the United States, beginning our journey as a technology solutions provider with a vision to bridge the digital divide."
+  - year: "2003"
+    title: "Middle East Expansion"
+    description: "Opened our headquarters in Dubai, UAE, strategically positioning ourselves to serve the rapidly growing Middle East market."
+  - year: "2008"
+    title: "European Presence"
+    description: "Established our London office to extend our reach across Europe and strengthen our global service capabilities."
+  - year: "2012"
+    title: "Development Center"
+    description: "Launched our dedicated development center in Colombo, Sri Lanka, scaling our technical capabilities and innovation capacity."
+  - year: "2018"
+    title: "Digital Transformation Focus"
+    description: "Pivoted to become a comprehensive digital transformation partner, expanding into cloud services, AI, and hospitality technology."
+  - year: "2024"
+    title: "Industry Leadership"
+    description: "Recognized as a leading technology partner in the region, with over 1000 successful projects and continuous innovation in emerging technologies."
 ---
 
-## Our Story
+## About ITSthe1
 
-ITSthe1 was formed in 1999 in Sri Lanka, while the Dubai office was established in 2005. ITSthe1 is headquartered in Dubai, U.A.E. and is one of the leading system integrators in the region.
+ITSthe1 is your premier partner for **IT, Telecom & Hospitality Solutions** in the Middle East, North Africa & Indian Ocean Islands. For over 25 years, we've been helping organizations navigate the digital landscape and achieve sustainable growth.
 
-Business focus is in several areas of Consultancy, Solutions and Services.
+### Our Story
 
-### Our Vision
+ITSthe1 was formed in **1999** in the USA, with our **headquarters established in Dubai, U.A.E.** in **2003**. We expanded our global presence with a **branch office in London, U.K.** and a dedicated **development center in Sri Lanka**.
 
-To be your trusted Partner in providing Effective Solutions, which help you achieve your goals.
+### What Sets Us Apart
 
-### Our Mission
+Our approach is built on delivering solutions that are well researched, rigorously tested, and provide exceptional price-performance value. We achieve this through strategic partnerships with world-class technology leaders and continuous investment in cutting-edge technologies.
 
-Our philosophy is to offer solutions that are well researched, well tested, with price performance value, exceeding expectations. Choosing strategic alliances with world-class technology partners and investing in cutting-edge technology aid people helps us to achieve this philosophy.
+### Our Core Services
 
-## What We Do
+- **Hospitality Technology** - IPTV systems and guest management platforms
+- **Cloud Services** - AWS, Azure, and hybrid cloud solutions
+- **Cybersecurity** - Security frameworks and compliance solutions
+- **Digital Solutions** - Mobile apps, web platforms, and digital transformation
+- **AI & Automation** - Artificial intelligence and process automation
+- **Enterprise Systems** - ERP, CRM, and business management platforms
 
-In the IT sector, we provide Enterprise solutions for SMEs and Hospitality Vertical as well as other Specialist verticals like Aviation, Server and Systems Management, Cloud based services, Cyber Security, Backup and End user Client support, Point of Sale, Device Management, Digital Signage, FMEA (Failure Mode and Effects Analysis), Web Applications Development, PBX, Automation, Password-ID Security and Revenue Stop loss Solutions. In the Software sector we provide Web Solutions, CRM, ERP, Mobile Apps and web application development.
+## Our Vision
 
-### Technical Highlights
+*To be your Trusted Partner, in providing Effective Solutions, which help you achieve your goals.*
 
-- **Flexible Deployment:** Choose deployment on-premise servers for complete control in cloud/hosted solutions for scalability and reduced infrastructure costs
-- **Device Compatibility:** Supports a full range of set devices, including hospitality TVs with integrated set-top boxes (STBs) and external Android or Linux-based STBs
-- **IPTV Technology:** Delivers high-quality live TV and on-demand content over Ethernet, ensuring reliable and efficient media streaming
-- **Customizable Interface:** Multiscreen can be tailored to align with your brand identity and specific operational requirements, providing a unique user experience
+## Our Mission
 
-### Business Advantages
-
-- **Revenue Generation:** Utilize the platform to upsell services such as spa treatments, dining reservations, and local tours directly through the TV interface
-- **Enhanced Guest Engagement:** Interactive features allow guests and residents to request services, provide feedback, and access personalized content, increasing satisfaction and loyalty
-- **Operational Efficiency:** Integration with existing Property Management Systems (PMS) and other operational tools streamlines service delivery and reduces response times
-- **Data Analytics:** Gain insights into user preferences and behavior to inform service improvements and targeted marketing strategies
-
-## Unparalleled Support and Customization
-
-At ITSthe1 Solutions, we pride ourselves on delivering exceptional after-sales support and a high degree of customization. Our dedicated team works closely with clients to ensure seamless integration, ongoing maintenance, and continuous optimization of the 1.TV platform to meet evolving needs.
-
-## Our Locations
-
-### Dubai, UAE
-**ITSthe1 Solutions LLC**  
-28th Floor, The One Tower  
-Barsha Heights, Dubai  
-United Arab Emirates  
-Tel: +971 4 295 2705  
-Email: sales@itsthe1.com
-
-### London, UK
-**ITSthe1 Solutions UK Ltd**  
-71-75 Shelton Street London  
-WC2H 9JQ United Kingdom  
-Tel: +44 789 2158586  
-Email: info@itsthe1.com
-
-### Colombo, Sri Lanka
-**ITSthe1 Solutions Pvt Ltd.**  
-493/B, Galle Road  
-Colombo (Colombo-3), Sri Lanka  
-Tel: +94 707 220444  
-Email: support@itsthe1.com
-
-## Why Choose ITSthe1?
-
-### Expertise & Experience
-With over 25 years in the industry, we bring deep technical knowledge and proven methodologies to every project.
-
-### Quality Assurance
-We maintain the highest standards of quality in all our solutions and services, ensuring reliable and robust implementations.
-
-### Customer-Centric Approach
-Our success is measured by our clients' success. We work closely with you to understand your unique requirements and deliver tailored solutions.
-
-### Ongoing Support
-From initial consultation to post-implementation support, we're with you every step of the way.
-
-### Innovation Focus
-We stay at the forefront of technology trends, ensuring our solutions incorporate the latest innovations and best practices.
-
----
-
-*Ready to transform your business with our proven IT solutions? [Contact us today](/contact/) to discuss your requirements.*
+Our philosophy centers on delivering solutions that are meticulously researched, rigorously tested, and provide exceptional price-performance value. We achieve this through strategic partnerships with world-class technology leaders and continuous investment in cutting-edge technologies and people.

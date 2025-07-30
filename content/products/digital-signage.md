@@ -235,4 +235,4 @@ Experience the future of digital signage with ITSthe1 Solutions—where technolo
 
 Ready to transform your workplace communication? Contact our team for a personalized demonstration and quote.
 
-[Contact Us](/contact/) for more information about our DSMM solutions.
+For more information about our DSMM solutions, email us at [sales@itsthe1.com](mailto:sales@itsthe1.com).

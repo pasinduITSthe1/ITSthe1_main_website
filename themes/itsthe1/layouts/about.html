@@ -1,0 +1,909 @@
+{{ define "main" }}
+<!-- Enhanced Page Header -->
+<div class="page-header">
+    <div class="container">
+        <div class="page-header-content">
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{ if .Params.subtitle }}
+            <p class="page-subtitle">{{ .Params.subtitle }}</p>
+            {{ end }}
+        </div>
+        <div class="header-badge-container">
+            <span class="hero-badge">Established 1999</span>
+        </div>
+    </div>
+</div>
+
+<!-- Stats Section -->
+{{ if .Params.stats }}
+<section class="stats-section">
+    <div class="container">
+        <div class="products-stats">
+            <div class="stats-grid">
+                {{ range .Params.stats }}
+                <div class="stat-item">
+                    <div class="stat-number">{{ .number }}</div>
+                    <div class="stat-label">{{ .label }}</div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Main Content -->
+<section id="story" class="content-section">
+    <div class="container">
+        <div class="content-layout">
+            <div class="main-content">
+                <div class="content-inner">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+{{ if .Params.values }}
+<section class="values-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Core Values</h2>
+            <p class="section-subtitle">The principles that guide everything we do</p>
+        </div>
+        <div class="values-grid">
+            {{ range .Params.values }}
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="{{ .icon }}"></i>
+                </div>
+                <div class="value-content">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Timeline Section -->
+{{ if .Params.timeline }}
+<section class="timeline-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Our Journey</h2>
+            <p class="section-subtitle">25+ years of innovation and growth</p>
+        </div>
+        <div class="timeline-container">
+            {{ range $index, $item := .Params.timeline }}
+            <div class="timeline-item {{ if eq (mod $index 2) 0 }}left{{ else }}right{{ end }}">
+                <div class="timeline-content">
+                    <div class="timeline-year">{{ .year }}</div>
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Locations Section -->
+<section class="locations-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Global Presence</h2>
+            <p class="section-subtitle">Serving clients across three continents</p>
+        </div>
+        <div class="locations-grid">
+            <div class="location-card">
+                <div class="location-header">
+                    <h3>Dubai, UAE</h3>
+                    <div class="location-badge-wrapper">
+                        <span class="location-badge">Headquarters</span>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <p class="company-name">ITSthe1 Solutions LLC</p>
+                    <p class="address">28th Floor, The One Tower<br>Barsha Heights, Dubai</p>
+                    <div class="contact-info">
+                        <a href="tel:+97142952705" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+971 4 295 2705</span>
+                        </a>
+                        <a href="mailto:sales@itsthe1.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sales@itsthe1.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <div class="location-header">
+                    <h3>London, UK</h3>
+                    <div class="location-badge-wrapper">
+                        <span class="location-badge">European Office</span>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <p class="company-name">ITSthe1 Solutions UK Ltd</p>
+                    <p class="address">71-75 Shelton Street<br>London WC2H 9JQ</p>
+                    <div class="contact-info">
+                        <a href="tel:+447892158586" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+44 789 2158586</span>
+                        </a>
+                        <a href="mailto:info@itsthe1.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@itsthe1.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <div class="location-header">
+                    <h3>Colombo, Sri Lanka</h3>
+                    <div class="location-badge-wrapper">
+                        <span class="location-badge">Development Center</span>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <p class="company-name">ITSthe1 Solutions Pvt Ltd</p>
+                    <p class="address">493/B, Galle Road<br>Colombo-3</p>
+                    <div class="contact-info">
+                        <a href="tel:+94707220444" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+94 707 220444</span>
+                        </a>
+                        <a href="mailto:support@itsthe1.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@itsthe1.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* CSS Variables */
+:root {
+    --primary: #FF6B35;
+    --secondary: #2C3E50;
+    --accent: #F39C12;
+    --text-dark: #2D3748;
+    --text-light: #718096;
+    --bg-light: #F7FAFC;
+    --white: #FFFFFF;
+    --border: #E2E8F0;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Page Header Enhancements for About Page */
+.header-badge-container {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+.page-header .hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.page-header .hero-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s;
+}
+
+.page-header .hero-badge:hover::before {
+    left: 100%;
+}
+
+.page-header .hero-badge:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* Stats Section */
+.stats-section {
+    background: var(--white);
+    padding: 40px 0;
+    margin-top: -20px;
+    position: relative;
+    z-index: 3;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.stat-card {
+    text-align: center;
+    background: transparent;
+    padding: 40px 20px;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    position: relative;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+/* Content Section */
+.content-section {
+    padding: 40px 0;
+    background: var(--bg-light);
+}
+
+.content-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.content-inner {
+    background: var(--white);
+    padding: 40px 50px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+.content-inner h2 {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin: 30px 0 15px 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.content-inner h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.content-inner h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+}
+
+.content-inner p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.content-inner ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.content-inner li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Values Section */
+.values-section {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.value-card {
+    background: var(--bg-light);
+    padding: 40px 30px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    background: var(--white);
+}
+
+.value-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.value-content h3 {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.value-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--primary);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item.left {
+    justify-content: flex-end;
+}
+
+.timeline-item.right {
+    justify-content: flex-start;
+}
+
+.timeline-content {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    max-width: 350px;
+    position: relative;
+}
+
+.timeline-item.left .timeline-content {
+    margin-right: 50px;
+}
+
+.timeline-item.right .timeline-content {
+    margin-left: 50px;
+}
+
+.timeline-year {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.timeline-content h3 {
+    color: var(--secondary);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: var(--text-light);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: var(--primary);
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    box-shadow: 0 0 0 3px var(--primary);
+}
+
+/* Locations Section */
+.locations-section {
+    padding: 40px 0;
+    background: var(--white);
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.location-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.location-card.featured {
+    border: 2px solid var(--primary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.location-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary);
+}
+
+.location-header {
+    background: linear-gradient(135deg, var(--bg-light) 0%, #f8f9fc 100%);
+    padding: 30px 35px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.location-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.location-card.featured .location-header {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--white);
+    border-bottom: none;
+}
+
+.location-card.featured .location-header::before {
+    display: none;
+}
+
+.location-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.location-badge {
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    background: var(--primary);
+    color: var(--white);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.location-card.featured .location-badge {
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.location-badge-wrapper {
+    margin-top: 12px;
+}
+
+.location-badge-wrapper .location-badge {
+    position: static;
+    transform: none;
+    display: inline-block;
+    margin: 0;
+}
+
+.location-details {
+    padding: 35px;
+    background: linear-gradient(180deg, var(--white) 0%, #fcfcfd 100%);
+}
+
+.company-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+    letter-spacing: -0.3px;
+}
+
+.address {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.contact-info {
+    border-top: 1px solid #eef0f3;
+    padding-top: 25px;
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    position: relative;
+}
+
+.contact-item:hover {
+    color: var(--primary);
+    background: rgba(255, 118, 59, 0.05);
+    padding-left: 8px;
+}
+
+.contact-item i {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 14px;
+    background: rgba(255, 118, 59, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover i {
+    background: var(--primary);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 50px 0;
+    margin-bottom: 60px;
+    background: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    border-radius: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-secondary:hover {
+    background: var(--white);
+    color: var(--secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .page-header {
+        padding: 6rem 0 3rem;
+    }
+    
+    .header-badge-container {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    
+    .page-header .hero-badge {
+        font-size: 12px;
+        padding: 8px 18px;
+        border-radius: 25px;
+        letter-spacing: 0.6px;
+        border-width: 1.5px;
+    }
+    
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+    }
+    
+    .stat-card {
+        padding: 35px 15px;
+    }
+    
+    .content-inner {
+        padding: 40px 50px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-container::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        justify-content: flex-start !important;
+    }
+    
+    .timeline-content {
+        margin-left: 60px !important;
+        margin-right: 0 !important;
+        max-width: calc(100% - 60px);
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .location-badge {
+        position: static;
+        transform: none;
+        margin-top: 8px;
+        display: inline-block;
+    }
+    
+    .location-header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    
+    .stat-card {
+        padding: 30px 15px;
+    }
+    
+    .page-header {
+        padding: 5rem 0 2.5rem;
+    }
+    
+    .header-badge-container {
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .page-header .hero-badge {
+        font-size: 11px;
+        padding: 7px 16px;
+        border-radius: 22px;
+        letter-spacing: 0.5px;
+        border-width: 1.5px;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .content-inner {
+        padding: 30px 25px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+</style>
+{{ end }}

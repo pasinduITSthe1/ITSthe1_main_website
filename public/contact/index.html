@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=12369&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,13 @@
     
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:12369/contact/">
+    <meta property="og:url" content="http://localhost:1313/contact/">
     <meta property="og:title" content="Contact Us | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="og:description" content="Contact ITSthe1 for your IT and telecom solution needs. We have offices in Dubai, London, and Colombo to serve you better.">
     
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:12369/contact/">
+    <meta property="twitter:url" content="http://localhost:1313/contact/">
     <meta property="twitter:title" content="Contact Us | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="twitter:description" content="Contact ITSthe1 for your IT and telecom solution needs. We have offices in Dubai, London, and Colombo to serve you better.">
     
@@ -160,7 +160,7 @@
                     
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a class="button is-primary" href="/contact/">
+                            <a class="button is-primary" href="mailto:sales@itsthe1.com?subject=Demo Request&body=Hi, I would like to request a demo of your solutions.">
                                 <strong>Get a Demo</strong>
                             </a>
                         </div>
@@ -174,7 +174,7 @@
     
     <main id="main" role="main">
         
-<div class="page-header">
+<div class="page-header contact-header">
     <div class="container">
         <div class="page-header-content">
             <h1 class="page-title">Contact Us</h1>
@@ -185,143 +185,193 @@
             
             <nav class="breadcrumb" aria-label="breadcrumbs">
                 <ul>
-                    <li><a href="/">Home</a></li><li><a href="/">ITSthe1 Solutions LLC - IT &amp; Telecom Solutions</a></li><li class="is-active"><span>Contact Us</span></li>
+                    <li><a href="/">Home</a></li>
+                    <li class="is-active"><span>Contact Us</span></li>
                 </ul>
             </nav>
         </div>
     </div>
 </div>
 
-<div class="page-content">
+<div class="contact-page">
     <div class="container">
-        <div class="content-wrapper">
-            <article class="main-content">
-                
-                
-                <div class="content">
-                    <h2 id="get-in-touch">Get In Touch</h2>
+        <div class="contact-content">
+            <h2 id="get-in-touch">Get In Touch</h2>
 <p>Ready to transform your business with cutting-edge IT solutions? Our team of experts is here to help you navigate the complex world of technology and find the perfect solutions for your unique needs.</p>
 <div class="contact-form-section">
     <div class="contact-grid">
         <div class="contact-form">
             <h3>Send us a Message</h3>
-            <form id="contact-form" action="#" method="POST">
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/contact/success/">
+                
+                <input type="hidden" name="form-name" value="contact" />
+                
+                
+                <div class="honeypot-field">
+                    <label>Don't fill this out: <input name="bot-field" /></label>
+                </div>
+                
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-<pre><code>            &lt;div class=&quot;form-group&quot;&gt;
-                &lt;label for=&quot;email&quot;&gt;Email *&lt;/label&gt;
-                &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
-            &lt;/div&gt;
-            
-            &lt;div class=&quot;form-group&quot;&gt;
-                &lt;label for=&quot;phone&quot;&gt;Phone Number&lt;/label&gt;
-                &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot;&gt;
-            &lt;/div&gt;
-            
-            &lt;div class=&quot;form-group&quot;&gt;
-                &lt;label for=&quot;company&quot;&gt;Company&lt;/label&gt;
-                &lt;input type=&quot;text&quot; id=&quot;company&quot; name=&quot;company&quot;&gt;
-            &lt;/div&gt;
-            
-            &lt;div class=&quot;form-group&quot;&gt;
-                &lt;label for=&quot;service&quot;&gt;Service of Interest&lt;/label&gt;
-                &lt;select id=&quot;service&quot; name=&quot;service&quot;&gt;
-                    &lt;option value=&quot;&quot;&gt;Select a service&lt;/option&gt;
-                    &lt;option value=&quot;digital-transformation&quot;&gt;Digital Transformation&lt;/option&gt;
-                    &lt;option value=&quot;cyber-security&quot;&gt;Cyber Security&lt;/option&gt;
-                    &lt;option value=&quot;cloud-services&quot;&gt;Cloud Services&lt;/option&gt;
-                    &lt;option value=&quot;web-mobile&quot;&gt;Web &amp; Mobile Development&lt;/option&gt;
-                    &lt;option value=&quot;hospitality-solutions&quot;&gt;Hospitality Solutions&lt;/option&gt;
-                    &lt;option value=&quot;iptv-ott&quot;&gt;IPTV &amp; OTT Solutions&lt;/option&gt;
-                    &lt;option value=&quot;it-support&quot;&gt;IT Support &amp; Outsourcing&lt;/option&gt;
-                    &lt;option value=&quot;other&quot;&gt;Other&lt;/option&gt;
-                &lt;/select&gt;
-            &lt;/div&gt;
-            
-            &lt;div class=&quot;form-group&quot;&gt;
-                &lt;label for=&quot;message&quot;&gt;Message *&lt;/label&gt;
-                &lt;textarea id=&quot;message&quot; name=&quot;message&quot; rows=&quot;5&quot; required placeholder=&quot;Tell us about your project or requirements...&quot;&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-            
-            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;
-                &lt;i class=&quot;fas fa-paper-plane&quot;&gt;&lt;/i&gt;
-                Send Message
-            &lt;/button&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;contact-info&quot;&gt;
-        &lt;h3&gt;Our Offices&lt;/h3&gt;
-        
-        &lt;div class=&quot;office-location&quot;&gt;
-            &lt;h4&gt;&lt;i class=&quot;fas fa-map-marker-alt&quot;&gt;&lt;/i&gt; Dubai, UAE (Headquarters)&lt;/h4&gt;
-            &lt;div class=&quot;office-details&quot;&gt;
-                &lt;p&gt;&lt;strong&gt;ITSthe1 Solutions LLC&lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;28th Floor, The One Tower&lt;br&gt;
-                Barsha Heights, Dubai&lt;br&gt;
-                United Arab Emirates&lt;/p&gt;
-                &lt;p&gt;&lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt; &lt;a href=&quot;tel:+97142952705&quot;&gt;+971 4 295 2705&lt;/a&gt;&lt;/p&gt;
-                &lt;p&gt;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt; &lt;a href=&quot;mailto:sales@itsthe1.com&quot;&gt;sales@itsthe1.com&lt;/a&gt;&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        
-        &lt;div class=&quot;office-location&quot;&gt;
-            &lt;h4&gt;&lt;i class=&quot;fas fa-map-marker-alt&quot;&gt;&lt;/i&gt; London, UK&lt;/h4&gt;
-            &lt;div class=&quot;office-details&quot;&gt;
-                &lt;p&gt;&lt;strong&gt;ITSthe1 Solutions UK Ltd&lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;71-75 Shelton Street London&lt;br&gt;
-                WC2H 9JQ United Kingdom&lt;/p&gt;
-                &lt;p&gt;&lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt; &lt;a href=&quot;tel:+447892158586&quot;&gt;+44 789 2158586&lt;/a&gt;&lt;/p&gt;
-                &lt;p&gt;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt; &lt;a href=&quot;mailto:info@itsthe1.com&quot;&gt;info@itsthe1.com&lt;/a&gt;&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        
-        &lt;div class=&quot;office-location&quot;&gt;
-            &lt;h4&gt;&lt;i class=&quot;fas fa-map-marker-alt&quot;&gt;&lt;/i&gt; Colombo, Sri Lanka&lt;/h4&gt;
-            &lt;div class=&quot;office-details&quot;&gt;
-                &lt;p&gt;&lt;strong&gt;ITSthe1 Solutions Pvt Ltd.&lt;/strong&gt;&lt;/p&gt;
-                &lt;p&gt;493/B, Galle Road&lt;br&gt;
-                Colombo (Colombo-3), Sri Lanka&lt;/p&gt;
-                &lt;p&gt;&lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt; &lt;a href=&quot;tel:+94707220444&quot;&gt;+94 707 220444&lt;/a&gt;&lt;/p&gt;
-                &lt;p&gt;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt; &lt;a href=&quot;mailto:support@itsthe1.com&quot;&gt;support@itsthe1.com&lt;/a&gt;&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        
-        &lt;div class=&quot;business-hours&quot;&gt;
-            &lt;h4&gt;&lt;i class=&quot;fas fa-clock&quot;&gt;&lt;/i&gt; Business Hours&lt;/h4&gt;
-            &lt;p&gt;&lt;strong&gt;Monday - Friday:&lt;/strong&gt; 9:00 AM - 6:00 PM&lt;br&gt;
-            &lt;strong&gt;Saturday:&lt;/strong&gt; 9:00 AM - 1:00 PM&lt;br&gt;
-            &lt;strong&gt;Sunday:&lt;/strong&gt; Closed&lt;/p&gt;
-            &lt;p&gt;&lt;em&gt;*Hours may vary by location. Contact specific office for details.&lt;/em&gt;&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-</div>
-<h2 id="what-happens-next">What Happens Next?</h2>
-<ol>
-<li><strong>We Review Your Inquiry</strong> - Our team will carefully review your message and requirements</li>
-<li><strong>Initial Consultation</strong> - We&rsquo;ll schedule a call to discuss your needs in detail</li>
-<li><strong>Custom Proposal</strong> - Receive a tailored solution proposal with timeline and pricing</li>
-<li><strong>Project Kickoff</strong> - Once approved, we&rsquo;ll begin implementation of your solution</li>
-</ol>
-<h2 id="emergency-support">Emergency Support</h2>
-<p>For existing clients requiring urgent technical support, please contact our 24/7 emergency hotline:</p>
-<p><strong>Emergency Support:</strong> +971 50 123 4567<br>
-<strong>Email:</strong> <a href="mailto:emergency@itsthe1.com">emergency@itsthe1.com</a></p>
-<hr>
-<p><em>Your success is our priority. Let&rsquo;s build something amazing together.</em></p>
-
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
                 
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </div>
                 
+                <div class="form-group">
+                    <label for="service">Service of Interest</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="digital-transformation">Digital Transformation</option>
+                        <option value="cyber-security">Cyber Security</option>
+                        <option value="cloud-services">Cloud Services</option>
+                        <option value="web-mobile">Web & Mobile Development</option>
+                        <option value="hospitality-solutions">Hospitality Solutions</option>
+                        <option value="iptv-ott">IPTV & OTT Solutions</option>
+                        <option value="ai-helper">AI Helper</option>
+                        <option value="erp-garment">ERP for Garment Industry</option>
+                        <option value="crm-sme">CRM for SME</option>
+                        <option value="digital-signage">Digital Signage & Meeting Room</option>
+                        <option value="id-scanning">ID & Passport Scanning</option>
+                        <option value="hospitality-app">Hospitality App</option>
+                        <option value="digital-menu">Digital Menu</option>
+                        <option value="helpdesk">Helpdesk Solutions</option>
+                        <option value="it-support">IT Support & Outsourcing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
                 
-            </article>
+                <div class="form-group">
+                    <label for="budget">Project Budget (Optional)</label>
+                    <select id="budget" name="budget">
+                        <option value="">Select budget range</option>
+                        <option value="under-10k">Under $10,000</option>
+                        <option value="10k-50k">$10,000 - $50,000</option>
+                        <option value="50k-100k">$50,000 - $100,000</option>
+                        <option value="100k-500k">$100,000 - $500,000</option>
+                        <option value="over-500k">Over $500,000</option>
+                        <option value="discuss">Prefer to discuss</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timeline">Project Timeline (Optional)</label>
+                    <select id="timeline" name="timeline">
+                        <option value="">Select timeline</option>
+                        <option value="asap">ASAP</option>
+                        <option value="1-month">Within 1 month</option>
+                        <option value="3-months">Within 3 months</option>
+                        <option value="6-months">Within 6 months</option>
+                        <option value="planning">Just planning ahead</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, requirements, challenges you're facing, or any specific questions you have..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter" value="yes" />
+                        <span>I would like to receive updates about new products and services</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Our Offices</h3>
             
+            <div class="office-location">
+                <h4><i class="fas fa-map-marker-alt"></i> Dubai, UAE (Headquarters)</h4>
+                <div class="office-details">
+                    <p><strong>ITSthe1 Solutions LLC</strong></p>
+                    <p>28th Floor, The One Tower<br>
+                    Barsha Heights, Dubai<br>
+                    United Arab Emirates</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+97142952705">+971 4 295 2705</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:sales@itsthe1.com">sales@itsthe1.com</a></p>
+                </div>
+            </div>
             
+            <div class="office-location">
+                <h4><i class="fas fa-map-marker-alt"></i> London, UK</h4>
+                <div class="office-details">
+                    <p><strong>ITSthe1 Solutions UK Ltd</strong></p>
+                    <p>71-75 Shelton Street London<br>
+                    WC2H 9JQ United Kingdom</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+447892158586">+44 789 2158586</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@itsthe1.com">info@itsthe1.com</a></p>
+                </div>
+            </div>
+            
+            <div class="office-location">
+                <h4><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</h4>
+                <div class="office-details">
+                    <p><strong>ITSthe1 Solutions Pvt Ltd.</strong></p>
+                    <p>493/B, Galle Road<br>
+                    Colombo (Colombo-3), Sri Lanka</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+94707220444">+94 707 220444</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:support@itsthe1.com">support@itsthe1.com</a></p>
+                </div>
+            </div>
+            
+            <div class="business-hours">
+                <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                <strong>Saturday:</strong> 9:00 AM - 1:00 PM<br>
+                <strong>Sunday:</strong> Closed</p>
+                <p><em>*Hours may vary by location. Contact specific office for details.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="contact-cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>We're Here to Help</h2>
+            <p>Our team of experts is ready to discuss your project and provide the perfect solution for your business needs.</p>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>Dubai: <a href="tel:+97142952705">+971 4 295 2705</a></p>
+                    <p>London: <a href="tel:+447892158586">+44 789 2158586</a></p>
+                    <p>Colombo: <a href="tel:+94707220444">+94 707 220444</a></p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Sales: <a href="mailto:sales@itsthe1.com">sales@itsthe1.com</a></p>
+                    <p>Support: <a href="mailto:support@itsthe1.com">support@itsthe1.com</a></p>
+                    <p>General: <a href="mailto:info@itsthe1.com">info@itsthe1.com</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -371,15 +421,15 @@
             <div class="footer-section">
                 <h4>Our Services</h4>
                 <ul class="footer-links">
-                    <li><a href="/services/it-support/">IT Support & Outsourcing</a></li>
-                    <li><a href="/services/co-managed/">Co-managed IT Services</a></li>
-                    <li><a href="/services/security-compliance/">IT Security & Compliance</a></li>
+                    <li><a href="/services/it-support-outsourcing/">IT Support & Outsourcing</a></li>
+                    <li><a href="/services/co-managed-it-services/">Co-managed IT Services</a></li>
+                    <li><a href="/services/it-security-compliance/">IT Security & Compliance</a></li>
                     <li><a href="/services/microsoft-365/">Microsoft 365</a></li>
                     <li><a href="/services/microsoft-azure/">Microsoft Azure</a></li>
-                    <li><a href="/services/business-applications/">Microsoft Business Applications</a></li>
+                    <li><a href="/services/microsoft-business-applications/">Microsoft Business Applications</a></li>
                     <li><a href="/services/cloud-hybrid/">Cloud & Hybrid</a></li>
-                    <li><a href="/services/consultancy/">IT Consultancy</a></li>
-                    <li><a href="/services/strategy-development/">IT Strategy Development</a></li>
+                    <li><a href="/services/it-consultancy/">IT Consultancy</a></li>
+                    <li><a href="/services/it-strategy-development/">IT Strategy Development</a></li>
                     <li><a href="/services/digital-transformation-planning/">Digital Transformation Planning</a></li>
                 </ul>
             </div>

@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="page-header contact-header">
+    <div class="container">
+        <div class="page-header-content">
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{ if .Params.subtitle }}
+            <p class="page-subtitle">{{ .Params.subtitle }}</p>
+            {{ end }}
+            
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="{{ "/" | relURL }}">Home</a></li>
+                    <li class="is-active"><span>{{ .Title }}</span></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="contact-page">
+    <div class="container">
+        <div class="contact-content">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+<!-- Contact CTA Section -->
+<div class="contact-cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>We're Here to Help</h2>
+            <p>Our team of experts is ready to discuss your project and provide the perfect solution for your business needs.</p>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>Dubai: <a href="tel:+97142952705">+971 4 295 2705</a></p>
+                    <p>London: <a href="tel:+447892158586">+44 789 2158586</a></p>
+                    <p>Colombo: <a href="tel:+94707220444">+94 707 220444</a></p>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Sales: <a href="mailto:sales@itsthe1.com">sales@itsthe1.com</a></p>
+                    <p>Support: <a href="mailto:support@itsthe1.com">support@itsthe1.com</a></p>
+                    <p>General: <a href="mailto:info@itsthe1.com">info@itsthe1.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

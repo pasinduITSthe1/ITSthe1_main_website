@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form Validation (if contact form exists)
+    // Form Validation and Submission (if contact form exists)
     const contactForm = document.getElementById('contact-form');
     
     if (contactForm) {
@@ -127,12 +127,98 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (isValid) {
-                // Show success message or submit form
-                showNotification('Thank you for your message! We\'ll get back to you soon.', 'success');
-                contactForm.reset();
+                // Show loading state
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                // Collect form data
+                const formData = new FormData(contactForm);
+                const formObject = {};
+                formData.forEach((value, key) => {
+                    formObject[key] = value;
+                });
+                
+                // Add timestamp and additional info
+                formObject.timestamp = new Date().toISOString();
+                formObject.page = window.location.href;
+                
+                // Try to submit the form (you can replace this with your preferred form service)
+                submitContactForm(formObject)
+                    .then(response => {
+                        showNotification('Thank you for your message! We\'ll get back to you within 24 hours.', 'success');
+                        contactForm.reset();
+                    })
+                    .catch(error => {
+                        console.error('Form submission error:', error);
+                        showNotification('There was an error sending your message. Please try again or contact us directly.', 'error');
+                    })
+                    .finally(() => {
+                        // Reset button state
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    });
             } else {
                 showNotification('Please fill in all required fields correctly.', 'error');
             }
+        });
+    }
+    
+    // Contact form submission function
+    async function submitContactForm(formData) {
+        // Check if the form has Netlify attributes
+        const form = document.getElementById('contact-form');
+        const isNetlifyForm = form && form.hasAttribute('data-netlify');
+        
+        if (isNetlifyForm) {
+            // For Netlify Forms, let the browser handle the submission
+            // but we'll still use JavaScript for validation and UX
+            const formElement = document.getElementById('contact-form');
+            const netlifyFormData = new FormData(formElement);
+            
+            return fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(netlifyFormData).toString()
+            }).then(response => {
+                if (response.ok) {
+                    // Redirect to success page
+                    window.location.href = '/contact/success/';
+                    return response;
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            });
+        }
+        
+        // Alternative: Use Formspree (replace with your Formspree endpoint)
+        // Uncomment and replace YOUR_FORM_ID with your actual Formspree form ID
+        /*
+        return fetch('https://formspree.io/f/YOUR_FORM_ID', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
+        */
+        
+        // Alternative: Use EmailJS (requires EmailJS setup)
+        // Uncomment and configure with your EmailJS credentials
+        /*
+        return emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+            .then(function(response) {
+                return { ok: true };
+            });
+        */
+        
+        // For development/testing - simulate successful submission
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log('Form submitted (development mode):', formData);
+                resolve({ ok: true });
+            }, 1000);
         });
     }
     
@@ -398,7 +484,58 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductSlider();
 });
 
-// Utility Functions
+// Quick Contact Form Fill Function
+function fillContactForm(type, subject) {
+    const messageField = document.getElementById('message');
+    const serviceField = document.getElementById('service');
+    
+    let message = '';
+    let service = '';
+    
+    switch(type) {
+        case 'general':
+            message = 'Hello, I would like to learn more about your IT solutions and services. Please provide me with more information about how you can help my business.';
+            service = '';
+            break;
+        case 'quote':
+            message = 'Hello, I am interested in getting a quote for your services. Please contact me to discuss my requirements and provide pricing information.';
+            service = '';
+            break;
+        case 'consultation':
+            message = 'Hello, I would like to schedule a free consultation to discuss my business needs and explore how your solutions can help us.';
+            service = '';
+            break;
+        case 'demo':
+            message = 'Hello, I am interested in seeing a demo of your products and solutions. Please schedule a demonstration at your earliest convenience.';
+            service = '';
+            break;
+        case 'support':
+            message = 'Hello, I need technical support assistance. Please contact me to help resolve my technical issues.';
+            service = 'it-support';
+            break;
+        case 'partnership':
+            message = 'Hello, I am interested in exploring partnership opportunities with ITSthe1. Please contact me to discuss potential collaboration.';
+            service = 'other';
+            break;
+    }
+    
+    if (messageField) {
+        messageField.value = message;
+        messageField.focus();
+    }
+    
+    if (serviceField && service) {
+        serviceField.value = service;
+    }
+    
+    // Scroll to form
+    const contactFormSection = document.querySelector('.contact-form-section');
+    if (contactFormSection) {
+        contactFormSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Main JavaScript for ITSthe1 Website
 
 // Debounce function for performance optimization
 function debounce(func, wait, immediate) {

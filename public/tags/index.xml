@@ -9,24 +9,10 @@
     <lastBuildDate>Sat, 06 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Digital Signage</title>
-      <link>http://localhost:1313/tags/digital-signage/</link>
+      <title>Content Delivery</title>
+      <link>http://localhost:1313/tags/content-delivery/</link>
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/digital-signage/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Entertainment</title>
-      <link>http://localhost:1313/tags/entertainment/</link>
-      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/entertainment/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hospitality</title>
-      <link>http://localhost:1313/tags/hospitality/</link>
-      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hospitality/</guid>
+      <guid>http://localhost:1313/tags/content-delivery/</guid>
       <description></description>
     </item>
     <item>
@@ -34,6 +20,27 @@
       <link>http://localhost:1313/tags/iptv/</link>
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/iptv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Middleware</title>
+      <link>http://localhost:1313/tags/middleware/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/middleware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monetization</title>
+      <link>http://localhost:1313/tags/monetization/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/monetization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multi-Device</title>
+      <link>http://localhost:1313/tags/multi-device/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/multi-device/</guid>
       <description></description>
     </item>
     <item>
@@ -51,6 +58,13 @@
       <description></description>
     </item>
     <item>
+      <title>Digital Signage</title>
+      <link>http://localhost:1313/tags/digital-signage/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/digital-signage/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Guest Management</title>
       <link>http://localhost:1313/tags/guest-management/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
@@ -65,10 +79,24 @@
       <description></description>
     </item>
     <item>
-      <title>Hotels</title>
-      <link>http://localhost:1313/tags/hotels/</link>
+      <title>Hospitality</title>
+      <link>http://localhost:1313/tags/hospitality/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hotels/</guid>
+      <guid>http://localhost:1313/tags/hospitality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hotel-Tech</title>
+      <link>http://localhost:1313/tags/hotel-tech/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hotel-tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart Hotels</title>
+      <link>http://localhost:1313/tags/smart-hotels/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/smart-hotels/</guid>
       <description></description>
     </item>
     <item>
@@ -79,6 +107,13 @@
       <description></description>
     </item>
     <item>
+      <title>E-Commerce</title>
+      <link>http://localhost:1313/tags/e-commerce/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/e-commerce/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Mobile Apps</title>
       <link>http://localhost:1313/tags/mobile-apps/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
@@ -86,17 +121,17 @@
       <description></description>
     </item>
     <item>
-      <title>Responsive Design</title>
-      <link>http://localhost:1313/tags/responsive-design/</link>
+      <title>Progressive Web Apps</title>
+      <link>http://localhost:1313/tags/progressive-web-apps/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/responsive-design/</guid>
+      <guid>http://localhost:1313/tags/progressive-web-apps/</guid>
       <description></description>
     </item>
     <item>
-      <title>User Experience</title>
-      <link>http://localhost:1313/tags/user-experience/</link>
+      <title>Ui/Ux Design</title>
+      <link>http://localhost:1313/tags/ui/ux-design/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/user-experience/</guid>
+      <guid>http://localhost:1313/tags/ui/ux-design/</guid>
       <description></description>
     </item>
     <item>
@@ -128,6 +163,13 @@
       <description></description>
     </item>
     <item>
+      <title>Cloud Security</title>
+      <link>http://localhost:1313/tags/cloud-security/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-security/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Cloud Services</title>
       <link>http://localhost:1313/tags/cloud-services/</link>
       <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
@@ -135,17 +177,17 @@
       <description></description>
     </item>
     <item>
-      <title>Infrastructure</title>
-      <link>http://localhost:1313/tags/infrastructure/</link>
+      <title>Hybrid Cloud</title>
+      <link>http://localhost:1313/tags/hybrid-cloud/</link>
       <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/infrastructure/</guid>
+      <guid>http://localhost:1313/tags/hybrid-cloud/</guid>
       <description></description>
     </item>
     <item>
-      <title>Scalability</title>
-      <link>http://localhost:1313/tags/scalability/</link>
+      <title>Multi-Cloud</title>
+      <link>http://localhost:1313/tags/multi-cloud/</link>
       <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scalability/</guid>
+      <guid>http://localhost:1313/tags/multi-cloud/</guid>
       <description></description>
     </item>
     <item>
@@ -205,10 +247,87 @@
       <description></description>
     </item>
     <item>
+      <title>24/7 Support</title>
+      <link>http://localhost:1313/tags/24/7-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/24/7-support/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Artificial Intelligence</title>
       <link>http://localhost:1313/tags/artificial-intelligence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure DevOps</title>
+      <link>http://localhost:1313/tags/azure-devops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/azure-devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Management</title>
+      <link>http://localhost:1313/tags/azure-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/azure-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Azure Migration</title>
+      <link>http://localhost:1313/tags/azure-migration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/azure-migration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business Alignment</title>
+      <link>http://localhost:1313/tags/business-alignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/business-alignment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business Applications</title>
+      <link>http://localhost:1313/tags/business-applications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/business-applications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Business Modernization</title>
+      <link>http://localhost:1313/tags/business-modernization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/business-modernization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Infrastructure</title>
+      <link>http://localhost:1313/tags/cloud-infrastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Productivity</title>
+      <link>http://localhost:1313/tags/cloud-productivity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Strategy</title>
+      <link>http://localhost:1313/tags/cloud-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cloud-strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Co-Managed IT</title>
+      <link>http://localhost:1313/tags/co-managed-it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/co-managed-it/</guid>
       <description></description>
     </item>
     <item>
@@ -247,10 +366,31 @@
       <description></description>
     </item>
     <item>
+      <title>Data Protection</title>
+      <link>http://localhost:1313/tags/data-protection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-protection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Culture</title>
+      <link>http://localhost:1313/tags/digital-culture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/digital-culture/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Digital Menu</title>
       <link>http://localhost:1313/tags/digital-menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/digital-menu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Strategy</title>
+      <link>http://localhost:1313/tags/digital-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/digital-strategy/</guid>
       <description></description>
     </item>
     <item>
@@ -268,10 +408,24 @@
       <description></description>
     </item>
     <item>
+      <title>Entertainment</title>
+      <link>http://localhost:1313/tags/entertainment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/entertainment/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>ERP</title>
       <link>http://localhost:1313/tags/erp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/erp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exchange Online</title>
+      <link>http://localhost:1313/tags/exchange-online/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/exchange-online/</guid>
       <description></description>
     </item>
     <item>
@@ -289,10 +443,17 @@
       <description></description>
     </item>
     <item>
-      <title>Hotel Tech</title>
-      <link>http://localhost:1313/tags/hotel-tech/</link>
+      <title>Hybrid Support</title>
+      <link>http://localhost:1313/tags/hybrid-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hotel-tech/</guid>
+      <guid>http://localhost:1313/tags/hybrid-support/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infrastructure</title>
+      <link>http://localhost:1313/tags/infrastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/infrastructure/</guid>
       <description></description>
     </item>
     <item>
@@ -310,6 +471,55 @@
       <description></description>
     </item>
     <item>
+      <title>IT Collaboration</title>
+      <link>http://localhost:1313/tags/it-collaboration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/it-collaboration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT Consulting</title>
+      <link>http://localhost:1313/tags/it-consulting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/it-consulting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT Governance</title>
+      <link>http://localhost:1313/tags/it-governance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/it-governance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT Partnership</title>
+      <link>http://localhost:1313/tags/it-partnership/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/it-partnership/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT Planning</title>
+      <link>http://localhost:1313/tags/it-planning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/it-planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT Security</title>
+      <link>http://localhost:1313/tags/it-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/it-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT Strategy</title>
+      <link>http://localhost:1313/tags/it-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/it-strategy/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>IT Support</title>
       <link>http://localhost:1313/tags/it-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -321,6 +531,20 @@
       <link>http://localhost:1313/tags/itsm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/itsm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>M365</title>
+      <link>http://localhost:1313/tags/m365/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/m365/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maintenance</title>
+      <link>http://localhost:1313/tags/maintenance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/maintenance/</guid>
       <description></description>
     </item>
     <item>
@@ -345,6 +569,41 @@
       <description></description>
     </item>
     <item>
+      <title>Microsoft 365</title>
+      <link>http://localhost:1313/tags/microsoft-365/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/microsoft-365/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Azure</title>
+      <link>http://localhost:1313/tags/microsoft-azure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/microsoft-azure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Dynamics 365</title>
+      <link>http://localhost:1313/tags/microsoft-dynamics-365/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/microsoft-dynamics-365/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Support</title>
+      <link>http://localhost:1313/tags/microsoft-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/microsoft-support/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Microsoft Teams</title>
+      <link>http://localhost:1313/tags/microsoft-teams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/microsoft-teams/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Mobile App</title>
       <link>http://localhost:1313/tags/mobile-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -356,6 +615,55 @@
       <link>http://localhost:1313/tags/ocr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/ocr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Office 365</title>
+      <link>http://localhost:1313/tags/office-365/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/office-365/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Outsourcing</title>
+      <link>http://localhost:1313/tags/outsourcing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/outsourcing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Apps</title>
+      <link>http://localhost:1313/tags/power-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/power-apps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Automate</title>
+      <link>http://localhost:1313/tags/power-automate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/power-automate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power BI</title>
+      <link>http://localhost:1313/tags/power-bi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/power-bi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Power Platform</title>
+      <link>http://localhost:1313/tags/power-platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/power-platform/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Process Automation</title>
+      <link>http://localhost:1313/tags/process-automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/process-automation/</guid>
       <description></description>
     </item>
     <item>
@@ -373,6 +681,13 @@
       <description></description>
     </item>
     <item>
+      <title>Risk Management</title>
+      <link>http://localhost:1313/tags/risk-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/risk-management/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Sales</title>
       <link>http://localhost:1313/tags/sales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -384,6 +699,13 @@
       <link>http://localhost:1313/tags/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SharePoint</title>
+      <link>http://localhost:1313/tags/sharepoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sharepoint/</guid>
       <description></description>
     </item>
     <item>
@@ -408,10 +730,73 @@
       <description></description>
     </item>
     <item>
+      <title>Strategic Planning</title>
+      <link>http://localhost:1313/tags/strategic-planning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/strategic-planning/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Supply Chain</title>
       <link>http://localhost:1313/tags/supply-chain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/supply-chain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System Monitoring</title>
+      <link>http://localhost:1313/tags/system-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/system-monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technical Support</title>
+      <link>http://localhost:1313/tags/technical-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technical-support/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology Assessment</title>
+      <link>http://localhost:1313/tags/technology-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technology-assessment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology Innovation</title>
+      <link>http://localhost:1313/tags/technology-innovation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technology-innovation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology Management</title>
+      <link>http://localhost:1313/tags/technology-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technology-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology Roadmap</title>
+      <link>http://localhost:1313/tags/technology-roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technology-roadmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology Strategy</title>
+      <link>http://localhost:1313/tags/technology-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/technology-strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Detection</title>
+      <link>http://localhost:1313/tags/threat-detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-detection/</guid>
       <description></description>
     </item>
     <item>

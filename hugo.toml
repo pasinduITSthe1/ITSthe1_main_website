@@ -108,25 +108,45 @@ theme = 'itsthe1'
 
 # Services submenu
   [[menu.services]]
-    name = 'IT Support & Maintenance'
-    url = '/services/it-support/'
+    name = 'IT Support & Outsourcing'
+    url = '/services/it-support-outsourcing/'
     weight = 10
   [[menu.services]]
-    name = 'Technology Consulting'
-    url = '/services/consulting/'
+    name = 'Co-managed IT Services'
+    url = '/services/co-managed-it-services/'
     weight = 20
   [[menu.services]]
-    name = 'Microsoft Solutions'
-    url = '/services/microsoft/'
+    name = 'IT Security & Compliance'
+    url = '/services/it-security-compliance/'
     weight = 30
   [[menu.services]]
-    name = 'Web & Mobile Development'
-    url = '/services/development/'
+    name = 'Microsoft 365'
+    url = '/services/microsoft-365/'
     weight = 40
   [[menu.services]]
-    name = 'System Integration'
-    url = '/services/integration/'
+    name = 'Microsoft Azure'
+    url = '/services/microsoft-azure/'
     weight = 50
+  [[menu.services]]
+    name = 'Microsoft Business Applications'
+    url = '/services/microsoft-business-applications/'
+    weight = 60
+  [[menu.services]]
+    name = 'Cloud & Hybrid'
+    url = '/services/cloud-hybrid/'
+    weight = 70
+  [[menu.services]]
+    name = 'IT Consultancy'
+    url = '/services/it-consultancy/'
+    weight = 80
+  [[menu.services]]
+    name = 'IT Strategy Development'
+    url = '/services/it-strategy-development/'
+    weight = 90
+  [[menu.services]]
+    name = 'Digital Transformation Planning'
+    url = '/services/digital-transformation-planning/'
+    weight = 100
 
 [markup]
   [markup.goldmark]

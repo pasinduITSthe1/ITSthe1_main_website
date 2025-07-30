@@ -125,4 +125,4 @@ Contact us today to schedule a consultation and discover how digital transformat
 
 ---
 
-*Transform your business for the digital age. [Contact our experts](/contact/) to get started.*
+*Transform your business for the digital age. Contact our experts at [sales@itsthe1.com](mailto:sales@itsthe1.com) to get started.*

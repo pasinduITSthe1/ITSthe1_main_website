@@ -62,6 +62,27 @@
                 </div>
             </div>
         </div>
+        {{ else if eq .Section "services" }}
+        <div class="products-stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">{{ len .Pages }}</div>
+                    <div class="stat-label">Services</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">750+</div>
+                    <div class="stat-label">Clients Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Service Uptime</div>
+                </div>
+            </div>
+        </div>
         {{ end }}
         
         <!-- Enhanced Content Grid -->
@@ -76,7 +97,11 @@
                 <!-- Default gradient background if no image -->
                 <div class="card-image">
                     <div class="card-image-placeholder">
+                        {{ if .Params.icon }}
+                        <i class="{{ .Params.icon }}"></i>
+                        {{ else }}
                         <i class="fas fa-cube"></i>
+                        {{ end }}
                     </div>
                 </div>
                 {{ end }}
@@ -114,18 +139,20 @@
         
         <!-- Call to Action -->
         <div class="page-cta">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Get in touch with our experts to discuss how our solutions can help your organization grow.</p>
-                <div class="cta-buttons">
-                    <a href="{{ "/contact/" | relURL }}" class="btn btn-primary btn-lg">
-                        <i class="fas fa-phone"></i>
-                        Contact Us
-                    </a>
-                    <a href="{{ "/solutions/" | relURL }}" class="btn btn-outline btn-lg">
-                        <i class="fas fa-eye"></i>
-                        View Solutions
-                    </a>
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Get in touch with our experts to discuss how our solutions can help your organization grow.</p>
+                    <div class="cta-buttons">
+                        <a href="{{ "/contact/" | relURL }}" class="btn btn-primary btn-lg">
+                            <i class="fas fa-phone"></i>
+                            Contact Us
+                        </a>
+                        <a href="{{ "/solutions/" | relURL }}" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-eye"></i>
+                            View Solutions
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
