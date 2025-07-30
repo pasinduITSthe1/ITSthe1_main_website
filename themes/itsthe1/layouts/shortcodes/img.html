@@ -1,0 +1,29 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $class := .Get "class" | default "" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $width := .Get "width" | default "" -}}
+{{- $height := .Get "height" | default "" -}}
+
+{{- $image := resources.Get $src -}}
+{{- if $image -}}
+  {{- $webp := $image.Resize (printf "%sx%s webp q85" (or $width "800") (or $height "")) -}}
+  {{- $jpeg := $image.Resize (printf "%sx%s jpg q85" (or $width "800") (or $height "")) -}}
+  
+  <picture>
+    <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+    <img src="{{ $jpeg.RelPermalink }}" 
+         alt="{{ $alt }}" 
+         {{ with $class }}class="{{ . }}"{{ end }}
+         {{ with $width }}width="{{ . }}"{{ end }}
+         {{ with $height }}height="{{ . }}"{{ end }}
+         loading="{{ $loading }}">
+  </picture>
+{{- else -}}
+  <img src="{{ $src }}" 
+       alt="{{ $alt }}" 
+       {{ with $class }}class="{{ . }}"{{ end }}
+       {{ with $width }}width="{{ . }}"{{ end }}
+       {{ with $height }}height="{{ . }}"{{ end }}
+       loading="{{ $loading }}">
+{{- end -}}

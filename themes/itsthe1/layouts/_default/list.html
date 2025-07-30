@@ -91,7 +91,11 @@
             <article class="content-card" data-aos="fade-up" data-aos-delay="{{ mul .Weight 100 }}">
                 {{ if .Params.featured_image }}
                 <div class="card-image">
-                    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" loading="lazy" />
+                    <img src="{{ .Params.featured_image | relURL }}" 
+                         alt="{{ .Title }}" 
+                         loading="lazy"
+                         width="400"
+                         height="250" />
                 </div>
                 {{ else }}
                 <!-- Default gradient background if no image -->

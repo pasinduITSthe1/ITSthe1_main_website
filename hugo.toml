@@ -153,5 +153,28 @@ theme = 'itsthe1'
     [markup.goldmark.renderer]
       unsafe = true
 
+# Image processing configuration
+[imaging]
+  # Default image processing quality (0-100)
+  quality = 85
+  # JPEG and WebP quality
+  [imaging.jpeg]
+    quality = 85
+  [imaging.webp]
+    quality = 85
+  # Enable progressive JPEG
+  resampleFilter = "lanczos"
+  # Image anchor point for cropping
+  anchor = "smart"
+
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
+
+# Performance optimizations
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false

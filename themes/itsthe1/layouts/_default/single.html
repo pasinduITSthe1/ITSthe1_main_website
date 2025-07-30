@@ -37,7 +37,11 @@
             <article class="main-content">
                 {{ if .Params.featured_image }}
                 <div class="featured-image">
-                    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" />
+                    <img src="{{ .Params.featured_image | relURL }}" 
+                         alt="{{ .Title }}"
+                         loading="lazy"
+                         width="800"
+                         height="400" />
                 </div>
                 {{ end }}
                 

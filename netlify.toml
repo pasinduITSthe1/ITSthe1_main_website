@@ -1,0 +1,45 @@
+[build]
+  publish = "public"
+  command = "hugo --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.125.0"
+  NODE_VERSION = "18"
+
+# Image optimization
+[[plugins]]
+  package = "@netlify/plugin-local-install-core"
+
+# Headers for performance
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]  
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"  
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Image optimization with Netlify Large Media
+[dev]
+  command = "hugo server --buildDrafts --watch --bind 0.0.0.0 --port 1313"
