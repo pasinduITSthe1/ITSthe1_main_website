@@ -2,7 +2,7 @@
 title: "Hospitality Technology"
 subtitle: "Innovative technology solutions to enhance guest experiences"
 description: "Comprehensive hospitality technology solutions including smart hotel systems, IPTV, digital signage, mobile apps, and guest management systems designed to enhance guest experiences and streamline operations."
-featured_image: "/images/solutions/Hospitality2.png"
+featured_image: "/images/solutions/Hospitality2.webp"
 tags: ["hospitality", "hotel-tech", "guest services", "iptv", "digital signage", "smart hotels", "guest management"]
 date: 2024-01-05
 draft: false

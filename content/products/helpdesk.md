@@ -1,7 +1,7 @@
 ---
 title: "1.Support - Smart Support Ticketing & Workflow Automation"
 subtitle: "Streamline service requests and enhance operational efficiency across hospitality, healthcare, and enterprise environments"
-featured_image: "/images/products2/Smart Support Ticketing.png"
+featured_image: "/images/products2/Smart Support Ticketing.webp"
 excerpt: "Centralized support ticketing and workflow management system with real-time ticket creation, SLA-based tracking, multi-level escalation, and comprehensive analytics. Fully integrated with 1.TV and 1.Hotel platforms."
 tags: ["Helpdesk", "IT Support", "Ticketing", "Automation", "ITSM", "Guest Services", "Staff Management", "Customer Service"]
 weight: 60

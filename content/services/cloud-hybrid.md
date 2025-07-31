@@ -4,7 +4,6 @@ subtitle: "Comprehensive cloud and hybrid infrastructure solutions"
 description: "Expert cloud and hybrid infrastructure services including multi-cloud strategies, hybrid deployments, cloud migration, and infrastructure optimization."
 excerpt: "Comprehensive cloud and hybrid infrastructure solutions including multi-cloud strategies and infrastructure optimization."
 tags: ["Cloud Services", "Hybrid Cloud", "Multi-Cloud", "Cloud Migration", "Infrastructure", "AWS", "Azure", "Cloud Strategy"]
-layout: "service"
 icon: "fas fa-cloud"
 ---
 

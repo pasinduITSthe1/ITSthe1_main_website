@@ -4,7 +4,6 @@ subtitle: "Strategic digital transformation planning and execution services"
 description: "Comprehensive digital transformation planning services to help organizations modernize operations, embrace new technologies, and drive innovation-led growth."
 excerpt: "Strategic digital transformation planning to help organizations modernize operations and drive innovation-led growth."
 tags: ["Digital Transformation", "Digital Strategy", "Business Modernization", "Technology Innovation", "Process Automation", "Digital Culture"]
-layout: "service"
 icon: "fas fa-rocket"
 ---
 

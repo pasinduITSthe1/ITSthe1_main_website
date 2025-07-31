@@ -1,7 +1,7 @@
 ---
 title: "CRM - CRM for SME"
 subtitle: "Customer relationship management solution for small and medium enterprises"
-featured_image: "/images/products2/CRM.png"
+featured_image: "/images/products2/CRM.webp"
 excerpt: "Affordable and powerful CRM solution designed specifically for SMEs to manage customer relationships and drive business growth."
 tags: ["CRM", "SME", "Customer Management", "Sales"]
 weight: 100

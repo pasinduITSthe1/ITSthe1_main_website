@@ -4,7 +4,6 @@ subtitle: "Comprehensive cybersecurity solutions to protect your business assets
 description: "Advanced IT security services and compliance solutions to safeguard your organization against cyber threats while meeting regulatory requirements."
 excerpt: "Advanced cybersecurity solutions and compliance services to protect your organization against threats while meeting regulations."
 tags: ["Cyber Security", "IT Security", "Compliance", "Risk Management", "Data Protection", "Security Consulting", "Threat Detection"]
-layout: "service"
 icon: "fas fa-shield-alt"
 ---
 

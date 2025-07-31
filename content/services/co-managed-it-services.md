@@ -4,7 +4,6 @@ subtitle: "Partnership-based IT management combining your team with our expertis
 description: "Collaborative IT service model that combines your internal IT capabilities with our specialized expertise to deliver enhanced technology solutions and support."
 excerpt: "Strategic partnership combining your internal IT team with our specialists for enhanced technology solutions and support."
 tags: ["Co-managed IT", "IT Partnership", "Hybrid Support", "IT Collaboration", "Technology Management", "IT Consulting"]
-layout: "service"
 icon: "fas fa-handshake"
 ---
 

@@ -4,7 +4,6 @@ subtitle: "Comprehensive Microsoft Dynamics 365 and Power Platform solutions"
 description: "Expert implementation and support for Microsoft Business Applications including Dynamics 365, Power Platform, and integrated business process solutions."
 excerpt: "Expert implementation of Microsoft Dynamics 365 and Power Platform solutions for streamlined business processes."
 tags: ["Microsoft Dynamics 365", "Power Platform", "Business Applications", "CRM", "ERP", "Power Apps", "Power Automate", "Power BI"]
-layout: "service"
 icon: "fas fa-cogs"
 ---
 

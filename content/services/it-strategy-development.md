@@ -4,7 +4,6 @@ subtitle: "Comprehensive IT strategy planning and roadmap development"
 description: "Expert IT strategy development services to align technology initiatives with business objectives, optimize IT investments, and drive digital transformation success."
 excerpt: "Comprehensive IT strategy planning to align technology initiatives with business objectives and drive transformation success."
 tags: ["IT Strategy", "Strategic Planning", "Technology Roadmap", "Digital Strategy", "IT Planning", "Business Alignment"]
-layout: "service"
 icon: "fas fa-route"
 ---
 

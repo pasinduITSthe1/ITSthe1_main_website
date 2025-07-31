@@ -1,7 +1,7 @@
 ---
 title: "1.Hotel - Guest Engagement & Experience Platform"
 subtitle: "Empowering guests with seamless digital interactions across hotels, hospitals, resorts, and serviced apartments"
-featured_image: "/images/products2/Hospitality.png"
+featured_image: "/images/products2/Hospitality.webp"
 excerpt: "Guest-facing application platform delivered as WebApp or native mobile app, fully integrated with 1.TV and 1.Support for comprehensive hospitality ecosystem management."
 tags: ["Hospitality", "Mobile App", "Guest Services", "Guest Management", "Hotel Tech", "Digital Transformation", "Customer Service"]
 weight: 40

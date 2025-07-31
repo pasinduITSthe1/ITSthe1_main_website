@@ -4,7 +4,6 @@ subtitle: "Expert Azure cloud services for scalable and secure business solution
 description: "Comprehensive Microsoft Azure services including cloud migration, infrastructure management, application development, and optimization for maximum business value."
 excerpt: "Expert Azure cloud services including migration, infrastructure management, and application development for business value."
 tags: ["Microsoft Azure", "Cloud Services", "Azure Migration", "Cloud Infrastructure", "Azure DevOps", "Cloud Security", "Azure Management"]
-layout: "service"
 icon: "fab fa-microsoft"
 ---
 

@@ -4,7 +4,6 @@ subtitle: "Complete Microsoft 365 implementation, migration, and support service
 description: "Expert Microsoft 365 services including implementation, migration, optimization, and ongoing support to maximize your productivity and collaboration capabilities."
 excerpt: "Complete Microsoft 365 implementation, migration, and optimization services to maximize productivity and collaboration."
 tags: ["Microsoft 365", "Office 365", "M365", "Cloud Productivity", "Microsoft Teams", "SharePoint", "Exchange Online", "Microsoft Support"]
-layout: "service"
 icon: "fab fa-microsoft"
 ---
 

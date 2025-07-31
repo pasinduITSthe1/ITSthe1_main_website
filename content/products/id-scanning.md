@@ -1,7 +1,7 @@
 ---
 title: "1.ID - Advanced ID & Passport Scanning Solution"
 subtitle: "Streamline guest registration and ensure regulatory compliance with trusted government-authorized identity capture"
-featured_image: "/images/products2/Passport Scanning.png"
+featured_image: "/images/products2/Passport Scanning.webp"
 excerpt: "Cutting-edge identity capture platform for instant scanning and secure storage of national IDs and passports. Authorized by Dubai Tourism Department and UAE State Security for direct government data transmission."
 tags: ["Security", "Document Scanning", "Verification", "OCR", "Compliance", "Guest Services", "Hospitality"]
 weight: 30

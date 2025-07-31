@@ -4,7 +4,6 @@ subtitle: "Strategic IT consulting services to drive digital transformation"
 description: "Expert IT consulting services providing strategic guidance, technology assessment, digital transformation planning, and IT governance to optimize your technology investments."
 excerpt: "Strategic IT guidance and technology assessment to optimize your technology investments and drive business success."
 tags: ["IT Consulting", "Strategic Planning", "Technology Assessment", "Digital Transformation", "IT Governance", "Technology Strategy"]
-layout: "service"
 icon: "fas fa-lightbulb"
 ---
 

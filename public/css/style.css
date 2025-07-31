@@ -1887,7 +1887,7 @@ section {
 }
 
 .page-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     margin-top: 2rem;
@@ -3128,6 +3128,7 @@ hugo a:hover {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-weight: 700;
     margin-top: 2rem;
+    font-size: 3rem;
 }
 
 .products-header .page-subtitle {
