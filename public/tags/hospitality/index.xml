@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hospitality on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:14088/tags/hospitality/</link>
+    <link>http://localhost:1313/tags/hospitality/</link>
     <description>Recent content in Hospitality on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:14088/tags/hospitality/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hospitality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.TV - IPTV for Enterprise &amp; Hospitality</title>
-      <link>http://localhost:14088/products/iptv/</link>
+      <link>http://localhost:1313/products/iptv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:14088/products/iptv/</guid>
+      <guid>http://localhost:1313/products/iptv/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Introducing &lt;strong&gt;1.TV by ITSthe1 Solutions&lt;/strong&gt;—a comprehensive IPTV platform tailored for the hospitality, healthcare, education, maritime, and multi-dwelling unit (MDU) sectors. Designed to enhance guest and resident experiences while unlocking new revenue streams, 1.TV seamlessly integrates entertainment, information, and interactive services into a unified interface.&lt;/p&gt;&#xA;&lt;p&gt;1.TV is an enterprise-grade IPTV middleware platform that transforms ordinary TVs into interactive digital experience hubs, delivering much more than entertainment—it enhances engagement, drives upselling, and strengthens your brand identity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1.ID - Advanced ID &amp; Passport Scanning Solution</title>
-      <link>http://localhost:14088/products/id-scanning/</link>
+      <link>http://localhost:1313/products/id-scanning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:14088/products/id-scanning/</guid>
+      <guid>http://localhost:1313/products/id-scanning/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.ID by ITSthe1 Solutions&lt;/strong&gt; is a cutting-edge identity capture platform designed for the hospitality sector, enabling instant scanning and secure storage of national IDs and passports. Trusted by the &lt;strong&gt;Dubai Tourism Department and UAE State Security&lt;/strong&gt;, ITSthe1 is among the select few authorized to collect and transmit guest identity data directly to government systems.&lt;/p&gt;&#xA;&lt;p&gt;Our advanced ID scanning solution streamlines guest registration processes while ensuring full regulatory compliance, providing a seamless experience for both guests and operators across multiple industries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1.Hotel - Guest Engagement &amp; Experience Platform</title>
-      <link>http://localhost:14088/products/hospitality-app/</link>
+      <link>http://localhost:1313/products/hospitality-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:14088/products/hospitality-app/</guid>
+      <guid>http://localhost:1313/products/hospitality-app/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.Hotel by ITSthe1 Solutions&lt;/strong&gt; is a guest-facing application designed to elevate the hospitality experience across hotels, hospitals, resorts, and serviced apartments. Delivered as a &lt;strong&gt;WebApp or native mobile app (iOS &amp;amp; Android)&lt;/strong&gt;, it enables real-time guest interaction, service automation, and property engagement.&lt;/p&gt;&#xA;&lt;p&gt;The solution is &lt;strong&gt;fully integrated with our 1.TV platform&lt;/strong&gt;, using a shared backend system to deliver consistent content across TV and mobile. It also works seamlessly with &lt;strong&gt;1.Support (1.SUP)&lt;/strong&gt;, our staff-facing app, ensuring every guest request is actioned through an automated support ticket workflow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI - AI Helper for Hospitality Staff</title>
-      <link>http://localhost:14088/products/ai-helper/</link>
+      <link>http://localhost:1313/products/ai-helper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:14088/products/ai-helper/</guid>
+      <guid>http://localhost:1313/products/ai-helper/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Transform your hospitality operations with our AI-powered staff assistant. Designed to enhance guest services, automate routine tasks, and provide intelligent insights for better decision-making in hotels, restaurants, and hospitality venues.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Guest Request Processing&lt;/strong&gt;: Intelligent handling of guest inquiries and requests&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Predictive Analytics&lt;/strong&gt;: Forecast demand patterns and optimize resource allocation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multi-language Support&lt;/strong&gt;: Communicate with international guests in their native language&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Smart Recommendations&lt;/strong&gt;: Personalized suggestions for guests based on preferences&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Operational Insights&lt;/strong&gt;: Real-time analytics for performance optimization&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Improve guest satisfaction with faster, more accurate responses&lt;/li&gt;&#xA;&lt;li&gt;Reduce staff workload by automating routine inquiries&lt;/li&gt;&#xA;&lt;li&gt;Increase revenue through intelligent upselling recommendations&lt;/li&gt;&#xA;&lt;li&gt;Enhance operational efficiency with predictive insights&lt;/li&gt;&#xA;&lt;li&gt;Provide 24/7 support capability without additional staffing&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;AI Engine&lt;/strong&gt;: Advanced natural language processing and machine learning&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: PMS, POS, CRM, and booking systems&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Support for 40+ languages with real-time translation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Learning&lt;/strong&gt;: Continuous improvement through interaction data&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;: Cloud-based with mobile and desktop interfaces&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Hospitality Technology</title>
-      <link>http://localhost:14088/solutions/hospitality/</link>
+      <link>http://localhost:1313/solutions/hospitality/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:14088/solutions/hospitality/</guid>
+      <guid>http://localhost:1313/solutions/hospitality/</guid>
       <description>&lt;h2 id=&#34;hospitality-technology-enhancing-guest-experiences&#34;&gt;Hospitality Technology: Enhancing Guest Experiences&lt;/h2&gt;&#xA;&lt;p&gt;The hospitality industry relies on innovative technology to enhance guest experiences and streamline operations. Our hospitality solutions offer cutting-edge services to improve efficiency and guest satisfaction. Hospitality Technology Solutions encompass a wide range of technologies and services designed to enhance the guest experience in hotels, resorts, and other hospitality establishments.&lt;/p&gt;&#xA;&lt;p&gt;From smart hotel automation to interactive entertainment systems, we provide comprehensive technology solutions that transform the way hotels cater to their guests&amp;rsquo; needs in today&amp;rsquo;s digital age. Our solutions focus on providing convenience, personalization, efficiency, and improved communication throughout the entire guest stay.&lt;/p&gt;</description>
     </item>
   </channel>
