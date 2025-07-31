@@ -555,19 +555,20 @@
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0;
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
     background: var(--white);
     border-radius: var(--radius);
     overflow: hidden;
+    padding: 1rem;
 }
 
 .stat-card {
     text-align: center;
     background: transparent;
-    padding: 40px 20px;
-    border-radius: 0;
+    padding: 30px 20px;
+    border-radius: 8px;
     box-shadow: none;
     border: none;
     position: relative;
@@ -1083,8 +1084,8 @@
     }
     
     .stats-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     
     .stat-card {
@@ -1145,12 +1146,12 @@
 
 @media (max-width: 480px) {
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
     .stat-card {
-        padding: 30px 15px;
+        padding: 25px 15px;
     }
     
     .page-header {
@@ -1185,6 +1186,24 @@
     .values-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .stats-grid {
+        gap: 0.75rem;
+    }
+    
+    .stat-card {
+        padding: 20px 10px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
     }
 }
 
@@ -1289,9 +1308,9 @@ html {
             <div class="footer-bottom-content">
                 <p>&copy; 2025 ITSthe1 Solutions LLC. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="/privacy-policy/">Privacy Policy</a>
-                    <a href="/terms-conditions/">Terms & Conditions</a>
-                    <a href="/cookies/">Cookies</a>
+                    <span class="footer-link-disabled">Privacy Policy</span>
+                    <span class="footer-link-disabled">Terms & Conditions</span>
+                    <span class="footer-link-disabled">Cookies</span>
                 </div>
             </div>
         </div>
