@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CRM on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:1313/tags/crm/</link>
+    <link>http://localhost:4832/tags/crm/</link>
     <description>Recent content in CRM on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/crm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4832/tags/crm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CRM - CRM for SME</title>
-      <link>http://localhost:1313/products/crm-sme/</link>
+      <link>http://localhost:4832/products/crm-sme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/crm-sme/</guid>
+      <guid>http://localhost:4832/products/crm-sme/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Accelerate your business growth with our CRM solution designed specifically for small and medium enterprises. Manage customer relationships, track sales opportunities, and automate marketing campaigns with our user-friendly platform.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contact Management&lt;/strong&gt;: Centralized customer database with interaction history&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sales Pipeline&lt;/strong&gt;: Visual sales tracking and opportunity management&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Marketing Automation&lt;/strong&gt;: Email campaigns and lead nurturing workflows&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Task Management&lt;/strong&gt;: Schedule follow-ups and manage team activities&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Analytics &amp;amp; Reporting&lt;/strong&gt;: Customer insights and sales performance metrics&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Increase sales conversion rates by up to 25%&lt;/li&gt;&#xA;&lt;li&gt;Improve customer retention through better relationship management&lt;/li&gt;&#xA;&lt;li&gt;Automate repetitive tasks to save time and resources&lt;/li&gt;&#xA;&lt;li&gt;Gain valuable insights into customer behavior and preferences&lt;/li&gt;&#xA;&lt;li&gt;Scale your business operations efficiently&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;: Cloud-based with mobile app access&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: Email systems, accounting software, marketing tools&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Configurable fields, workflows, and reports&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Enterprise-grade encryption and data protection&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Support&lt;/strong&gt;: 24/7 customer support and training resources&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Microsoft Business Applications</title>
-      <link>http://localhost:1313/services/microsoft-business-applications/</link>
+      <link>http://localhost:4832/services/microsoft-business-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/services/microsoft-business-applications/</guid>
+      <guid>http://localhost:4832/services/microsoft-business-applications/</guid>
       <description>&lt;h2 id=&#34;streamline-your-business-with-microsoft-business-applications&#34;&gt;Streamline Your Business with Microsoft Business Applications&lt;/h2&gt;&#xA;&lt;p&gt;Our Microsoft Business Applications services help organizations leverage the power of Dynamics 365 and Power Platform to optimize business processes, improve customer relationships, and drive operational efficiency.&lt;/p&gt;&#xA;&lt;h3 id=&#34;dynamics-365-solutions&#34;&gt;Dynamics 365 Solutions&lt;/h3&gt;&#xA;&lt;h4 id=&#34;customer-relationship-management-crm&#34;&gt;Customer Relationship Management (CRM)&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamics 365 Sales&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lead and opportunity management&lt;/li&gt;&#xA;&lt;li&gt;Sales process automation&lt;/li&gt;&#xA;&lt;li&gt;Customer relationship tracking&lt;/li&gt;&#xA;&lt;li&gt;Sales analytics and forecasting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamics 365 Customer Service&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Case management and resolution&lt;/li&gt;&#xA;&lt;li&gt;Knowledge base and self-service portals&lt;/li&gt;&#xA;&lt;li&gt;Omnichannel customer support&lt;/li&gt;&#xA;&lt;li&gt;Service analytics and reporting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamics 365 Marketing&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
