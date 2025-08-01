@@ -2,346 +2,346 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4203/products/iptv/</loc>
+    <loc>http://localhost:3000/products/iptv/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/digital-signage/</loc>
+    <loc>http://localhost:3000/products/digital-signage/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/id-scanning/</loc>
+    <loc>http://localhost:3000/products/id-scanning/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/hospitality-app/</loc>
+    <loc>http://localhost:3000/products/hospitality-app/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/digital-menu/</loc>
+    <loc>http://localhost:3000/products/digital-menu/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/helpdesk/</loc>
+    <loc>http://localhost:3000/products/helpdesk/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/ai-helper/</loc>
+    <loc>http://localhost:3000/products/ai-helper/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/erp-garment/</loc>
+    <loc>http://localhost:3000/products/erp-garment/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/crm-sme/</loc>
+    <loc>http://localhost:3000/products/crm-sme/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/content-delivery/</loc>
+    <loc>http://localhost:3000/tags/content-delivery/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/iptv/</loc>
+    <loc>http://localhost:3000/tags/iptv/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/solutions/iptv-ott/</loc>
+    <loc>http://localhost:3000/solutions/iptv-ott/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/middleware/</loc>
+    <loc>http://localhost:3000/tags/middleware/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/monetization/</loc>
+    <loc>http://localhost:3000/tags/monetization/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/multi-device/</loc>
+    <loc>http://localhost:3000/tags/multi-device/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/ott/</loc>
+    <loc>http://localhost:3000/tags/ott/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/streaming/</loc>
+    <loc>http://localhost:3000/tags/streaming/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/</loc>
+    <loc>http://localhost:3000/tags/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/digital-signage/</loc>
+    <loc>http://localhost:3000/tags/digital-signage/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/guest-management/</loc>
+    <loc>http://localhost:3000/tags/guest-management/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/guest-services/</loc>
+    <loc>http://localhost:3000/tags/guest-services/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/hospitality/</loc>
+    <loc>http://localhost:3000/tags/hospitality/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/solutions/hospitality/</loc>
+    <loc>http://localhost:3000/solutions/hospitality/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/hotel-tech/</loc>
+    <loc>http://localhost:3000/tags/hotel-tech/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/smart-hotels/</loc>
+    <loc>http://localhost:3000/tags/smart-hotels/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/custom-applications/</loc>
+    <loc>http://localhost:3000/tags/custom-applications/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/e-commerce/</loc>
+    <loc>http://localhost:3000/tags/e-commerce/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/mobile-apps/</loc>
+    <loc>http://localhost:3000/tags/mobile-apps/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/progressive-web-apps/</loc>
+    <loc>http://localhost:3000/tags/progressive-web-apps/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/ui/ux-design/</loc>
+    <loc>http://localhost:3000/tags/ui/ux-design/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/solutions/web-mobile/</loc>
+    <loc>http://localhost:3000/solutions/web-mobile/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/web-development/</loc>
+    <loc>http://localhost:3000/tags/web-development/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/aws/</loc>
+    <loc>http://localhost:3000/tags/aws/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/azure/</loc>
+    <loc>http://localhost:3000/tags/azure/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/solutions/cloud-services/</loc>
+    <loc>http://localhost:3000/solutions/cloud-services/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/cloud-migration/</loc>
+    <loc>http://localhost:3000/tags/cloud-migration/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/cloud-security/</loc>
+    <loc>http://localhost:3000/tags/cloud-security/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/cloud-services/</loc>
+    <loc>http://localhost:3000/tags/cloud-services/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/hybrid-cloud/</loc>
+    <loc>http://localhost:3000/tags/hybrid-cloud/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/multi-cloud/</loc>
+    <loc>http://localhost:3000/tags/multi-cloud/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/solutions/cyber-security/</loc>
+    <loc>http://localhost:3000/solutions/cyber-security/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/cyber-security/</loc>
+    <loc>http://localhost:3000/tags/cyber-security/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/security-consulting/</loc>
+    <loc>http://localhost:3000/tags/security-consulting/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/threat-management/</loc>
+    <loc>http://localhost:3000/tags/threat-management/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/vulnerability-assessment/</loc>
+    <loc>http://localhost:3000/tags/vulnerability-assessment/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/about/</loc>
+    <loc>http://localhost:3000/about/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/automation/</loc>
+    <loc>http://localhost:3000/tags/automation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/contact/</loc>
+    <loc>http://localhost:3000/contact/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/solutions/digital-transformation/</loc>
+    <loc>http://localhost:3000/solutions/digital-transformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/digital-transformation/</loc>
+    <loc>http://localhost:3000/tags/digital-transformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/</loc>
+    <loc>http://localhost:3000/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/services/</loc>
+    <loc>http://localhost:3000/services/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/solutions/</loc>
+    <loc>http://localhost:3000/solutions/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/process-optimization/</loc>
+    <loc>http://localhost:3000/tags/process-optimization/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/technology-consulting/</loc>
+    <loc>http://localhost:3000/tags/technology-consulting/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4203/tags/24/7-support/</loc>
+    <loc>http://localhost:3000/tags/24/7-support/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:3000/tags/artificial-intelligence/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/azure-devops/</loc>
+    <loc>http://localhost:3000/tags/azure-devops/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/azure-management/</loc>
+    <loc>http://localhost:3000/tags/azure-management/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/azure-migration/</loc>
+    <loc>http://localhost:3000/tags/azure-migration/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/business-alignment/</loc>
+    <loc>http://localhost:3000/tags/business-alignment/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/business-applications/</loc>
+    <loc>http://localhost:3000/tags/business-applications/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/business-modernization/</loc>
+    <loc>http://localhost:3000/tags/business-modernization/</loc>
   </url><url>
-    <loc>http://localhost:4203/categories/</loc>
+    <loc>http://localhost:3000/categories/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/cloud-hybrid/</loc>
+    <loc>http://localhost:3000/services/cloud-hybrid/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/cloud-infrastructure/</loc>
+    <loc>http://localhost:3000/tags/cloud-infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/cloud-productivity/</loc>
+    <loc>http://localhost:3000/tags/cloud-productivity/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/cloud-strategy/</loc>
+    <loc>http://localhost:3000/tags/cloud-strategy/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/co-managed-it/</loc>
+    <loc>http://localhost:3000/tags/co-managed-it/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/co-managed-it-services/</loc>
+    <loc>http://localhost:3000/services/co-managed-it-services/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/communication/</loc>
+    <loc>http://localhost:3000/tags/communication/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/compliance/</loc>
+    <loc>http://localhost:3000/tags/compliance/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/crm/</loc>
+    <loc>http://localhost:3000/tags/crm/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/customer-management/</loc>
+    <loc>http://localhost:3000/tags/customer-management/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/customer-service/</loc>
+    <loc>http://localhost:3000/tags/customer-service/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/data-protection/</loc>
+    <loc>http://localhost:3000/tags/data-protection/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/digital-culture/</loc>
+    <loc>http://localhost:3000/tags/digital-culture/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/digital-menu/</loc>
+    <loc>http://localhost:3000/tags/digital-menu/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/digital-strategy/</loc>
+    <loc>http://localhost:3000/tags/digital-strategy/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/digital-transformation-planning/</loc>
+    <loc>http://localhost:3000/services/digital-transformation-planning/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/document-scanning/</loc>
+    <loc>http://localhost:3000/tags/document-scanning/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/enterprise/</loc>
+    <loc>http://localhost:3000/tags/enterprise/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/entertainment/</loc>
+    <loc>http://localhost:3000/tags/entertainment/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/erp/</loc>
+    <loc>http://localhost:3000/tags/erp/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/exchange-online/</loc>
+    <loc>http://localhost:3000/tags/exchange-online/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/garment-industry/</loc>
+    <loc>http://localhost:3000/tags/garment-industry/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/helpdesk/</loc>
+    <loc>http://localhost:3000/tags/helpdesk/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/hybrid-support/</loc>
+    <loc>http://localhost:3000/tags/hybrid-support/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/infrastructure/</loc>
+    <loc>http://localhost:3000/tags/infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/interactive/</loc>
+    <loc>http://localhost:3000/tags/interactive/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/interactive-display/</loc>
+    <loc>http://localhost:3000/tags/interactive-display/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-collaboration/</loc>
+    <loc>http://localhost:3000/tags/it-collaboration/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/it-consultancy/</loc>
+    <loc>http://localhost:3000/services/it-consultancy/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-consulting/</loc>
+    <loc>http://localhost:3000/tags/it-consulting/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-governance/</loc>
+    <loc>http://localhost:3000/tags/it-governance/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-partnership/</loc>
+    <loc>http://localhost:3000/tags/it-partnership/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-planning/</loc>
+    <loc>http://localhost:3000/tags/it-planning/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-security/</loc>
+    <loc>http://localhost:3000/tags/it-security/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/it-security-compliance/</loc>
+    <loc>http://localhost:3000/services/it-security-compliance/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-strategy/</loc>
+    <loc>http://localhost:3000/tags/it-strategy/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/it-strategy-development/</loc>
+    <loc>http://localhost:3000/services/it-strategy-development/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/it-support/</loc>
+    <loc>http://localhost:3000/tags/it-support/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/it-support-outsourcing/</loc>
+    <loc>http://localhost:3000/services/it-support-outsourcing/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/itsm/</loc>
+    <loc>http://localhost:3000/tags/itsm/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/m365/</loc>
+    <loc>http://localhost:3000/tags/m365/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/maintenance/</loc>
+    <loc>http://localhost:3000/tags/maintenance/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/manufacturing/</loc>
+    <loc>http://localhost:3000/tags/manufacturing/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/marketing-automation/</loc>
+    <loc>http://localhost:3000/tags/marketing-automation/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/meeting-rooms/</loc>
+    <loc>http://localhost:3000/tags/meeting-rooms/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/microsoft-365/</loc>
+    <loc>http://localhost:3000/services/microsoft-365/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/microsoft-365/</loc>
+    <loc>http://localhost:3000/tags/microsoft-365/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/microsoft-azure/</loc>
+    <loc>http://localhost:3000/services/microsoft-azure/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/microsoft-azure/</loc>
+    <loc>http://localhost:3000/tags/microsoft-azure/</loc>
   </url><url>
-    <loc>http://localhost:4203/services/microsoft-business-applications/</loc>
+    <loc>http://localhost:3000/services/microsoft-business-applications/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/microsoft-dynamics-365/</loc>
+    <loc>http://localhost:3000/tags/microsoft-dynamics-365/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/microsoft-support/</loc>
+    <loc>http://localhost:3000/tags/microsoft-support/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/microsoft-teams/</loc>
+    <loc>http://localhost:3000/tags/microsoft-teams/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/mobile-app/</loc>
+    <loc>http://localhost:3000/tags/mobile-app/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/ocr/</loc>
+    <loc>http://localhost:3000/tags/ocr/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/office-365/</loc>
+    <loc>http://localhost:3000/tags/office-365/</loc>
   </url><url>
-    <loc>http://localhost:4203/products/</loc>
+    <loc>http://localhost:3000/products/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/outsourcing/</loc>
+    <loc>http://localhost:3000/tags/outsourcing/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/power-apps/</loc>
+    <loc>http://localhost:3000/tags/power-apps/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/power-automate/</loc>
+    <loc>http://localhost:3000/tags/power-automate/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/power-bi/</loc>
+    <loc>http://localhost:3000/tags/power-bi/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/power-platform/</loc>
+    <loc>http://localhost:3000/tags/power-platform/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/process-automation/</loc>
+    <loc>http://localhost:3000/tags/process-automation/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/qr-code/</loc>
+    <loc>http://localhost:3000/tags/qr-code/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/restaurant/</loc>
+    <loc>http://localhost:3000/tags/restaurant/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/risk-management/</loc>
+    <loc>http://localhost:3000/tags/risk-management/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/sales/</loc>
+    <loc>http://localhost:3000/tags/sales/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/security/</loc>
+    <loc>http://localhost:3000/tags/security/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/sharepoint/</loc>
+    <loc>http://localhost:3000/tags/sharepoint/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/sme/</loc>
+    <loc>http://localhost:3000/tags/sme/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/staff-assistant/</loc>
+    <loc>http://localhost:3000/tags/staff-assistant/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/staff-management/</loc>
+    <loc>http://localhost:3000/tags/staff-management/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/strategic-planning/</loc>
+    <loc>http://localhost:3000/tags/strategic-planning/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/supply-chain/</loc>
+    <loc>http://localhost:3000/tags/supply-chain/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/system-monitoring/</loc>
+    <loc>http://localhost:3000/tags/system-monitoring/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/technical-support/</loc>
+    <loc>http://localhost:3000/tags/technical-support/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/technology-assessment/</loc>
+    <loc>http://localhost:3000/tags/technology-assessment/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/technology-innovation/</loc>
+    <loc>http://localhost:3000/tags/technology-innovation/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/technology-management/</loc>
+    <loc>http://localhost:3000/tags/technology-management/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/technology-roadmap/</loc>
+    <loc>http://localhost:3000/tags/technology-roadmap/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/technology-strategy/</loc>
+    <loc>http://localhost:3000/tags/technology-strategy/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/threat-detection/</loc>
+    <loc>http://localhost:3000/tags/threat-detection/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/ticketing/</loc>
+    <loc>http://localhost:3000/tags/ticketing/</loc>
   </url><url>
-    <loc>http://localhost:4203/tags/verification/</loc>
+    <loc>http://localhost:3000/tags/verification/</loc>
   </url>
 </urlset>

@@ -155,6 +155,7 @@ p {
 
 .navbar {
     padding: 0.25rem 0;
+    position: relative;
 }
 
 .navbar .container {
@@ -1634,6 +1635,14 @@ section {
 }
 
 @media (max-width: 768px) {
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex: none;
+    }
+    
     .navbar-menu {
         display: none;
         position: absolute;
@@ -1650,6 +1659,7 @@ section {
         border-radius: 0 0 12px 12px;
         max-height: 80vh;
         overflow-y: auto;
+        z-index: 1001;
     }
     
     .navbar-menu.active {
@@ -1736,6 +1746,11 @@ section {
     .navbar-burger {
         display: flex;
         margin-left: auto;
+        position: relative;
+        z-index: 1001;
+        pointer-events: all;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.1);
     }
     
     .buttons {

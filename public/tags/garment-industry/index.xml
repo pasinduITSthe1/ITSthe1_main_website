@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Garment Industry on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:4203/tags/garment-industry/</link>
+    <link>http://localhost:3000/tags/garment-industry/</link>
     <description>Recent content in Garment Industry on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:4203/tags/garment-industry/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3000/tags/garment-industry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ERP - ERP for the Garment Industry</title>
-      <link>http://localhost:4203/products/erp-garment/</link>
+      <link>http://localhost:3000/products/erp-garment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4203/products/erp-garment/</guid>
+      <guid>http://localhost:3000/products/erp-garment/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Streamline your garment manufacturing operations with our industry-specific ERP solution. From design and production planning to inventory management and quality control, our system is built to handle the unique challenges of the apparel industry.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Production Planning&lt;/strong&gt;: Style-wise production scheduling and capacity planning&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Inventory Management&lt;/strong&gt;: Raw material tracking, fabric management, and finished goods&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quality Control&lt;/strong&gt;: Inspection workflows and compliance management&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Supply Chain&lt;/strong&gt;: Vendor management and procurement optimization&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cost Management&lt;/strong&gt;: Real-time costing and profitability analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduce production lead times by up to 30%&lt;/li&gt;&#xA;&lt;li&gt;Improve inventory turnover and reduce waste&lt;/li&gt;&#xA;&lt;li&gt;Ensure compliance with international quality standards&lt;/li&gt;&#xA;&lt;li&gt;Optimize resource utilization and manufacturing efficiency&lt;/li&gt;&#xA;&lt;li&gt;Generate detailed analytics for informed decision-making&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modules&lt;/strong&gt;: Production, Inventory, Finance, HR, Quality, Sales&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: CAD systems, cutting machines, automated equipment&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Compliance&lt;/strong&gt;: ISO, WRAP, BSCI, and other industry standards&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reporting&lt;/strong&gt;: Real-time dashboards and customizable reports&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt;: Support for multiple factories and locations&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
