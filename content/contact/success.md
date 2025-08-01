@@ -24,9 +24,9 @@ Thank you for reaching out to ITSthe1. We have received your message and one of 
 
 If you have an urgent request or need immediate assistance, please contact us directly:
 
-- **Dubai Office:** [+971 4 295 2705](tel:+97142952705)
-- **London Office:** [+44 789 2158586](tel:+447892158586)  
-- **Colombo Office:** [+94 707 220444](tel:+94707220444)
+- **Dubai Office:** [+97 142 352209](tel:+97142352209)
+- **London Office:** [+44 783 2152969](tel:+447832152969)  
+- **Colombo Office:** [+94 70 733 3666](tel:+94707333666)
 - **Email:** [info@itsthe1.com](mailto:info@itsthe1.com)
 
 <div style="text-align: center; margin: 2rem 0;">
