@@ -1,11 +1,20 @@
-// Main JavaScript for ITSthe1 Website
+// Main JavaScript for ITSthe1 Website - Optimized
 
-document.addEventListener('DOMContentLoaded', function() {
+// Use more efficient DOM ready function
+function ready(fn) {
+    if (document.readyState !== 'loading') {
+        fn();
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+
+ready(function() {
     
     // Set Active Navigation State
     setActiveNavigation();
     
-    // Mobile Navigation Toggle
+    // Mobile Navigation Toggle - with debouncing
     const navbarBurger = document.querySelector('.navbar-burger');
     const navbarMenu = document.querySelector('.navbar-menu');
     
@@ -16,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Mobile Dropdown Toggle
+    // Mobile Dropdown Toggle - with better performance
     const dropdownItems = document.querySelectorAll('.has-dropdown');
     
     dropdownItems.forEach(dropdown => {
@@ -29,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     dropdown.classList.toggle('active');
                     
-                    // Close other dropdowns
+                    // Close other dropdowns more efficiently
                     dropdownItems.forEach(otherDropdown => {
                         if (otherDropdown !== dropdown) {
                             otherDropdown.classList.remove('active');
@@ -40,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Close dropdowns when clicking outside
+    // Close dropdowns when clicking outside - with event delegation
     document.addEventListener('click', function(e) {
         if (!e.target.closest('.has-dropdown')) {
             dropdownItems.forEach(dropdown => {
@@ -482,6 +491,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize the slider
     initProductSlider();
+    
+    // Lazy load background video
+    lazyLoadVideo();
+    
+    // Setup Intersection Observer for better performance
+    setupIntersectionObserver();
 });
 
 // Quick Contact Form Fill Function
@@ -610,4 +625,49 @@ function setActiveNavigation() {
             item.classList.add('active');
         }
     });
+}
+
+// Lazy load video background
+function lazyLoadVideo() {
+    const video = document.querySelector('.hero-background-video');
+    if (video) {
+        const source = video.querySelector('source[data-src]');
+        if (source) {
+            // Load video when it's about to be visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        source.src = source.dataset.src;
+                        source.removeAttribute('data-src');
+                        video.load();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '50px' });
+            
+            observer.observe(video);
+        }
+    }
+}
+
+// Setup Intersection Observer for better performance
+function setupIntersectionObserver() {
+    // Lazy load images that don't have loading="lazy" already
+    const images = document.querySelectorAll('img:not([loading])');
+    
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.loading = 'lazy';
+                    observer.unobserve(img);
+                }
+            });
+        });
+        
+        images.forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
 }

@@ -23,19 +23,37 @@
     <meta property="twitter:title" content="{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}">
     <meta property="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ site.Params.description }}{{ end }}">
     
-    <!-- Favicon -->
+    <!-- Favicon and Icons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
     
-    <!-- Google Fonts -->
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Critical CSS inline -->
+    {{ $css := resources.Get "css/style.css" }}
+    {{ if $css }}
+        {{ $css = $css | minify | fingerprint }}
+        <link rel="preload" href="{{ $css.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="{{ $css.RelPermalink }}"></noscript>
+    {{ else }}
+        <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    {{ end }}
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    <!-- Load fonts efficiently -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Font Awesome - load asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- Custom CSS Variables -->
     <style>
@@ -57,8 +75,14 @@
     
     {{ partial "footer.html" . }}
     
-    <!-- JavaScript -->
-    <script src="{{ "/js/main.js" | relURL }}"></script>
+    <!-- JavaScript - load async -->
+    {{ $js := resources.Get "js/main.js" }}
+    {{ if $js }}
+        {{ $js = $js | minify | fingerprint }}
+        <script src="{{ $js.RelPermalink }}" async></script>
+    {{ else }}
+        <script src="{{ "/js/main.js" | relURL }}" async></script>
+    {{ end }}
     
     <!-- Scroll to top button -->
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">

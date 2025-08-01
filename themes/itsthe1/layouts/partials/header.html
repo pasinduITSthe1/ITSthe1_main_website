@@ -3,12 +3,24 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item logo" href="{{ "/" | relURL }}">
+                    {{ $logo := resources.Get "images/logo.svg" }}
+                    {{ if $logo }}
+                    <img src="{{ $logo.RelPermalink }}" 
+                         alt="{{ site.Title }}" 
+                         class="logo-img"
+                         width="150"
+                         height="40"
+                         loading="eager"
+                         decoding="async">
+                    {{ else }}
                     <img src="/images/logo.svg" 
                          alt="{{ site.Title }}" 
                          class="logo-img"
                          width="150"
                          height="40"
-                         loading="eager">
+                         loading="eager"
+                         decoding="async">
+                    {{ end }}
                 </a>
                 
                 <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">

@@ -3,12 +3,24 @@
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">
+                    {{ $logo := resources.Get "images/logo.svg" }}
+                    {{ if $logo }}
+                    <img src="{{ $logo.RelPermalink }}" 
+                         alt="{{ site.Title }}" 
+                         class="footer-logo-img"
+                         width="150"
+                         height="40"
+                         loading="lazy"
+                         decoding="async">
+                    {{ else }}
                     <img src="/images/logo.svg" 
                          alt="{{ site.Title }}" 
                          class="footer-logo-img"
                          width="150"
                          height="40"
-                         loading="lazy">
+                         loading="lazy"
+                         decoding="async">
+                    {{ end }}
                 </div>
                 <p class="footer-description">
                     {{ site.Params.description }}
