@@ -2,346 +2,346 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:3870/products/iptv/</loc>
+    <loc>http://localhost:4921/products/iptv/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/digital-signage/</loc>
+    <loc>http://localhost:4921/products/digital-signage/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/id-scanning/</loc>
+    <loc>http://localhost:4921/products/id-scanning/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/hospitality-app/</loc>
+    <loc>http://localhost:4921/products/hospitality-app/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/digital-menu/</loc>
+    <loc>http://localhost:4921/products/digital-menu/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/helpdesk/</loc>
+    <loc>http://localhost:4921/products/helpdesk/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/ai-helper/</loc>
+    <loc>http://localhost:4921/products/ai-helper/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/erp-garment/</loc>
+    <loc>http://localhost:4921/products/erp-garment/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/crm-sme/</loc>
+    <loc>http://localhost:4921/products/crm-sme/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/content-delivery/</loc>
+    <loc>http://localhost:4921/tags/content-delivery/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/iptv/</loc>
+    <loc>http://localhost:4921/tags/iptv/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/solutions/iptv-ott/</loc>
+    <loc>http://localhost:4921/solutions/iptv-ott/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/middleware/</loc>
+    <loc>http://localhost:4921/tags/middleware/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/monetization/</loc>
+    <loc>http://localhost:4921/tags/monetization/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/multi-device/</loc>
+    <loc>http://localhost:4921/tags/multi-device/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/ott/</loc>
+    <loc>http://localhost:4921/tags/ott/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/streaming/</loc>
+    <loc>http://localhost:4921/tags/streaming/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/</loc>
+    <loc>http://localhost:4921/tags/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/digital-signage/</loc>
+    <loc>http://localhost:4921/tags/digital-signage/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/guest-management/</loc>
+    <loc>http://localhost:4921/tags/guest-management/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/guest-services/</loc>
+    <loc>http://localhost:4921/tags/guest-services/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/hospitality/</loc>
+    <loc>http://localhost:4921/tags/hospitality/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/solutions/hospitality/</loc>
+    <loc>http://localhost:4921/solutions/hospitality/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/hotel-tech/</loc>
+    <loc>http://localhost:4921/tags/hotel-tech/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/smart-hotels/</loc>
+    <loc>http://localhost:4921/tags/smart-hotels/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/custom-applications/</loc>
+    <loc>http://localhost:4921/tags/custom-applications/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/e-commerce/</loc>
+    <loc>http://localhost:4921/tags/e-commerce/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/mobile-apps/</loc>
+    <loc>http://localhost:4921/tags/mobile-apps/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/progressive-web-apps/</loc>
+    <loc>http://localhost:4921/tags/progressive-web-apps/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/ui/ux-design/</loc>
+    <loc>http://localhost:4921/tags/ui/ux-design/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/solutions/web-mobile/</loc>
+    <loc>http://localhost:4921/solutions/web-mobile/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/web-development/</loc>
+    <loc>http://localhost:4921/tags/web-development/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/aws/</loc>
+    <loc>http://localhost:4921/tags/aws/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/azure/</loc>
+    <loc>http://localhost:4921/tags/azure/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/solutions/cloud-services/</loc>
+    <loc>http://localhost:4921/solutions/cloud-services/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/cloud-migration/</loc>
+    <loc>http://localhost:4921/tags/cloud-migration/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/cloud-security/</loc>
+    <loc>http://localhost:4921/tags/cloud-security/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/cloud-services/</loc>
+    <loc>http://localhost:4921/tags/cloud-services/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/hybrid-cloud/</loc>
+    <loc>http://localhost:4921/tags/hybrid-cloud/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/multi-cloud/</loc>
+    <loc>http://localhost:4921/tags/multi-cloud/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/solutions/cyber-security/</loc>
+    <loc>http://localhost:4921/solutions/cyber-security/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/cyber-security/</loc>
+    <loc>http://localhost:4921/tags/cyber-security/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/security-consulting/</loc>
+    <loc>http://localhost:4921/tags/security-consulting/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/threat-management/</loc>
+    <loc>http://localhost:4921/tags/threat-management/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/vulnerability-assessment/</loc>
+    <loc>http://localhost:4921/tags/vulnerability-assessment/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/about/</loc>
+    <loc>http://localhost:4921/about/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/automation/</loc>
+    <loc>http://localhost:4921/tags/automation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/contact/</loc>
+    <loc>http://localhost:4921/contact/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/solutions/digital-transformation/</loc>
+    <loc>http://localhost:4921/solutions/digital-transformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/digital-transformation/</loc>
+    <loc>http://localhost:4921/tags/digital-transformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/</loc>
+    <loc>http://localhost:4921/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/services/</loc>
+    <loc>http://localhost:4921/services/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/solutions/</loc>
+    <loc>http://localhost:4921/solutions/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/process-optimization/</loc>
+    <loc>http://localhost:4921/tags/process-optimization/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/technology-consulting/</loc>
+    <loc>http://localhost:4921/tags/technology-consulting/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:3870/tags/24/7-support/</loc>
+    <loc>http://localhost:4921/tags/24/7-support/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:4921/tags/artificial-intelligence/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/azure-devops/</loc>
+    <loc>http://localhost:4921/tags/azure-devops/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/azure-management/</loc>
+    <loc>http://localhost:4921/tags/azure-management/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/azure-migration/</loc>
+    <loc>http://localhost:4921/tags/azure-migration/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/business-alignment/</loc>
+    <loc>http://localhost:4921/tags/business-alignment/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/business-applications/</loc>
+    <loc>http://localhost:4921/tags/business-applications/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/business-modernization/</loc>
+    <loc>http://localhost:4921/tags/business-modernization/</loc>
   </url><url>
-    <loc>http://localhost:3870/categories/</loc>
+    <loc>http://localhost:4921/categories/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/cloud-hybrid/</loc>
+    <loc>http://localhost:4921/services/cloud-hybrid/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/cloud-infrastructure/</loc>
+    <loc>http://localhost:4921/tags/cloud-infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/cloud-productivity/</loc>
+    <loc>http://localhost:4921/tags/cloud-productivity/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/cloud-strategy/</loc>
+    <loc>http://localhost:4921/tags/cloud-strategy/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/co-managed-it/</loc>
+    <loc>http://localhost:4921/tags/co-managed-it/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/co-managed-it-services/</loc>
+    <loc>http://localhost:4921/services/co-managed-it-services/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/communication/</loc>
+    <loc>http://localhost:4921/tags/communication/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/compliance/</loc>
+    <loc>http://localhost:4921/tags/compliance/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/crm/</loc>
+    <loc>http://localhost:4921/tags/crm/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/customer-management/</loc>
+    <loc>http://localhost:4921/tags/customer-management/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/customer-service/</loc>
+    <loc>http://localhost:4921/tags/customer-service/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/data-protection/</loc>
+    <loc>http://localhost:4921/tags/data-protection/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/digital-culture/</loc>
+    <loc>http://localhost:4921/tags/digital-culture/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/digital-menu/</loc>
+    <loc>http://localhost:4921/tags/digital-menu/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/digital-strategy/</loc>
+    <loc>http://localhost:4921/tags/digital-strategy/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/digital-transformation-planning/</loc>
+    <loc>http://localhost:4921/services/digital-transformation-planning/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/document-scanning/</loc>
+    <loc>http://localhost:4921/tags/document-scanning/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/enterprise/</loc>
+    <loc>http://localhost:4921/tags/enterprise/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/entertainment/</loc>
+    <loc>http://localhost:4921/tags/entertainment/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/erp/</loc>
+    <loc>http://localhost:4921/tags/erp/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/exchange-online/</loc>
+    <loc>http://localhost:4921/tags/exchange-online/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/garment-industry/</loc>
+    <loc>http://localhost:4921/tags/garment-industry/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/helpdesk/</loc>
+    <loc>http://localhost:4921/tags/helpdesk/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/hybrid-support/</loc>
+    <loc>http://localhost:4921/tags/hybrid-support/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/infrastructure/</loc>
+    <loc>http://localhost:4921/tags/infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/interactive/</loc>
+    <loc>http://localhost:4921/tags/interactive/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/interactive-display/</loc>
+    <loc>http://localhost:4921/tags/interactive-display/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-collaboration/</loc>
+    <loc>http://localhost:4921/tags/it-collaboration/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/it-consultancy/</loc>
+    <loc>http://localhost:4921/services/it-consultancy/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-consulting/</loc>
+    <loc>http://localhost:4921/tags/it-consulting/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-governance/</loc>
+    <loc>http://localhost:4921/tags/it-governance/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-partnership/</loc>
+    <loc>http://localhost:4921/tags/it-partnership/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-planning/</loc>
+    <loc>http://localhost:4921/tags/it-planning/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-security/</loc>
+    <loc>http://localhost:4921/tags/it-security/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/it-security-compliance/</loc>
+    <loc>http://localhost:4921/services/it-security-compliance/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-strategy/</loc>
+    <loc>http://localhost:4921/tags/it-strategy/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/it-strategy-development/</loc>
+    <loc>http://localhost:4921/services/it-strategy-development/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/it-support/</loc>
+    <loc>http://localhost:4921/tags/it-support/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/it-support-outsourcing/</loc>
+    <loc>http://localhost:4921/services/it-support-outsourcing/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/itsm/</loc>
+    <loc>http://localhost:4921/tags/itsm/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/m365/</loc>
+    <loc>http://localhost:4921/tags/m365/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/maintenance/</loc>
+    <loc>http://localhost:4921/tags/maintenance/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/manufacturing/</loc>
+    <loc>http://localhost:4921/tags/manufacturing/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/marketing-automation/</loc>
+    <loc>http://localhost:4921/tags/marketing-automation/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/meeting-rooms/</loc>
+    <loc>http://localhost:4921/tags/meeting-rooms/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/microsoft-365/</loc>
+    <loc>http://localhost:4921/services/microsoft-365/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/microsoft-365/</loc>
+    <loc>http://localhost:4921/tags/microsoft-365/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/microsoft-azure/</loc>
+    <loc>http://localhost:4921/services/microsoft-azure/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/microsoft-azure/</loc>
+    <loc>http://localhost:4921/tags/microsoft-azure/</loc>
   </url><url>
-    <loc>http://localhost:3870/services/microsoft-business-applications/</loc>
+    <loc>http://localhost:4921/services/microsoft-business-applications/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/microsoft-dynamics-365/</loc>
+    <loc>http://localhost:4921/tags/microsoft-dynamics-365/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/microsoft-support/</loc>
+    <loc>http://localhost:4921/tags/microsoft-support/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/microsoft-teams/</loc>
+    <loc>http://localhost:4921/tags/microsoft-teams/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/mobile-app/</loc>
+    <loc>http://localhost:4921/tags/mobile-app/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/ocr/</loc>
+    <loc>http://localhost:4921/tags/ocr/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/office-365/</loc>
+    <loc>http://localhost:4921/tags/office-365/</loc>
   </url><url>
-    <loc>http://localhost:3870/products/</loc>
+    <loc>http://localhost:4921/products/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/outsourcing/</loc>
+    <loc>http://localhost:4921/tags/outsourcing/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/power-apps/</loc>
+    <loc>http://localhost:4921/tags/power-apps/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/power-automate/</loc>
+    <loc>http://localhost:4921/tags/power-automate/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/power-bi/</loc>
+    <loc>http://localhost:4921/tags/power-bi/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/power-platform/</loc>
+    <loc>http://localhost:4921/tags/power-platform/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/process-automation/</loc>
+    <loc>http://localhost:4921/tags/process-automation/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/qr-code/</loc>
+    <loc>http://localhost:4921/tags/qr-code/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/restaurant/</loc>
+    <loc>http://localhost:4921/tags/restaurant/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/risk-management/</loc>
+    <loc>http://localhost:4921/tags/risk-management/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/sales/</loc>
+    <loc>http://localhost:4921/tags/sales/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/security/</loc>
+    <loc>http://localhost:4921/tags/security/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/sharepoint/</loc>
+    <loc>http://localhost:4921/tags/sharepoint/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/sme/</loc>
+    <loc>http://localhost:4921/tags/sme/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/staff-assistant/</loc>
+    <loc>http://localhost:4921/tags/staff-assistant/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/staff-management/</loc>
+    <loc>http://localhost:4921/tags/staff-management/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/strategic-planning/</loc>
+    <loc>http://localhost:4921/tags/strategic-planning/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/supply-chain/</loc>
+    <loc>http://localhost:4921/tags/supply-chain/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/system-monitoring/</loc>
+    <loc>http://localhost:4921/tags/system-monitoring/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/technical-support/</loc>
+    <loc>http://localhost:4921/tags/technical-support/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/technology-assessment/</loc>
+    <loc>http://localhost:4921/tags/technology-assessment/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/technology-innovation/</loc>
+    <loc>http://localhost:4921/tags/technology-innovation/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/technology-management/</loc>
+    <loc>http://localhost:4921/tags/technology-management/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/technology-roadmap/</loc>
+    <loc>http://localhost:4921/tags/technology-roadmap/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/technology-strategy/</loc>
+    <loc>http://localhost:4921/tags/technology-strategy/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/threat-detection/</loc>
+    <loc>http://localhost:4921/tags/threat-detection/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/ticketing/</loc>
+    <loc>http://localhost:4921/tags/ticketing/</loc>
   </url><url>
-    <loc>http://localhost:3870/tags/verification/</loc>
+    <loc>http://localhost:4921/tags/verification/</loc>
   </url>
 </urlset>
