@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (navbarBurger && navbarMenu) {
         navbarBurger.addEventListener('click', function() {
-            navbarBurger.classList.toggle('active');
+            navbarBurger.classList.toggle('is-active');
             navbarMenu.classList.toggle('active');
         });
     }
