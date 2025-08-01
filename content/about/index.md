@@ -1,7 +1,7 @@
 ---
 title: "About ITSthe1"
 subtitle: "Your premier partner for IT, Telecom & Hospitality Solutions"
-description: "ITSthe1 - Founded in 1999, headquartered in Dubai UAE with offices in London UK and R&D in Sri Lanka. Leading systems integrators and product developers for Hospitality Technology, providing Enterprise solutions for SMEs."
+description: "ITSthe1 - Your trusted technology partner since 1999, serving the Middle East, North A  frica & Indian Ocean Islands with innovative solutions that drive digital transformation."
 featured_image: "/images/about-hero.jpg"
 date: 2024-01-01
 draft: false
@@ -39,16 +39,16 @@ values:
 timeline:
   - year: "1999"
     title: "Foundation in USA"
-    description: "ITSthe1 was first formed in the United States, beginning our journey as a technology solutions provider."
+    description: "ITSthe1 was established in the United States, beginning our journey as a technology solutions provider with a vision to bridge the digital divide."
   - year: "2003"
-    title: "Dubai Office Established"
-    description: "Dubai Office was established, strategically positioning ourselves to serve the rapidly growing Middle East market."
-  - year: "2005"
-    title: "R&D and Development Center"
-    description: "R&D and Development operations moved to Sri Lanka, scaling our technical capabilities and innovation capacity."
+    title: "Middle East Expansion"
+    description: "Opened our headquarters in Dubai, UAE, strategically positioning ourselves to serve the rapidly growing Middle East market."
   - year: "2008"
     title: "European Presence"
     description: "Established our London office to extend our reach across Europe and strengthen our global service capabilities."
+  - year: "2012"
+    title: "Development Center"
+    description: "Launched our dedicated development center in Colombo, Sri Lanka, scaling our technical capabilities and innovation capacity."
   - year: "2018"
     title: "Digital Transformation Focus"
     description: "Pivoted to become a comprehensive digital transformation partner, expanding into cloud services, AI, and hospitality technology."
@@ -63,9 +63,7 @@ ITSthe1 is your premier partner for **IT, Telecom & Hospitality Solutions** in t
 
 ### Our Story
 
-ITSthe1 was first formed in **1999** in the USA. Our **Dubai Office was established in 2003** while **R&D and Development moved to Sri Lanka in 2005**. ITSthe1 is headquartered in **Dubai UAE**, with a **branch in London UK**, and is one of the leading systems integrators and product developers for **Hospitality Technology**.
-
-Our business focus is in several areas of **Consultancy, Solutions and Services**. In the IT sector, we provide **Enterprise solutions for SMEs** and the **Hospitality vertical**.
+ITSthe1 was formed in **1999** in the USA, with our **headquarters established in Dubai, U.A.E.** in **2003**. We expanded our global presence with a **branch office in London, U.K.** and a dedicated **development center in Sri Lanka**.
 
 ### What Sets Us Apart
 

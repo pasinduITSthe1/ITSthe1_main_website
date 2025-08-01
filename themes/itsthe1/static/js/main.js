@@ -18,51 +18,10 @@ ready(function() {
     const navbarBurger = document.querySelector('.navbar-burger');
     const navbarMenu = document.querySelector('.navbar-menu');
     
-    console.log('Mobile navigation elements:', { 
-        burger: !!navbarBurger, 
-        menu: !!navbarMenu 
-    });
-    
     if (navbarBurger && navbarMenu) {
-        navbarBurger.addEventListener('click', function(e) {
-            e.preventDefault();
-            console.log('Hamburger clicked');
-            navbarBurger.classList.toggle('is-active');
+        navbarBurger.addEventListener('click', function() {
+            navbarBurger.classList.toggle('active');
             navbarMenu.classList.toggle('active');
-            
-            // Update aria attributes for accessibility
-            const isExpanded = navbarMenu.classList.contains('active');
-            navbarBurger.setAttribute('aria-expanded', isExpanded);
-        });
-        
-        // Close mobile menu when clicking on menu items (except dropdowns)
-        const menuItems = navbarMenu.querySelectorAll('.navbar-item:not(.has-dropdown)');
-        menuItems.forEach(item => {
-            item.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    navbarBurger.classList.remove('is-active');
-                    navbarMenu.classList.remove('active');
-                    navbarBurger.setAttribute('aria-expanded', 'false');
-                }
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.navbar') && navbarMenu.classList.contains('active')) {
-                navbarBurger.classList.remove('is-active');
-                navbarMenu.classList.remove('active');
-                navbarBurger.setAttribute('aria-expanded', 'false');
-            }
-        });
-        
-        // Handle window resize
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                navbarBurger.classList.remove('is-active');
-                navbarMenu.classList.remove('active');
-                navbarBurger.setAttribute('aria-expanded', 'false');
-            }
         });
     }
     
@@ -743,9 +702,14 @@ function setupIntersectionObserver() {
         });
     }
 }
- 
- F r i d a y ,   A u g u s t   1 ,   2 0 2 5   1 2 : 5 5 : 5 4   P M  
-  
-  
-  
+
+ 
+ F r i d a y ,   A u g u s t   1 ,   2 0 2 5   1 2 : 5 5 : 5 4   P M 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  

@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our Products on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:3000/products/</link>
+    <link>http://localhost:3870/products/</link>
     <description>Recent content in Our Products on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:3000/products/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3870/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.TV - IPTV for Enterprise &amp; Hospitality</title>
-      <link>http://localhost:3000/products/iptv/</link>
+      <link>http://localhost:3870/products/iptv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/iptv/</guid>
+      <guid>http://localhost:3870/products/iptv/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Introducing &lt;strong&gt;1.TV by ITSthe1 Solutions&lt;/strong&gt;—a comprehensive IPTV platform tailored for the hospitality, healthcare, education, maritime, and multi-dwelling unit (MDU) sectors. Designed to enhance guest and resident experiences while unlocking new revenue streams, 1.TV seamlessly integrates entertainment, information, and interactive services into a unified interface.&lt;/p&gt;&#xA;&lt;p&gt;1.TV is an enterprise-grade IPTV middleware platform that transforms ordinary TVs into interactive digital experience hubs, delivering much more than entertainment—it enhances engagement, drives upselling, and strengthens your brand identity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1.DS &amp; 1.MS - Digital Signage Solutions</title>
-      <link>http://localhost:3000/products/digital-signage/</link>
+      <link>http://localhost:3870/products/digital-signage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/digital-signage/</guid>
+      <guid>http://localhost:3870/products/digital-signage/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s fast-paced environments, effective communication is paramount. &lt;strong&gt;ITSthe1&amp;rsquo;s Digital Signage solutions - 1.DS and 1.MS&lt;/strong&gt; offer versatile, customizable platforms that cater to diverse industries, enhancing viewer engagement and operational efficiency.&lt;/p&gt;&#xA;&lt;p&gt;Our digital signage solutions transform ordinary displays into dynamic communication hubs, delivering targeted content, improving space utilization, and creating engaging experiences for customers, employees, and visitors.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1ds--comprehensive-digital-signage-platform&#34;&gt;1.DS – Comprehensive Digital Signage Platform&lt;/h2&gt;&#xA;&lt;h3 id=&#34;engage-inform-and-inspire-across-multiple-sectors&#34;&gt;Engage, Inform, and Inspire Across Multiple Sectors&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.DS&lt;/strong&gt; is a robust digital signage solution designed to deliver dynamic content across various venues, including hotels, hospitals, enterprises, banks, malls, retail outlets, transportation hubs, cruises, educational institutions, and multi-dwelling units (MDUs).&lt;/p&gt;</description>
     </item>
     <item>
       <title>1.ID - Advanced ID &amp; Passport Scanning Solution</title>
-      <link>http://localhost:3000/products/id-scanning/</link>
+      <link>http://localhost:3870/products/id-scanning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/id-scanning/</guid>
+      <guid>http://localhost:3870/products/id-scanning/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.ID by ITSthe1 Solutions&lt;/strong&gt; is a cutting-edge identity capture platform designed for the hospitality sector, enabling instant scanning and secure storage of national IDs and passports. Trusted by the &lt;strong&gt;Dubai Tourism Department and UAE State Security&lt;/strong&gt;, ITSthe1 is among the select few authorized to collect and transmit guest identity data directly to government systems.&lt;/p&gt;&#xA;&lt;p&gt;Our advanced ID scanning solution streamlines guest registration processes while ensuring full regulatory compliance, providing a seamless experience for both guests and operators across multiple industries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1.Hotel - Guest Engagement &amp; Experience Platform</title>
-      <link>http://localhost:3000/products/hospitality-app/</link>
+      <link>http://localhost:3870/products/hospitality-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/hospitality-app/</guid>
+      <guid>http://localhost:3870/products/hospitality-app/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.Hotel by ITSthe1 Solutions&lt;/strong&gt; is a guest-facing application designed to elevate the hospitality experience across hotels, hospitals, resorts, and serviced apartments. Delivered as a &lt;strong&gt;WebApp or native mobile app (iOS &amp;amp; Android)&lt;/strong&gt;, it enables real-time guest interaction, service automation, and property engagement.&lt;/p&gt;&#xA;&lt;p&gt;The solution is &lt;strong&gt;fully integrated with our 1.TV platform&lt;/strong&gt;, using a shared backend system to deliver consistent content across TV and mobile. It also works seamlessly with &lt;strong&gt;1.Support (1.SUP)&lt;/strong&gt;, our staff-facing app, ensuring every guest request is actioned through an automated support ticket workflow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Menu - Digital Menu</title>
-      <link>http://localhost:3000/products/digital-menu/</link>
+      <link>http://localhost:3870/products/digital-menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/digital-menu/</guid>
+      <guid>http://localhost:3870/products/digital-menu/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Revolutionize your restaurant operations with our comprehensive digital menu solution. Provide customers with an engaging, contactless dining experience while reducing operational costs and improving efficiency.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;QR Code Access&lt;/strong&gt;: Instant menu access via smartphone scanning&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Real-time Updates&lt;/strong&gt;: Modify prices, availability, and items instantly&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multi-language Support&lt;/strong&gt;: Serve international customers in their preferred language&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Visual Appeal&lt;/strong&gt;: High-resolution images and detailed descriptions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Order Integration&lt;/strong&gt;: Direct integration with POS and kitchen systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduce printing costs by 100%&lt;/li&gt;&#xA;&lt;li&gt;Update menus instantly across all locations&lt;/li&gt;&#xA;&lt;li&gt;Improve customer satisfaction with visual menu presentation&lt;/li&gt;&#xA;&lt;li&gt;Enable contactless dining experience&lt;/li&gt;&#xA;&lt;li&gt;Gather valuable customer insights and preferences&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: All smartphones and tablets&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Support for 50+ languages&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: POS systems, payment gateways, inventory management&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Analytics&lt;/strong&gt;: Customer behavior tracking and reporting&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Brand-specific design and layout options&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>1.Support - Smart Support Ticketing &amp; Workflow Automation</title>
-      <link>http://localhost:3000/products/helpdesk/</link>
+      <link>http://localhost:3870/products/helpdesk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/helpdesk/</guid>
+      <guid>http://localhost:3870/products/helpdesk/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.Support by ITSthe1 Solutions&lt;/strong&gt; is a centralized support ticketing and workflow management system designed for hotels, hospitals, resorts, MDUs, universities, corporate offices, and service-based enterprises. Whether used independently or &lt;strong&gt;fully integrated with our 1.TV (in-room entertainment system) and 1.Hotel (guest mobile app)&lt;/strong&gt;, it enables real-time ticket creation, SLA-based task tracking, multi-level escalation, and operational performance analytics across departments with comprehensive reporting to monitor Key Performance Indicators (KPIs).&lt;/p&gt;&#xA;&lt;p&gt;Transform your service operations with intelligent automation, seamless integrations, and data-driven insights that enhance both staff efficiency and customer satisfaction.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI - AI Helper for Hospitality Staff</title>
-      <link>http://localhost:3000/products/ai-helper/</link>
+      <link>http://localhost:3870/products/ai-helper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/ai-helper/</guid>
+      <guid>http://localhost:3870/products/ai-helper/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Transform your hospitality operations with our AI-powered staff assistant. Designed to enhance guest services, automate routine tasks, and provide intelligent insights for better decision-making in hotels, restaurants, and hospitality venues.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Guest Request Processing&lt;/strong&gt;: Intelligent handling of guest inquiries and requests&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Predictive Analytics&lt;/strong&gt;: Forecast demand patterns and optimize resource allocation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multi-language Support&lt;/strong&gt;: Communicate with international guests in their native language&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Smart Recommendations&lt;/strong&gt;: Personalized suggestions for guests based on preferences&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Operational Insights&lt;/strong&gt;: Real-time analytics for performance optimization&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Improve guest satisfaction with faster, more accurate responses&lt;/li&gt;&#xA;&lt;li&gt;Reduce staff workload by automating routine inquiries&lt;/li&gt;&#xA;&lt;li&gt;Increase revenue through intelligent upselling recommendations&lt;/li&gt;&#xA;&lt;li&gt;Enhance operational efficiency with predictive insights&lt;/li&gt;&#xA;&lt;li&gt;Provide 24/7 support capability without additional staffing&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;AI Engine&lt;/strong&gt;: Advanced natural language processing and machine learning&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: PMS, POS, CRM, and booking systems&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Support for 40+ languages with real-time translation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Learning&lt;/strong&gt;: Continuous improvement through interaction data&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;: Cloud-based with mobile and desktop interfaces&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>ERP - ERP for the Garment Industry</title>
-      <link>http://localhost:3000/products/erp-garment/</link>
+      <link>http://localhost:3870/products/erp-garment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/erp-garment/</guid>
+      <guid>http://localhost:3870/products/erp-garment/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Streamline your garment manufacturing operations with our industry-specific ERP solution. From design and production planning to inventory management and quality control, our system is built to handle the unique challenges of the apparel industry.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Production Planning&lt;/strong&gt;: Style-wise production scheduling and capacity planning&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Inventory Management&lt;/strong&gt;: Raw material tracking, fabric management, and finished goods&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Quality Control&lt;/strong&gt;: Inspection workflows and compliance management&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Supply Chain&lt;/strong&gt;: Vendor management and procurement optimization&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cost Management&lt;/strong&gt;: Real-time costing and profitability analysis&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduce production lead times by up to 30%&lt;/li&gt;&#xA;&lt;li&gt;Improve inventory turnover and reduce waste&lt;/li&gt;&#xA;&lt;li&gt;Ensure compliance with international quality standards&lt;/li&gt;&#xA;&lt;li&gt;Optimize resource utilization and manufacturing efficiency&lt;/li&gt;&#xA;&lt;li&gt;Generate detailed analytics for informed decision-making&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modules&lt;/strong&gt;: Production, Inventory, Finance, HR, Quality, Sales&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: CAD systems, cutting machines, automated equipment&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Compliance&lt;/strong&gt;: ISO, WRAP, BSCI, and other industry standards&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reporting&lt;/strong&gt;: Real-time dashboards and customizable reports&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt;: Support for multiple factories and locations&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>CRM - CRM for SME</title>
-      <link>http://localhost:3000/products/crm-sme/</link>
+      <link>http://localhost:3870/products/crm-sme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/crm-sme/</guid>
+      <guid>http://localhost:3870/products/crm-sme/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Accelerate your business growth with our CRM solution designed specifically for small and medium enterprises. Manage customer relationships, track sales opportunities, and automate marketing campaigns with our user-friendly platform.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contact Management&lt;/strong&gt;: Centralized customer database with interaction history&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sales Pipeline&lt;/strong&gt;: Visual sales tracking and opportunity management&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Marketing Automation&lt;/strong&gt;: Email campaigns and lead nurturing workflows&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Task Management&lt;/strong&gt;: Schedule follow-ups and manage team activities&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Analytics &amp;amp; Reporting&lt;/strong&gt;: Customer insights and sales performance metrics&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Increase sales conversion rates by up to 25%&lt;/li&gt;&#xA;&lt;li&gt;Improve customer retention through better relationship management&lt;/li&gt;&#xA;&lt;li&gt;Automate repetitive tasks to save time and resources&lt;/li&gt;&#xA;&lt;li&gt;Gain valuable insights into customer behavior and preferences&lt;/li&gt;&#xA;&lt;li&gt;Scale your business operations efficiently&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;: Cloud-based with mobile app access&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: Email systems, accounting software, marketing tools&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Configurable fields, workflows, and reports&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Enterprise-grade encryption and data protection&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Support&lt;/strong&gt;: 24/7 customer support and training resources&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

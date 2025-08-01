@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Threat Management on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:3000/tags/threat-management/</link>
+    <link>http://localhost:3870/tags/threat-management/</link>
     <description>Recent content in Threat Management on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:3000/tags/threat-management/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3870/tags/threat-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyber Security</title>
-      <link>http://localhost:3000/solutions/cyber-security/</link>
+      <link>http://localhost:3870/solutions/cyber-security/</link>
       <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/solutions/cyber-security/</guid>
+      <guid>http://localhost:3870/solutions/cyber-security/</guid>
       <description>&lt;h2 id=&#34;comprehensive-cybersecurity-protection&#34;&gt;Comprehensive Cybersecurity Protection&lt;/h2&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s digital-first world, cybersecurity is more critical than ever. Businesses face an ever-growing number of cyber threats, from ransomware and data breaches to phishing attacks and advanced persistent threats (APTs). At ITSthe1, we provide comprehensive cybersecurity solutions to protect your IT infrastructure, sensitive data, and business continuity.&lt;/p&gt;&#xA;&lt;p&gt;Cybersecurity threats are evolving, making it crucial for businesses to protect their digital assets. Our cybersecurity solutions ensure data protection, regulatory compliance, and proactive threat mitigation. Our approach focuses on proactive threat detection, vulnerability management, and regulatory compliance, ensuring your organization remains secure and resilient against cyberattacks.&lt;/p&gt;</description>
     </item>
   </channel>

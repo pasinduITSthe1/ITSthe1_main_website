@@ -1,64 +1,33 @@
 [build]
   publish = "public"
-  command = "hugo --minify --gc"
+  command = "hugo --minify"
 
 [build.environment]
   HUGO_VERSION = "0.148.2"
   NODE_VERSION = "18"
 
-# Build optimization
-[build.processing]
-  skip_processing = false
-[build.processing.css]
-  bundle = true
-  minify = true
-[build.processing.js]
-  bundle = true
-  minify = true
-[build.processing.html]
-  pretty_urls = true
-[build.processing.images]
-  compress = true
+# Image optimization
+[[plugins]]
+  package = "@netlify/plugin-local-install-core"
 
 # Headers for performance
 [[headers]]
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-    Vary = "Accept-Encoding"
 
 [[headers]]  
   for = "*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-    Vary = "Accept-Encoding"
 
 [[headers]]
   for = "*.css"  
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
-    Vary = "Accept-Encoding"
 
 [[headers]]
   for = "*.svg"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-    Vary = "Accept-Encoding"
-
-[[headers]]  
-  for = "*.woff2"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-    Access-Control-Allow-Origin = "*"
-
-[[headers]]
-  for = "*.webp"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-    Vary = "Accept-Encoding"
-
-[[headers]]
-  for = "*.mp4"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 

@@ -178,37 +178,3 @@ theme = 'itsthe1'
   disableJSON = false
   disableSVG = false
   disableXML = false
-  [minify.tdewolff]
-    [minify.tdewolff.css]
-      keepCSS2 = false
-      precision = 0
-    [minify.tdewolff.html]
-      keepComments = false
-      keepConditionalComments = true
-      keepDefaultAttrVals = true
-      keepDocumentTags = true
-      keepEndTags = true
-      keepQuotes = false
-      keepWhitespace = false
-    [minify.tdewolff.js]
-      keepVarNames = false
-      precision = 0
-
-# Enable asset bundling and processing
-[build]
-  writeStats = true
-
-# Caching configuration
-[caches]
-  [caches.getjson]
-    dir = ":cacheDir/:project"
-    maxAge = "10m"
-  [caches.getcsv]
-    dir = ":cacheDir/:project"
-    maxAge = "10m"
-  [caches.images]
-    dir = ":resourceDir/_gen"
-    maxAge = "720h"
-  [caches.assets]
-    dir = ":resourceDir/_gen"
-    maxAge = "720h"

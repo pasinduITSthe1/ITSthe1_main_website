@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Power Automate on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:3000/tags/power-automate/</link>
+    <link>http://localhost:3870/tags/power-automate/</link>
     <description>Recent content in Power Automate on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:3000/tags/power-automate/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3870/tags/power-automate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microsoft Business Applications</title>
-      <link>http://localhost:3000/services/microsoft-business-applications/</link>
+      <link>http://localhost:3870/services/microsoft-business-applications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/services/microsoft-business-applications/</guid>
+      <guid>http://localhost:3870/services/microsoft-business-applications/</guid>
       <description>&lt;h2 id=&#34;streamline-your-business-with-microsoft-business-applications&#34;&gt;Streamline Your Business with Microsoft Business Applications&lt;/h2&gt;&#xA;&lt;p&gt;Our Microsoft Business Applications services help organizations leverage the power of Dynamics 365 and Power Platform to optimize business processes, improve customer relationships, and drive operational efficiency.&lt;/p&gt;&#xA;&lt;h3 id=&#34;dynamics-365-solutions&#34;&gt;Dynamics 365 Solutions&lt;/h3&gt;&#xA;&lt;h4 id=&#34;customer-relationship-management-crm&#34;&gt;Customer Relationship Management (CRM)&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamics 365 Sales&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lead and opportunity management&lt;/li&gt;&#xA;&lt;li&gt;Sales process automation&lt;/li&gt;&#xA;&lt;li&gt;Customer relationship tracking&lt;/li&gt;&#xA;&lt;li&gt;Sales analytics and forecasting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamics 365 Customer Service&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Case management and resolution&lt;/li&gt;&#xA;&lt;li&gt;Knowledge base and self-service portals&lt;/li&gt;&#xA;&lt;li&gt;Omnichannel customer support&lt;/li&gt;&#xA;&lt;li&gt;Service analytics and reporting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamics 365 Marketing&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

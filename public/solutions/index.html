@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=3000&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=3870&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,43 +13,29 @@
     
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:3000/solutions/">
+    <meta property="og:url" content="http://localhost:3870/solutions/">
     <meta property="og:title" content="Our Solutions | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="og:description" content="Explore ITSthe1&#39;s complete range of solutions including Digital Transformation, Cyber Security, Cloud Services, Web &amp; Mobile Development, and specialized Hospitality and IPTV solutions.">
     
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:3000/solutions/">
+    <meta property="twitter:url" content="http://localhost:3870/solutions/">
     <meta property="twitter:title" content="Our Solutions | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="twitter:description" content="Explore ITSthe1&#39;s complete range of solutions including Digital Transformation, Cyber Security, Cloud Services, Web &amp; Mobile Development, and specialized Hospitality and IPTV solutions.">
     
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
-    <link rel="manifest" href="/site.webmanifest">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     
-        <link rel="stylesheet" href="/css/style.css">
-    
-    
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-    
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="/css/style.css">
     
     
     <style>
@@ -68,16 +54,12 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item logo" href="/">
-                    
-                    
                     <img src="/images/logo.svg" 
                          alt="ITSthe1 - IT &amp; Telecom Solutions" 
                          class="logo-img"
                          width="150"
                          height="40"
-                         loading="eager"
-                         decoding="async">
-                    
+                         loading="eager">
                 </a>
                 
                 <button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
@@ -525,16 +507,12 @@
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">
-                    
-                    
                     <img src="/images/logo.svg" 
                          alt="ITSthe1 - IT &amp; Telecom Solutions" 
                          class="footer-logo-img"
                          width="150"
                          height="40"
-                         loading="lazy"
-                         decoding="async">
-                    
+                         loading="lazy">
                 </div>
                 <p class="footer-description">
                     Leading provider of IT and Telecom solutions, specializing in Digital Transformation, Cyber Security, Cloud Services, Web &amp; Mobile applications, and Hospitality Solutions.
@@ -628,71 +606,11 @@
 
     
     
+    <script src="/js/main.js"></script>
     
     
-        <script src="/js/main.js" async></script>
-    
-    
-    
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top" title="Back to top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 14L12 9L17 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
     </button>
-
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const scrollToTopBtn = document.getElementById('scrollToTop');
-            
-            if (scrollToTopBtn) {
-                
-                let ticking = false;
-                
-                function updateScrollButton() {
-                    if (window.pageYOffset > 300) {
-                        scrollToTopBtn.classList.add('visible');
-                    } else {
-                        scrollToTopBtn.classList.remove('visible');
-                    }
-                    ticking = false;
-                }
-                
-                window.addEventListener('scroll', function() {
-                    if (!ticking) {
-                        requestAnimationFrame(updateScrollButton);
-                        ticking = true;
-                    }
-                });
-                
-                
-                scrollToTopBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    
-                    if ('scrollBehavior' in document.documentElement.style) {
-                        window.scrollTo({
-                            top: 0,
-                            left: 0,
-                            behavior: 'smooth'
-                        });
-                    } else {
-                        
-                        smoothScrollToTop();
-                    }
-                });
-                
-                
-                function smoothScrollToTop() {
-                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                    if (scrollTop > 0) {
-                        window.requestAnimationFrame(smoothScrollToTop);
-                        window.scrollTo(0, scrollTop - scrollTop / 8);
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 </html>

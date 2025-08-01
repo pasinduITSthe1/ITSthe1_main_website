@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Restaurant on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:3000/tags/restaurant/</link>
+    <link>http://localhost:3870/tags/restaurant/</link>
     <description>Recent content in Restaurant on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:3000/tags/restaurant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3870/tags/restaurant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Menu - Digital Menu</title>
-      <link>http://localhost:3000/products/digital-menu/</link>
+      <link>http://localhost:3870/products/digital-menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:3000/products/digital-menu/</guid>
+      <guid>http://localhost:3870/products/digital-menu/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Revolutionize your restaurant operations with our comprehensive digital menu solution. Provide customers with an engaging, contactless dining experience while reducing operational costs and improving efficiency.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;QR Code Access&lt;/strong&gt;: Instant menu access via smartphone scanning&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Real-time Updates&lt;/strong&gt;: Modify prices, availability, and items instantly&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multi-language Support&lt;/strong&gt;: Serve international customers in their preferred language&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Visual Appeal&lt;/strong&gt;: High-resolution images and detailed descriptions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Order Integration&lt;/strong&gt;: Direct integration with POS and kitchen systems&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduce printing costs by 100%&lt;/li&gt;&#xA;&lt;li&gt;Update menus instantly across all locations&lt;/li&gt;&#xA;&lt;li&gt;Improve customer satisfaction with visual menu presentation&lt;/li&gt;&#xA;&lt;li&gt;Enable contactless dining experience&lt;/li&gt;&#xA;&lt;li&gt;Gather valuable customer insights and preferences&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-specifications&#34;&gt;Technical Specifications&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Compatibility&lt;/strong&gt;: All smartphones and tablets&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Languages&lt;/strong&gt;: Support for 50+ languages&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: POS systems, payment gateways, inventory management&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Analytics&lt;/strong&gt;: Customer behavior tracking and reporting&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Brand-specific design and layout options&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
