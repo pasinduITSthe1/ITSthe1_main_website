@@ -1567,6 +1567,10 @@ section {
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .scroll-to-top.visible {
@@ -1577,6 +1581,15 @@ section {
 .scroll-to-top:hover {
     background: var(--accent-color);
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-to-top svg {
+    transition: transform 0.2s ease;
+}
+
+.scroll-to-top:hover svg {
+    transform: translateY(-1px);
 }
 
 /* Responsive Design */

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4203&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,13 @@
     
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/services/it-support-outsourcing/">
+    <meta property="og:url" content="http://localhost:4203/services/it-support-outsourcing/">
     <meta property="og:title" content="IT Support &amp; Outsourcing | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="og:description" content="Professional IT support and outsourcing services providing 24/7 monitoring, helpdesk support, and proactive maintenance to ensure optimal system performance.">
     
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/services/it-support-outsourcing/">
+    <meta property="twitter:url" content="http://localhost:4203/services/it-support-outsourcing/">
     <meta property="twitter:title" content="IT Support &amp; Outsourcing | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="twitter:description" content="Professional IT support and outsourcing services providing 24/7 monitoring, helpdesk support, and proactive maintenance to ensure optimal system performance.">
     
@@ -576,8 +576,65 @@
     
     
     
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 14L12 9L17 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
     </button>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            if (scrollToTopBtn) {
+                
+                let ticking = false;
+                
+                function updateScrollButton() {
+                    if (window.pageYOffset > 300) {
+                        scrollToTopBtn.classList.add('visible');
+                    } else {
+                        scrollToTopBtn.classList.remove('visible');
+                    }
+                    ticking = false;
+                }
+                
+                window.addEventListener('scroll', function() {
+                    if (!ticking) {
+                        requestAnimationFrame(updateScrollButton);
+                        ticking = true;
+                    }
+                });
+                
+                
+                scrollToTopBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    
+                    if ('scrollBehavior' in document.documentElement.style) {
+                        window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        
+                        smoothScrollToTop();
+                    }
+                });
+                
+                
+                function smoothScrollToTop() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollTop > 0) {
+                        window.requestAnimationFrame(smoothScrollToTop);
+                        window.scrollTo(0, scrollTop - scrollTop / 8);
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>

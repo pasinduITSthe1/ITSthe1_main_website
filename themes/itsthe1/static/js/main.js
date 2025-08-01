@@ -80,20 +80,51 @@ ready(function() {
     const scrollToTopBtn = document.getElementById('scrollToTop');
     
     if (scrollToTopBtn) {
-        window.addEventListener('scroll', function() {
+        // Throttle scroll events for better performance
+        let ticking = false;
+        
+        function updateScrollButton() {
             if (window.pageYOffset > 300) {
                 scrollToTopBtn.classList.add('visible');
             } else {
                 scrollToTopBtn.classList.remove('visible');
             }
+            ticking = false;
+        }
+        
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateScrollButton);
+                ticking = true;
+            }
         });
         
-        scrollToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+        scrollToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Multiple fallback methods for smooth scrolling
+            if ('scrollBehavior' in document.documentElement.style) {
+                // Modern browsers support
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                // Fallback for older browsers
+                smoothScrollToTop();
+            }
         });
+        
+        // Fallback smooth scroll function
+        function smoothScrollToTop() {
+            const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            if (currentScroll > 0) {
+                window.requestAnimationFrame(smoothScrollToTop);
+                window.scrollTo(0, currentScroll - (currentScroll / 8));
+            }
+        }
     }
     
     // Initialize AOS (Animate On Scroll) if available
