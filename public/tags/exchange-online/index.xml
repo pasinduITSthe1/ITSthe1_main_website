@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exchange Online on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:9284/tags/exchange-online/</link>
+    <link>http://localhost:12767/tags/exchange-online/</link>
     <description>Recent content in Exchange Online on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:9284/tags/exchange-online/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:12767/tags/exchange-online/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microsoft 365</title>
-      <link>http://localhost:9284/services/microsoft-365/</link>
+      <link>http://localhost:12767/services/microsoft-365/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:9284/services/microsoft-365/</guid>
+      <guid>http://localhost:12767/services/microsoft-365/</guid>
       <description>&lt;h2 id=&#34;maximize-your-productivity-with-microsoft-365&#34;&gt;Maximize Your Productivity with Microsoft 365&lt;/h2&gt;&#xA;&lt;p&gt;Our Microsoft 365 services help organizations harness the full power of Microsoft&amp;rsquo;s cloud productivity platform. From initial planning and migration to ongoing optimization and support, we ensure your team gets the most out of Microsoft 365.&lt;/p&gt;&#xA;&lt;h3 id=&#34;core-services&#34;&gt;Core Services&lt;/h3&gt;&#xA;&lt;h4 id=&#34;planning--assessment&#34;&gt;Planning &amp;amp; Assessment&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Current Environment Analysis&lt;/strong&gt;: Comprehensive review of existing infrastructure&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Requirements Gathering&lt;/strong&gt;: Understanding your business needs and objectives&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Migration Planning&lt;/strong&gt;: Detailed roadmap for smooth transition to Microsoft 365&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Licensing Optimization&lt;/strong&gt;: Right-sizing your Microsoft 365 licensing needs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;implementation--migration&#34;&gt;Implementation &amp;amp; Migration&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email Migration&lt;/strong&gt;: Seamless transition from legacy email systems to Exchange Online&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data Migration&lt;/strong&gt;: Secure transfer of files and documents to SharePoint and OneDrive&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;User Provisioning&lt;/strong&gt;: Account setup and initial configuration&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Security Configuration&lt;/strong&gt;: Implementation of security policies and compliance settings&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;training--adoption&#34;&gt;Training &amp;amp; Adoption&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;End-User Training&lt;/strong&gt;: Comprehensive training programs for all Microsoft 365 applications&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Change Management&lt;/strong&gt;: Support for organizational change and adoption strategies&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Champions Program&lt;/strong&gt;: Training super-users to support their colleagues&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: Custom user guides and best practices documentation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;microsoft-365-applications&#34;&gt;Microsoft 365 Applications&lt;/h3&gt;&#xA;&lt;h4 id=&#34;communication--collaboration&#34;&gt;Communication &amp;amp; Collaboration&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Microsoft Teams&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

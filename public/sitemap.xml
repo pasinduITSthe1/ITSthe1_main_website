@@ -2,346 +2,346 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:9284/products/iptv/</loc>
+    <loc>http://localhost:12767/products/iptv/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/digital-signage/</loc>
+    <loc>http://localhost:12767/products/digital-signage/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/id-scanning/</loc>
+    <loc>http://localhost:12767/products/id-scanning/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/hospitality-app/</loc>
+    <loc>http://localhost:12767/products/hospitality-app/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/digital-menu/</loc>
+    <loc>http://localhost:12767/products/digital-menu/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/helpdesk/</loc>
+    <loc>http://localhost:12767/products/helpdesk/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/ai-helper/</loc>
+    <loc>http://localhost:12767/products/ai-helper/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/erp-garment/</loc>
+    <loc>http://localhost:12767/products/erp-garment/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/crm-sme/</loc>
+    <loc>http://localhost:12767/products/crm-sme/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/content-delivery/</loc>
+    <loc>http://localhost:12767/tags/content-delivery/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/iptv/</loc>
+    <loc>http://localhost:12767/tags/iptv/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/solutions/iptv-ott/</loc>
+    <loc>http://localhost:12767/solutions/iptv-ott/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/middleware/</loc>
+    <loc>http://localhost:12767/tags/middleware/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/monetization/</loc>
+    <loc>http://localhost:12767/tags/monetization/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/multi-device/</loc>
+    <loc>http://localhost:12767/tags/multi-device/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/ott/</loc>
+    <loc>http://localhost:12767/tags/ott/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/streaming/</loc>
+    <loc>http://localhost:12767/tags/streaming/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/</loc>
+    <loc>http://localhost:12767/tags/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/digital-signage/</loc>
+    <loc>http://localhost:12767/tags/digital-signage/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/guest-management/</loc>
+    <loc>http://localhost:12767/tags/guest-management/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/guest-services/</loc>
+    <loc>http://localhost:12767/tags/guest-services/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/hospitality/</loc>
+    <loc>http://localhost:12767/tags/hospitality/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/solutions/hospitality/</loc>
+    <loc>http://localhost:12767/solutions/hospitality/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/hotel-tech/</loc>
+    <loc>http://localhost:12767/tags/hotel-tech/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/smart-hotels/</loc>
+    <loc>http://localhost:12767/tags/smart-hotels/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/custom-applications/</loc>
+    <loc>http://localhost:12767/tags/custom-applications/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/e-commerce/</loc>
+    <loc>http://localhost:12767/tags/e-commerce/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/mobile-apps/</loc>
+    <loc>http://localhost:12767/tags/mobile-apps/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/progressive-web-apps/</loc>
+    <loc>http://localhost:12767/tags/progressive-web-apps/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/ui/ux-design/</loc>
+    <loc>http://localhost:12767/tags/ui/ux-design/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/solutions/web-mobile/</loc>
+    <loc>http://localhost:12767/solutions/web-mobile/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/web-development/</loc>
+    <loc>http://localhost:12767/tags/web-development/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/aws/</loc>
+    <loc>http://localhost:12767/tags/aws/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/azure/</loc>
+    <loc>http://localhost:12767/tags/azure/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/solutions/cloud-services/</loc>
+    <loc>http://localhost:12767/solutions/cloud-services/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/cloud-migration/</loc>
+    <loc>http://localhost:12767/tags/cloud-migration/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/cloud-security/</loc>
+    <loc>http://localhost:12767/tags/cloud-security/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/cloud-services/</loc>
+    <loc>http://localhost:12767/tags/cloud-services/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/hybrid-cloud/</loc>
+    <loc>http://localhost:12767/tags/hybrid-cloud/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/multi-cloud/</loc>
+    <loc>http://localhost:12767/tags/multi-cloud/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/solutions/cyber-security/</loc>
+    <loc>http://localhost:12767/solutions/cyber-security/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/cyber-security/</loc>
+    <loc>http://localhost:12767/tags/cyber-security/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/security-consulting/</loc>
+    <loc>http://localhost:12767/tags/security-consulting/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/threat-management/</loc>
+    <loc>http://localhost:12767/tags/threat-management/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/vulnerability-assessment/</loc>
+    <loc>http://localhost:12767/tags/vulnerability-assessment/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/about/</loc>
+    <loc>http://localhost:12767/about/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/automation/</loc>
+    <loc>http://localhost:12767/tags/automation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/contact/</loc>
+    <loc>http://localhost:12767/contact/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/solutions/digital-transformation/</loc>
+    <loc>http://localhost:12767/solutions/digital-transformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/digital-transformation/</loc>
+    <loc>http://localhost:12767/tags/digital-transformation/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/</loc>
+    <loc>http://localhost:12767/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/services/</loc>
+    <loc>http://localhost:12767/services/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/solutions/</loc>
+    <loc>http://localhost:12767/solutions/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/process-optimization/</loc>
+    <loc>http://localhost:12767/tags/process-optimization/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/technology-consulting/</loc>
+    <loc>http://localhost:12767/tags/technology-consulting/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9284/tags/24/7-support/</loc>
+    <loc>http://localhost:12767/tags/24/7-support/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/artificial-intelligence/</loc>
+    <loc>http://localhost:12767/tags/artificial-intelligence/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/azure-devops/</loc>
+    <loc>http://localhost:12767/tags/azure-devops/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/azure-management/</loc>
+    <loc>http://localhost:12767/tags/azure-management/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/azure-migration/</loc>
+    <loc>http://localhost:12767/tags/azure-migration/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/business-alignment/</loc>
+    <loc>http://localhost:12767/tags/business-alignment/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/business-applications/</loc>
+    <loc>http://localhost:12767/tags/business-applications/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/business-modernization/</loc>
+    <loc>http://localhost:12767/tags/business-modernization/</loc>
   </url><url>
-    <loc>http://localhost:9284/categories/</loc>
+    <loc>http://localhost:12767/categories/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/cloud-hybrid/</loc>
+    <loc>http://localhost:12767/services/cloud-hybrid/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/cloud-infrastructure/</loc>
+    <loc>http://localhost:12767/tags/cloud-infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/cloud-productivity/</loc>
+    <loc>http://localhost:12767/tags/cloud-productivity/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/cloud-strategy/</loc>
+    <loc>http://localhost:12767/tags/cloud-strategy/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/co-managed-it/</loc>
+    <loc>http://localhost:12767/tags/co-managed-it/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/co-managed-it-services/</loc>
+    <loc>http://localhost:12767/services/co-managed-it-services/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/communication/</loc>
+    <loc>http://localhost:12767/tags/communication/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/compliance/</loc>
+    <loc>http://localhost:12767/tags/compliance/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/crm/</loc>
+    <loc>http://localhost:12767/tags/crm/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/customer-management/</loc>
+    <loc>http://localhost:12767/tags/customer-management/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/customer-service/</loc>
+    <loc>http://localhost:12767/tags/customer-service/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/data-protection/</loc>
+    <loc>http://localhost:12767/tags/data-protection/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/digital-culture/</loc>
+    <loc>http://localhost:12767/tags/digital-culture/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/digital-menu/</loc>
+    <loc>http://localhost:12767/tags/digital-menu/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/digital-strategy/</loc>
+    <loc>http://localhost:12767/tags/digital-strategy/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/digital-transformation-planning/</loc>
+    <loc>http://localhost:12767/services/digital-transformation-planning/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/document-scanning/</loc>
+    <loc>http://localhost:12767/tags/document-scanning/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/enterprise/</loc>
+    <loc>http://localhost:12767/tags/enterprise/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/entertainment/</loc>
+    <loc>http://localhost:12767/tags/entertainment/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/erp/</loc>
+    <loc>http://localhost:12767/tags/erp/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/exchange-online/</loc>
+    <loc>http://localhost:12767/tags/exchange-online/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/garment-industry/</loc>
+    <loc>http://localhost:12767/tags/garment-industry/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/helpdesk/</loc>
+    <loc>http://localhost:12767/tags/helpdesk/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/hybrid-support/</loc>
+    <loc>http://localhost:12767/tags/hybrid-support/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/infrastructure/</loc>
+    <loc>http://localhost:12767/tags/infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/interactive/</loc>
+    <loc>http://localhost:12767/tags/interactive/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/interactive-display/</loc>
+    <loc>http://localhost:12767/tags/interactive-display/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-collaboration/</loc>
+    <loc>http://localhost:12767/tags/it-collaboration/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/it-consultancy/</loc>
+    <loc>http://localhost:12767/services/it-consultancy/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-consulting/</loc>
+    <loc>http://localhost:12767/tags/it-consulting/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-governance/</loc>
+    <loc>http://localhost:12767/tags/it-governance/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-partnership/</loc>
+    <loc>http://localhost:12767/tags/it-partnership/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-planning/</loc>
+    <loc>http://localhost:12767/tags/it-planning/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-security/</loc>
+    <loc>http://localhost:12767/tags/it-security/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/it-security-compliance/</loc>
+    <loc>http://localhost:12767/services/it-security-compliance/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-strategy/</loc>
+    <loc>http://localhost:12767/tags/it-strategy/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/it-strategy-development/</loc>
+    <loc>http://localhost:12767/services/it-strategy-development/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/it-support/</loc>
+    <loc>http://localhost:12767/tags/it-support/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/it-support-outsourcing/</loc>
+    <loc>http://localhost:12767/services/it-support-outsourcing/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/itsm/</loc>
+    <loc>http://localhost:12767/tags/itsm/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/m365/</loc>
+    <loc>http://localhost:12767/tags/m365/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/maintenance/</loc>
+    <loc>http://localhost:12767/tags/maintenance/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/manufacturing/</loc>
+    <loc>http://localhost:12767/tags/manufacturing/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/marketing-automation/</loc>
+    <loc>http://localhost:12767/tags/marketing-automation/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/meeting-rooms/</loc>
+    <loc>http://localhost:12767/tags/meeting-rooms/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/microsoft-365/</loc>
+    <loc>http://localhost:12767/services/microsoft-365/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/microsoft-365/</loc>
+    <loc>http://localhost:12767/tags/microsoft-365/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/microsoft-azure/</loc>
+    <loc>http://localhost:12767/services/microsoft-azure/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/microsoft-azure/</loc>
+    <loc>http://localhost:12767/tags/microsoft-azure/</loc>
   </url><url>
-    <loc>http://localhost:9284/services/microsoft-business-applications/</loc>
+    <loc>http://localhost:12767/services/microsoft-business-applications/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/microsoft-dynamics-365/</loc>
+    <loc>http://localhost:12767/tags/microsoft-dynamics-365/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/microsoft-support/</loc>
+    <loc>http://localhost:12767/tags/microsoft-support/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/microsoft-teams/</loc>
+    <loc>http://localhost:12767/tags/microsoft-teams/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/mobile-app/</loc>
+    <loc>http://localhost:12767/tags/mobile-app/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/ocr/</loc>
+    <loc>http://localhost:12767/tags/ocr/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/office-365/</loc>
+    <loc>http://localhost:12767/tags/office-365/</loc>
   </url><url>
-    <loc>http://localhost:9284/products/</loc>
+    <loc>http://localhost:12767/products/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/outsourcing/</loc>
+    <loc>http://localhost:12767/tags/outsourcing/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/power-apps/</loc>
+    <loc>http://localhost:12767/tags/power-apps/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/power-automate/</loc>
+    <loc>http://localhost:12767/tags/power-automate/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/power-bi/</loc>
+    <loc>http://localhost:12767/tags/power-bi/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/power-platform/</loc>
+    <loc>http://localhost:12767/tags/power-platform/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/process-automation/</loc>
+    <loc>http://localhost:12767/tags/process-automation/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/qr-code/</loc>
+    <loc>http://localhost:12767/tags/qr-code/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/restaurant/</loc>
+    <loc>http://localhost:12767/tags/restaurant/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/risk-management/</loc>
+    <loc>http://localhost:12767/tags/risk-management/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/sales/</loc>
+    <loc>http://localhost:12767/tags/sales/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/security/</loc>
+    <loc>http://localhost:12767/tags/security/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/sharepoint/</loc>
+    <loc>http://localhost:12767/tags/sharepoint/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/sme/</loc>
+    <loc>http://localhost:12767/tags/sme/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/staff-assistant/</loc>
+    <loc>http://localhost:12767/tags/staff-assistant/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/staff-management/</loc>
+    <loc>http://localhost:12767/tags/staff-management/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/strategic-planning/</loc>
+    <loc>http://localhost:12767/tags/strategic-planning/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/supply-chain/</loc>
+    <loc>http://localhost:12767/tags/supply-chain/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/system-monitoring/</loc>
+    <loc>http://localhost:12767/tags/system-monitoring/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/technical-support/</loc>
+    <loc>http://localhost:12767/tags/technical-support/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/technology-assessment/</loc>
+    <loc>http://localhost:12767/tags/technology-assessment/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/technology-innovation/</loc>
+    <loc>http://localhost:12767/tags/technology-innovation/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/technology-management/</loc>
+    <loc>http://localhost:12767/tags/technology-management/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/technology-roadmap/</loc>
+    <loc>http://localhost:12767/tags/technology-roadmap/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/technology-strategy/</loc>
+    <loc>http://localhost:12767/tags/technology-strategy/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/threat-detection/</loc>
+    <loc>http://localhost:12767/tags/threat-detection/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/ticketing/</loc>
+    <loc>http://localhost:12767/tags/ticketing/</loc>
   </url><url>
-    <loc>http://localhost:9284/tags/verification/</loc>
+    <loc>http://localhost:12767/tags/verification/</loc>
   </url>
 </urlset>
