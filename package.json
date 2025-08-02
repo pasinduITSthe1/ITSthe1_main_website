@@ -1,5 +1,28 @@
 {
+  "name": "itsthe1-website",
+  "version": "1.0.0",
+  "description": "ITSthe1 - IT & Telecom Solutions Website",
+  "scripts": {
+    "dev": "hugo server --buildDrafts --watch --bind 0.0.0.0 --port 1313 --config hugo.dev.toml",
+    "build": "hugo --minify --config hugo.toml",
+    "build:draft": "hugo --buildDrafts --minify --config hugo.toml",
+    "clean": "powershell -ExecutionPolicy Bypass -Command \"Remove-Item -Path public -Recurse -Force -ErrorAction SilentlyContinue\"",
+    "optimize-images": "powershell -ExecutionPolicy Bypass -File ./optimize-images.ps1",
+    "organize-images": "powershell -ExecutionPolicy Bypass -File ./organize-images.ps1",
+    "maintenance": "powershell -ExecutionPolicy Bypass -File ./maintenance.ps1",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pasinduITSthe1/ITSthe1_main_website.git"
+  },
+  "author": "ITSthe1 Solutions",
+  "license": "MIT",
   "devDependencies": {
     "sharp": "^0.34.3"
+  },
+  "engines": {
+    "hugo": ">=0.120.0",
+    "node": ">=18.0.0"
   }
 }

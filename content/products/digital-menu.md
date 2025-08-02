@@ -1,7 +1,7 @@
 ---
 title: "Menu - Digital Menu"
 subtitle: "Interactive digital menu solutions for restaurants and hospitality"
-featured_image: "/images/products2/Digital Menu.webp"
+featured_image: "/images/products/digital-menu/hero-image.webp"
 excerpt: "Transform your dining experience with our interactive digital menu system featuring real-time updates and multi-language support."
 tags: ["Digital Menu", "Restaurant", "QR Code", "Interactive"]
 weight: 50

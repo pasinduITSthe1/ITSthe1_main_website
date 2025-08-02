@@ -1,0 +1,24 @@
+# Development Configuration
+baseURL = 'http://localhost:1313'
+languageCode = 'en-us'
+title = 'ITSthe1 - IT & Telecom Solutions [DEV]'
+theme = 'itsthe1'
+
+# Enable development features
+buildDrafts = true
+buildFuture = true
+buildExpired = true
+
+# Development server settings
+[server]
+  [[server.headers]]
+    for = "/**"
+    [server.headers.values]
+      Cache-Control = "no-cache, no-store, must-revalidate"
+      Pragma = "no-cache"
+      Expires = "0"
+
+# Import production config
+imports = [
+  {path = "hugo.toml"}
+]

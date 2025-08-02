@@ -1,7 +1,7 @@
 ---
 title: "AI - AI Helper for Hospitality Staff"
 subtitle: "Intelligent AI assistant for hospitality operations"
-featured_image: "/images/products2/AI Helper.webp"
+featured_image: "/images/products/ai-helper/hero-image.webp" 
 excerpt: "Empower your hospitality staff with AI-driven assistance for guest services, operational efficiency, and personalized experiences."
 tags: ["Artificial Intelligence", "Hospitality", "Staff Assistant", "Automation"]
 weight: 70

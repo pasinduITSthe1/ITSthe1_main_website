@@ -1,28 +1,94 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"label": "Hugo: Serve Development",
-			"type": "shell",
-			"command": "hugo",
-			"args": [
-				"server",
-				"--buildDrafts",
-				"--watch",
-				"--bind",
-				"0.0.0.0",
-				"--port",
-				"1313"
-			],
-			"group": "build",
-			"isBackground": true,
-			"problemMatcher": [],
-			"presentation": {
-				"echo": true,
-				"reveal": "always",
-				"focus": false,
-				"panel": "new"
-			}
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Hugo: Serve Development",
+      "type": "shell",
+      "command": "hugo",
+      "args": [
+        "server",
+        "--buildDrafts",
+        "--watch",
+        "--bind",
+        "0.0.0.0",
+        "--port",
+        "1313",
+        "--config",
+        "hugo.dev.toml"
+      ],
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Hugo: Build Production",
+      "type": "shell",
+      "command": "hugo",
+      "args": ["--minify", "--config", "hugo.toml"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Hugo: Clean Build",
+      "type": "shell",
+      "command": "Remove-Item",
+      "args": [
+        "-Path",
+        "public",
+        "-Recurse",
+        "-Force",
+        "-ErrorAction",
+        "SilentlyContinue"
+      ],
+      "options": {
+        "shell": {
+          "executable": "powershell.exe"
+        }
+      },
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Optimize Images",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": ["-ExecutionPolicy", "Bypass", "-File", "./optimize-images.ps1"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Install Dependencies",
+      "type": "shell",
+      "command": "npm",
+      "args": ["install"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      }
+    }
+  ]
 }

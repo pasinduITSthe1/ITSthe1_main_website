@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud Infrastructure on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:12767/tags/cloud-infrastructure/</link>
+    <link>http://localhost:7420/tags/cloud-infrastructure/</link>
     <description>Recent content in Cloud Infrastructure on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:12767/tags/cloud-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:7420/tags/cloud-infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microsoft Azure</title>
-      <link>http://localhost:12767/services/microsoft-azure/</link>
+      <link>http://localhost:7420/services/microsoft-azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:12767/services/microsoft-azure/</guid>
+      <guid>http://localhost:7420/services/microsoft-azure/</guid>
       <description>&lt;h2 id=&#34;transform-your-business-with-microsoft-azure&#34;&gt;Transform Your Business with Microsoft Azure&lt;/h2&gt;&#xA;&lt;p&gt;Our Microsoft Azure services help organizations leverage the power of Microsoft&amp;rsquo;s cloud platform to drive innovation, reduce costs, and enhance scalability. From strategic planning to implementation and ongoing management, we deliver comprehensive Azure solutions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;core-azure-services&#34;&gt;Core Azure Services&lt;/h3&gt;&#xA;&lt;h4 id=&#34;cloud-strategy--planning&#34;&gt;Cloud Strategy &amp;amp; Planning&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Azure Readiness Assessment&lt;/strong&gt;: Comprehensive evaluation of your current infrastructure&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Migration Planning&lt;/strong&gt;: Detailed roadmap for moving to Azure&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cost Optimization&lt;/strong&gt;: Right-sizing and cost management strategies&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Architecture Design&lt;/strong&gt;: Scalable and secure cloud architecture planning&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;migration-services&#34;&gt;Migration Services&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lift &amp;amp; Shift Migration&lt;/strong&gt;: Direct migration of existing applications to Azure&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modernization&lt;/strong&gt;: Refactoring applications for cloud-native benefits&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data Migration&lt;/strong&gt;: Secure transfer of databases and data warehouses&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hybrid Integration&lt;/strong&gt;: Connecting on-premises systems with Azure services&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;infrastructure-management&#34;&gt;Infrastructure Management&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Virtual Machines&lt;/strong&gt;: Setup and management of Azure VMs&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Networking&lt;/strong&gt;: Virtual networks, load balancers, and connectivity solutions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Storage Solutions&lt;/strong&gt;: Blob storage, file shares, and backup services&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Database Services&lt;/strong&gt;: SQL Database, Cosmos DB, and managed database solutions&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;azure-platform-services&#34;&gt;Azure Platform Services&lt;/h3&gt;&#xA;&lt;h4 id=&#34;application-development&#34;&gt;Application Development&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Azure App Services&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
