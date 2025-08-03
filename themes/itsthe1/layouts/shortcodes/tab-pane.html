@@ -1,0 +1,4 @@
+{{ $tabId := .Get "id" }} {{ $active := .Get "active" | default false }}
+<div class="tab-pane{{ if $active }} active{{ end }}" id="{{ $tabId }}">
+  {{ .Inner | markdownify }}
+</div>

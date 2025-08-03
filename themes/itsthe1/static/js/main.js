@@ -14,6 +14,9 @@ ready(function() {
     // Set Active Navigation State
     setActiveNavigation();
     
+    // Initialize Tabs
+    initializeTabs();
+    
     // Mobile Navigation Toggle - with debouncing
     const navbarBurger = document.querySelector('.navbar-burger');
     const navbarMenu = document.querySelector('.navbar-menu');
