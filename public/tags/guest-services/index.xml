@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guest Services on ITSthe1 - IT &amp; Telecom Solutions</title>
+    <title>Guest Services on ITSthe1 - IT &amp; Telecom Solutions [DEV]</title>
     <link>http://localhost:1313/tags/guest-services/</link>
-    <description>Recent content in Guest Services on ITSthe1 - IT &amp; Telecom Solutions</description>
+    <description>Recent content in Guest Services on ITSthe1 - IT &amp; Telecom Solutions [DEV]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/guest-services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hospitality Technology</title>
+      <link>http://localhost:1313/solutions/hospitality/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solutions/hospitality/</guid>
+      <description>&lt;h2 id=&#34;hospitality-technology-enhancing-guest-experiences&#34;&gt;Hospitality Technology: Enhancing Guest Experiences&lt;/h2&gt;&#xA;&lt;p&gt;The hospitality industry relies on innovative technology to enhance guest experiences and streamline operations. Our hospitality solutions offer cutting-edge services to improve efficiency and guest satisfaction. Hospitality Technology Solutions encompass a wide range of technologies and services designed to enhance the guest experience in hotels, resorts, and other hospitality establishments.&lt;/p&gt;&#xA;&lt;p&gt;From smart hotel automation to interactive entertainment systems, we provide comprehensive technology solutions that transform the way hotels cater to their guests&amp;rsquo; needs in today&amp;rsquo;s digital age. Our solutions focus on providing convenience, personalization, efficiency, and improved communication throughout the entire guest stay.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>1.TV - IPTV for Enterprise &amp; Hospitality</title>
       <link>http://localhost:1313/products/iptv/</link>
@@ -35,13 +42,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/products/helpdesk/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.Support by ITSthe1 Solutions&lt;/strong&gt; is a centralized support ticketing and workflow management system designed for hotels, hospitals, resorts, MDUs, universities, corporate offices, and service-based enterprises. Whether used independently or &lt;strong&gt;fully integrated with our 1.TV (in-room entertainment system) and 1.Hotel (guest mobile app)&lt;/strong&gt;, it enables real-time ticket creation, SLA-based task tracking, multi-level escalation, and operational performance analytics across departments with comprehensive reporting to monitor Key Performance Indicators (KPIs).&lt;/p&gt;&#xA;&lt;p&gt;Transform your service operations with intelligent automation, seamless integrations, and data-driven insights that enhance both staff efficiency and customer satisfaction.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hospitality Technology</title>
-      <link>http://localhost:1313/solutions/hospitality/</link>
-      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/solutions/hospitality/</guid>
-      <description>&lt;h2 id=&#34;hospitality-technology-enhancing-guest-experiences&#34;&gt;Hospitality Technology: Enhancing Guest Experiences&lt;/h2&gt;&#xA;&lt;p&gt;The hospitality industry relies on innovative technology to enhance guest experiences and streamline operations. Our hospitality solutions offer cutting-edge services to improve efficiency and guest satisfaction. Hospitality Technology Solutions encompass a wide range of technologies and services designed to enhance the guest experience in hotels, resorts, and other hospitality establishments.&lt;/p&gt;&#xA;&lt;p&gt;From smart hotel automation to interactive entertainment systems, we provide comprehensive technology solutions that transform the way hotels cater to their guests&amp;rsquo; needs in today&amp;rsquo;s digital age. Our solutions focus on providing convenience, personalization, efficiency, and improved communication throughout the entire guest stay.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

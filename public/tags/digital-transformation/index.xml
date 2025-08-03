@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Digital Transformation on ITSthe1 - IT &amp; Telecom Solutions</title>
+    <title>Digital Transformation on ITSthe1 - IT &amp; Telecom Solutions [DEV]</title>
     <link>http://localhost:1313/tags/digital-transformation/</link>
-    <description>Recent content in Digital Transformation on ITSthe1 - IT &amp; Telecom Solutions</description>
+    <description>Recent content in Digital Transformation on ITSthe1 - IT &amp; Telecom Solutions [DEV]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/digital-transformation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Transformation</title>
+      <link>http://localhost:1313/solutions/digital-transformation/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solutions/digital-transformation/</guid>
+      <description>&lt;h2 id=&#34;accelerate-your-digital-journey&#34;&gt;Accelerate Your Digital Journey&lt;/h2&gt;&#xA;&lt;p&gt;Digital transformation is essential for businesses looking to modernize operations, enhance customer experiences, and drive efficiency through technology. ITSthe1 is a leading expert in driving Digital Transformation, helping businesses harness the power of cutting-edge technologies to elevate their operations and stay ahead of the competition.&lt;/p&gt;&#xA;&lt;p&gt;Our solutions focus on leveraging AI, automation, cloud computing, and data analytics to streamline business processes and improve decision-making. With ITSthe1&amp;rsquo;s expertise, businesses can unlock new opportunities and optimize their processes through innovative digital solutions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>1.TV - IPTV for Enterprise &amp; Hospitality</title>
       <link>http://localhost:1313/products/iptv/</link>
@@ -28,13 +35,6 @@
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/solutions/it-consultancy/</guid>
       <description>&lt;h2 id=&#34;it-consultancy-unlocking-your-digital-potential&#34;&gt;IT Consultancy: Unlocking Your Digital Potential&lt;/h2&gt;&#xA;&lt;h3 id=&#34;strategic-it-guidance-for-business-excellence&#34;&gt;Strategic IT Guidance for Business Excellence&lt;/h3&gt;&#xA;&lt;p&gt;At ITSthe1, we understand that navigating the complex world of Information Technology (IT) can be challenging. That&amp;rsquo;s why we offer comprehensive IT consultancy services to guide your organization towards digital excellence.&lt;/p&gt;&#xA;&lt;p&gt;Our IT consultancy approach combines deep technical expertise with business acumen, ensuring that technology strategies align with business objectives and deliver measurable value. We work as trusted advisors, providing strategic guidance throughout your digital transformation journey.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Digital Transformation</title>
-      <link>http://localhost:1313/solutions/digital-transformation/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/solutions/digital-transformation/</guid>
-      <description>&lt;h2 id=&#34;accelerate-your-digital-journey&#34;&gt;Accelerate Your Digital Journey&lt;/h2&gt;&#xA;&lt;p&gt;Digital transformation is essential for businesses looking to modernize operations, enhance customer experiences, and drive efficiency through technology. ITSthe1 is a leading expert in driving Digital Transformation, helping businesses harness the power of cutting-edge technologies to elevate their operations and stay ahead of the competition.&lt;/p&gt;&#xA;&lt;p&gt;Our solutions focus on leveraging AI, automation, cloud computing, and data analytics to streamline business processes and improve decision-making. With ITSthe1&amp;rsquo;s expertise, businesses can unlock new opportunities and optimize their processes through innovative digital solutions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digital Transformation Planning</title>

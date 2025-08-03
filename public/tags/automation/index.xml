@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Automation on ITSthe1 - IT &amp; Telecom Solutions</title>
+    <title>Automation on ITSthe1 - IT &amp; Telecom Solutions [DEV]</title>
     <link>http://localhost:1313/tags/automation/</link>
-    <description>Recent content in Automation on ITSthe1 - IT &amp; Telecom Solutions</description>
+    <description>Recent content in Automation on ITSthe1 - IT &amp; Telecom Solutions [DEV]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Transformation</title>
+      <link>http://localhost:1313/solutions/digital-transformation/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solutions/digital-transformation/</guid>
+      <description>&lt;h2 id=&#34;accelerate-your-digital-journey&#34;&gt;Accelerate Your Digital Journey&lt;/h2&gt;&#xA;&lt;p&gt;Digital transformation is essential for businesses looking to modernize operations, enhance customer experiences, and drive efficiency through technology. ITSthe1 is a leading expert in driving Digital Transformation, helping businesses harness the power of cutting-edge technologies to elevate their operations and stay ahead of the competition.&lt;/p&gt;&#xA;&lt;p&gt;Our solutions focus on leveraging AI, automation, cloud computing, and data analytics to streamline business processes and improve decision-making. With ITSthe1&amp;rsquo;s expertise, businesses can unlock new opportunities and optimize their processes through innovative digital solutions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>1.Support - Smart Support Ticketing &amp; Workflow Automation</title>
       <link>http://localhost:1313/products/helpdesk/</link>
@@ -28,13 +35,6 @@
       <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/solutions/workflow-solutions/</guid>
       <description>&lt;h2 id=&#34;workflow-solutions-automating-business-excellence&#34;&gt;Workflow Solutions: Automating Business Excellence&lt;/h2&gt;&#xA;&lt;h3 id=&#34;streamline-operations-with-advanced-crm--erp-systems&#34;&gt;Streamline Operations with Advanced CRM &amp;amp; ERP Systems&lt;/h3&gt;&#xA;&lt;p&gt;Workflow is concerned with the automation of procedures where documents, information, or tasks are passed between participants according to defined rules to achieve, or contribute to, an overall business goal. At ITSthe1, we specialize in implementing comprehensive workflow solutions that transform how your organization operates.&lt;/p&gt;&#xA;&lt;p&gt;Our workflow solutions encompass Customer Relationship Management (CRM), Enterprise Resource Planning (ERP), and custom business process automation designed to eliminate inefficiencies, reduce manual errors, and accelerate business operations.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Digital Transformation</title>
-      <link>http://localhost:1313/solutions/digital-transformation/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/solutions/digital-transformation/</guid>
-      <description>&lt;h2 id=&#34;accelerate-your-digital-journey&#34;&gt;Accelerate Your Digital Journey&lt;/h2&gt;&#xA;&lt;p&gt;Digital transformation is essential for businesses looking to modernize operations, enhance customer experiences, and drive efficiency through technology. ITSthe1 is a leading expert in driving Digital Transformation, helping businesses harness the power of cutting-edge technologies to elevate their operations and stay ahead of the competition.&lt;/p&gt;&#xA;&lt;p&gt;Our solutions focus on leveraging AI, automation, cloud computing, and data analytics to streamline business processes and improve decision-making. With ITSthe1&amp;rsquo;s expertise, businesses can unlock new opportunities and optimize their processes through innovative digital solutions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

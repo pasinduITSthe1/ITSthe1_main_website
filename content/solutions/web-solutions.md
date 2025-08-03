@@ -3,6 +3,7 @@ title: "Web Solutions"
 subtitle: "Revolutionizing Your Business with Our Tailored Web Solutions"
 description: "Comprehensive web solutions including design, hosting, security, e-commerce, and responsive development services tailored for modern businesses."
 featured_image: "/images/solutions/Web Solutions.webp"
+weight: 2
 tags:
   [
     "web development",
@@ -37,9 +38,23 @@ At ITSthe1, we understand that deciding to launch a website for your small, medi
 
 ---
 
-## EASY DOMAIN REGISTRATION AND WEB HOSTING
+<div class="hosting-button-container" style="text-align: center; margin: 2rem 0;">
+    <a href="https://hosting.itsthe1.net/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg hosting-btn" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #FF6B35, #F39C12); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3); transition: all 0.3s ease; border: none;">
+        <i class="fas fa-server" style="margin-right: 0.5rem;"></i>
+        Easy Domain Registration & Web Hosting
+        <i class="fas fa-external-link-alt" style="margin-left: 0.5rem; font-size: 0.9rem;"></i>
+    </a>
+</div>
 
-### Leveraging Modern Web Technologies for Tailored Solutions
+<style>
+.hosting-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+    background: linear-gradient(135deg, #F39C12, #FF6B35);
+}
+</style>
+
+## LEVERAGING MODERN WEB TECHNOLOGIES FOR TAILORED SOLUTIONS
 
 At ITSthe1, we are committed to using the latest and most efficient web technologies to create your ideal web solution. Our comprehensive tech stack includes:
 

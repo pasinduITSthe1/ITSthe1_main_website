@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web Development on ITSthe1 - IT &amp; Telecom Solutions</title>
+    <title>Web Development on ITSthe1 - IT &amp; Telecom Solutions [DEV]</title>
     <link>http://localhost:1313/tags/web-development/</link>
-    <description>Recent content in Web Development on ITSthe1 - IT &amp; Telecom Solutions</description>
+    <description>Recent content in Web Development on ITSthe1 - IT &amp; Telecom Solutions [DEV]</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Web &amp; Mobile App Development</title>
-      <link>http://localhost:1313/solutions/web-mobile/</link>
-      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/solutions/web-mobile/</guid>
-      <description>&lt;h2 id=&#34;web--mobile-app-development-transforming-digital-experiences&#34;&gt;Web &amp;amp; Mobile App Development: Transforming Digital Experiences&lt;/h2&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s digital-first world, businesses need high-performing web and mobile applications to stay ahead of the competition. At ITSthe1, we specialize in custom web and mobile app development, delivering scalable, secure, and user-friendly applications that drive customer engagement and digital transformation.&lt;/p&gt;&#xA;&lt;p&gt;Businesses require high-performing web and mobile applications to enhance customer engagement and drive digital transformation. Our Web &amp;amp; Mobile App Development services provide cutting-edge solutions tailored to your business needs. Whether you&amp;rsquo;re looking for a custom business application, an e-commerce platform, or a high-performance mobile app, our expert team ensures seamless development from concept to deployment.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Web Solutions</title>
       <link>http://localhost:1313/solutions/web-solutions/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/solutions/web-solutions/</guid>
       <description>&lt;h2 id=&#34;web-solutions-a-step-by-step-roadmap-to-success&#34;&gt;Web Solutions: A Step-By-Step Roadmap To Success&lt;/h2&gt;&#xA;&lt;h3 id=&#34;revolutionizing-your-business-with-our-tailored-web-solutions&#34;&gt;Revolutionizing Your Business with Our Tailored Web Solutions&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Empowering Businesses of All Sizes with Cutting-Edge Websites&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;At ITSthe1, we understand that deciding to launch a website for your small, medium, or large enterprise is a significant step in today&amp;rsquo;s digital age. A website is your gateway to reaching a wider market, connecting with over 14 million potential customers in areas like POS, logistics, and providing round-the-clock accessibility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web &amp; Mobile App Development</title>
+      <link>http://localhost:1313/solutions/web-mobile/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solutions/web-mobile/</guid>
+      <description>&lt;h2 id=&#34;web--mobile-app-development-transforming-digital-experiences&#34;&gt;Web &amp;amp; Mobile App Development: Transforming Digital Experiences&lt;/h2&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s digital-first world, businesses need high-performing web and mobile applications to stay ahead of the competition. At ITSthe1, we specialize in custom web and mobile app development, delivering scalable, secure, and user-friendly applications that drive customer engagement and digital transformation.&lt;/p&gt;&#xA;&lt;p&gt;Businesses require high-performing web and mobile applications to enhance customer engagement and drive digital transformation. Our Web &amp;amp; Mobile App Development services provide cutting-edge solutions tailored to your business needs. Whether you&amp;rsquo;re looking for a custom business application, an e-commerce platform, or a high-performance mobile app, our expert team ensures seamless development from concept to deployment.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

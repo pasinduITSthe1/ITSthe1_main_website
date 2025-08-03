@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/solutions/iptv-ott/</loc>
+    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/solutions/digital-transformation/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/solutions/web-solutions/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/solutions/hospitality/</loc>
+    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/products/iptv/</loc>
   </url><url>
     <loc>http://localhost:1313/products/digital-signage/</loc>
@@ -24,9 +36,6 @@
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/iptv/</loc>
-    <lastmod>2024-01-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/solutions/iptv-ott/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/middleware/</loc>
@@ -63,9 +72,6 @@
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hospitality/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/solutions/hospitality/</loc>
     <lastmod>2024-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hotel-tech/</loc>
@@ -212,9 +218,6 @@
     <loc>http://localhost:1313/contact/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/solutions/digital-transformation/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -240,9 +243,6 @@
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/web-security/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/solutions/web-solutions/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/24/7-support/</loc>
