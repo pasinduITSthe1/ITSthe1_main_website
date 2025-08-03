@@ -19,7 +19,7 @@ excerpt: "Small and midsize businesses don't spend a lot of time thinking about 
 
 ## IT Consultancy: Unlocking Your Digital Potential
 
-### Strategic IT Guidance for Business Excellence  
+### Strategic IT Guidance for Business Excellence
 
 At ITSthe1, we understand that navigating the complex world of Information Technology (IT) can be challenging. That's why we offer comprehensive IT consultancy services to guide your organization towards digital excellence.
 
@@ -43,7 +43,7 @@ In today's interconnected world, the importance of cybersecurity cannot be overs
 
 ITSthe1 employs advanced threat detection technologies that continuously monitor your network and systems. We identify and respond to threats in real-time, minimizing potential damage.
 
-**2. Tailored Security Solutions** 
+**2. Tailored Security Solutions**
 
 No two organizations are alike, and neither are their cybersecurity needs. We provide tailored security solutions that address your specific vulnerabilities and risks.
 
