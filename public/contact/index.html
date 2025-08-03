@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=7420&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,13 @@
     
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:7420/contact/">
+    <meta property="og:url" content="http://localhost:1313/contact/">
     <meta property="og:title" content="Contact Us | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="og:description" content="Contact ITSthe1 for your IT and telecom solution needs. We have offices in Dubai, London, and Colombo to serve you better.">
     
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:7420/contact/">
+    <meta property="twitter:url" content="http://localhost:1313/contact/">
     <meta property="twitter:title" content="Contact Us | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="twitter:description" content="Contact ITSthe1 for your IT and telecom solution needs. We have offices in Dubai, London, and Colombo to serve you better.">
     
@@ -204,153 +204,205 @@
             <h2 id="get-in-touch">Get In Touch</h2>
 <p>Ready to transform your business with cutting-edge IT solutions? Our team of experts is here to help you navigate the complex world of technology and find the perfect solutions for your unique needs.</p>
 <div class="contact-form-section">
-    <div class="contact-grid">
-        <div class="contact-form">
-            <h3>Send us a Message</h3>
-            <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/contact/success/">
-                
-                <input type="hidden" name="form-name" value="contact" />
-                
-                
-                <div class="honeypot-field">
-                    <label>Don't fill this out: <input name="bot-field" /></label>
-                </div>
-                
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                
-                <div class="form-group">
-                    <label for="company">Company</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                
-                <div class="form-group">
-                    <label for="service">Service of Interest</label>
-                    <select id="service" name="service">
-                        <option value="">Select a service</option>
-                        <option value="digital-transformation">Digital Transformation</option>
-                        <option value="cyber-security">Cyber Security</option>
-                        <option value="cloud-services">Cloud Services</option>
-                        <option value="web-mobile">Web & Mobile Development</option>
-                        <option value="hospitality-solutions">Hospitality Solutions</option>
-                        <option value="iptv-ott">IPTV & OTT Solutions</option>
-                        <option value="ai-helper">AI Helper</option>
-                        <option value="erp-garment">ERP for Garment Industry</option>
-                        <option value="crm-sme">CRM for SME</option>
-                        <option value="digital-signage">Digital Signage & Meeting Room</option>
-                        <option value="id-scanning">ID & Passport Scanning</option>
-                        <option value="hospitality-app">Hospitality App</option>
-                        <option value="digital-menu">Digital Menu</option>
-                        <option value="helpdesk">Helpdesk Solutions</option>
-                        <option value="it-support">IT Support & Outsourcing</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="budget">Project Budget (Optional)</label>
-                    <select id="budget" name="budget">
-                        <option value="">Select budget range</option>
-                        <option value="under-10k">Under $10,000</option>
-                        <option value="10k-50k">$10,000 - $50,000</option>
-                        <option value="50k-100k">$50,000 - $100,000</option>
-                        <option value="100k-500k">$100,000 - $500,000</option>
-                        <option value="over-500k">Over $500,000</option>
-                        <option value="discuss">Prefer to discuss</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="timeline">Project Timeline (Optional)</label>
-                    <select id="timeline" name="timeline">
-                        <option value="">Select timeline</option>
-                        <option value="asap">ASAP</option>
-                        <option value="1-month">Within 1 month</option>
-                        <option value="3-months">Within 3 months</option>
-                        <option value="6-months">Within 6 months</option>
-                        <option value="planning">Just planning ahead</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, requirements, challenges you're facing, or any specific questions you have..."></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="newsletter" value="yes" />
-                        <span>I would like to receive updates about new products and services</span>
-                    </label>
-                </div>
-                
-                <button type="submit" class="btn btn-primary btn-lg">
-                    <i class="fas fa-paper-plane"></i>
-                    Send Message
-                </button>
-            </form>
-        </div>
+  <div class="contact-grid">
+    <div class="contact-form">
+      <h3>Send us a Message</h3>
+      <form
+        id="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/contact/success/"
+      >
         
-        <div class="contact-info">
-            <h3>Our Offices</h3>
-            
-            <div class="office-location">
-                <h4><i class="fas fa-map-marker-alt"></i> Dubai, UAE (Headquarters)</h4>
-                <div class="office-details">
-                    <p><strong>ITSthe1 Solutions LLC</strong></p>
-                    <p>38th Floor, The One Tower<br>
-                    Barsha Heights, Dubai<br>
-                    United Arab Emirates</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+97142352209">+971 4 235 2209</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:sales@itsthe1.com">sales@itsthe1.com</a></p>
-                </div>
-            </div>
-            
-            <div class="office-location">
-                <h4><i class="fas fa-map-marker-alt"></i> London, UK</h4>
-                <div class="office-details">
-                    <p><strong>ITSthe1 Solutions UK Ltd</strong></p>
-                    <p>71-75 Shelton Street<br>
-                    Covent Garden, London<br>
-                    WC2H 9JQ United Kingdom</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+447832152969">+44 78 321 52 969</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@itsthe1.com">info@itsthe1.com</a></p>
-                </div>
-            </div>
-            
-            <div class="office-location">
-                <h4><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</h4>
-                <div class="office-details">
-                    <p><strong>ITSthe1 Solutions Pvt Ltd.</strong></p>
-                    <p>662B, Galle Road<br>
-                    Colombo 3, Sri Lanka</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+94707333666">+94 707 333666</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:support@itsthe1.com">support@itsthe1.com</a></p>
-                </div>
-            </div>
-            
-            <div class="business-hours">
-                <h4><i class="fas fa-clock"></i> Business Hours</h4>
-                <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
-                <strong>Saturday:</strong> Closed<br>
-                <strong>Sunday:</strong> Closed</p>
-                <p><em>*Hours may vary by location. Contact specific office for details.</em></p>
-            </div>
+        <input type="hidden" name="form-name" value="contact" />
+
+        
+        <div class="honeypot-field">
+          <label>Don't fill this out: <input name="bot-field" /></label>
         </div>
+
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service of Interest</label>
+          <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="digital-transformation">
+              Digital Transformation
+            </option>
+            <option value="cyber-security">Cyber Security</option>
+            <option value="cloud-services">Cloud Services</option>
+            <option value="web-mobile">Web & Mobile Development</option>
+            <option value="hospitality-solutions">Hospitality Solutions</option>
+            <option value="iptv-ott">IPTV & OTT Solutions</option>
+            <option value="ai-helper">AI Helper</option>
+            <option value="erp-garment">ERP for Garment Industry</option>
+            <option value="crm-sme">CRM for SME</option>
+            <option value="digital-signage">
+              Digital Signage & Meeting Room
+            </option>
+            <option value="id-scanning">ID & Passport Scanning</option>
+            <option value="hospitality-app">Hospitality App</option>
+            <option value="digital-menu">Digital Menu</option>
+            <option value="helpdesk">Helpdesk Solutions</option>
+            <option value="it-support">IT Support & Outsourcing</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">Project Budget (Optional)</label>
+          <select id="budget" name="budget">
+            <option value="">Select budget range</option>
+            <option value="under-10k">Under $10,000</option>
+            <option value="10k-50k">$10,000 - $50,000</option>
+            <option value="50k-100k">$50,000 - $100,000</option>
+            <option value="100k-500k">$100,000 - $500,000</option>
+            <option value="over-500k">Over $500,000</option>
+            <option value="discuss">Prefer to discuss</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="timeline">Project Timeline (Optional)</label>
+          <select id="timeline" name="timeline">
+            <option value="">Select timeline</option>
+            <option value="asap">ASAP</option>
+            <option value="1-month">Within 1 month</option>
+            <option value="3-months">Within 3 months</option>
+            <option value="6-months">Within 6 months</option>
+            <option value="planning">Just planning ahead</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Tell us about your project, requirements, challenges you're facing, or any specific questions you have..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="newsletter" value="yes" />
+            <span
+              >I would like to receive updates about new products and
+              services</span
+            >
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">
+          <i class="fas fa-paper-plane"></i>
+          Send Message
+        </button>
+      </form>
     </div>
+
+    <div class="contact-info">
+      <h3>Our Offices</h3>
+
+      <div class="office-location">
+        <h4><i class="fas fa-map-marker-alt"></i> Dubai, UAE (Headquarters)</h4>
+        <div class="office-details">
+          <p><strong>ITSthe1 Solutions LLC</strong></p>
+          <p>
+            38th Floor, The One Tower<br />
+            Barsha Heights, Dubai<br />
+            United Arab Emirates
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+97142352209">+971 4 235 2209</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sales@itsthe1.com">sales@itsthe1.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="office-location">
+        <h4><i class="fas fa-map-marker-alt"></i> London, UK</h4>
+        <div class="office-details">
+          <p><strong>ITSthe1 Solutions UK Ltd</strong></p>
+          <p>
+            71-75 Shelton Street<br />
+            Covent Garden, London<br />
+            WC2H 9JQ United Kingdom
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+447832152969">+44 78 321 52 969</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@itsthe1.com">info@itsthe1.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="office-location">
+        <h4><i class="fas fa-map-marker-alt"></i> Colombo, Sri Lanka</h4>
+        <div class="office-details">
+          <p><strong>ITSthe1 Solutions Pvt Ltd.</strong></p>
+          <p>
+            662B, Galle Road<br />
+            Colombo 3, Sri Lanka
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+94707333666">+94 707 333666</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:support@itsthe1.com">support@itsthe1.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="business-hours">
+        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+        <p>
+          <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br />
+          <strong>Saturday:</strong> Closed<br />
+          <strong>Sunday:</strong> Closed
+        </p>
+        <p>
+          <em
+            >*Hours may vary by location. Contact specific office for
+            details.</em
+          >
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
+
 
         </div>
     </div>
