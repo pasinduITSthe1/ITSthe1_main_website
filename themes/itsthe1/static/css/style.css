@@ -1633,7 +1633,7 @@ section {
 /* Scroll to Top */
 .scroll-to-top {
   position: fixed;
-  bottom: 2rem;
+  bottom: 110px; /* Position above the chatbot button (64px height + 24px spacing + 22px margin) */
   right: 2rem;
   width: 50px;
   height: 50px;
@@ -1669,6 +1669,23 @@ section {
 
 .scroll-to-top:hover svg {
   transform: translateY(-1px);
+}
+
+/* Mobile scroll button positioning */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 120px; /* Move down - lower position for mobile */
+    right: 1.5rem; /* Ensure proper right positioning */
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 110px; /* Move down - lower position on smaller screens */
+    right: 1.5rem; /* Ensure proper right positioning */
+    width: 45px;
+    height: 45px;
+  }
 }
 
 /* Responsive Design */

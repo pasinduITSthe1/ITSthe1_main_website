@@ -1,16 +1,13 @@
-{{ define "main" }}
-{{/* Use dynamic page header partial */}}
-{{ partial "page-header.html" . }}
+{{ define "main" }} {{/* Use dynamic page header partial */}} {{ partial
+"page-header.html" . }}
 
 <div class="simple-page">
-    <div class="container">
-        <div class="simple-content">
-            <article class="main-content">
-                <div class="content">
-                    {{ .Content }}
-                </div>
-            </article>
-        </div>
+  <div class="container">
+    <div class="simple-content">
+      <article class="main-content">
+        <div class="content">{{ .Content }}</div>
+      </article>
     </div>
+  </div>
 </div>
 {{ end }}
