@@ -1,14 +1,6 @@
 {{ define "main" }}
-<div class="page-header simple-header">
-    <div class="container">
-        <div class="page-header-content">
-            <h1 class="page-title">{{ .Title }}</h1>
-            {{ if .Params.subtitle }}
-            <p class="page-subtitle">{{ .Params.subtitle }}</p>
-            {{ end }}
-        </div>
-    </div>
-</div>
+{{/* Use dynamic page header partial */}}
+{{ partial "page-header.html" . }}
 
 <div class="simple-page">
     <div class="container">

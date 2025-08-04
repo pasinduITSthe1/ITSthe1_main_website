@@ -1,101 +1,157 @@
 <footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <img src="/images/logo.svg" 
-                         alt="{{ site.Title }}" 
-                         class="footer-logo-img"
-                         width="150"
-                         height="40"
-                         loading="lazy">
-                </div>
-                <p class="footer-description">
-                    {{ site.Params.description }}
-                </p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/company/itsthe1/posts/?feedView=all" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://x.com/itsthe1" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.facebook.com/people/ITSthe1/100063473112704/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Our Solutions</h4>
-                <ul class="footer-links">
-                    <li><a href="/solutions/digital-transformation/">Digital Transformation</a></li>
-                    <li><a href="/solutions/cyber-security/">Cyber Security</a></li>
-                    <li><a href="/solutions/cloud-services/">Cloud Services</a></li>
-                    <li><a href="/solutions/web-mobile/">Web & Mobile</a></li>
-                    <li><a href="/solutions/hospitality/">Hospitality Solutions</a></li>
-                    <li><a href="/solutions/iptv-ott/">IPTV / OTT</a></li>
-                    <li><a href="/solutions/microsoft/">Microsoft</a></li>
-                    <li><a href="/solutions/network-services/">Network Services</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Our Services</h4>
-                <ul class="footer-links">
-                    <li><a href="/services/it-support-outsourcing/">IT Support & Outsourcing</a></li>
-                    <li><a href="/services/co-managed-it-services/">Co-managed IT Services</a></li>
-                    <li><a href="/services/it-security-compliance/">IT Security & Compliance</a></li>
-                    <li><a href="/services/microsoft-365/">Microsoft 365</a></li>
-                    <li><a href="/services/microsoft-azure/">Microsoft Azure</a></li>
-                    <li><a href="/services/microsoft-business-applications/">Microsoft Business Applications</a></li>
-                    <li><a href="/services/cloud-hybrid/">Cloud & Hybrid</a></li>
-                    <li><a href="/services/it-consultancy/">IT Consultancy</a></li>
-                    <li><a href="/services/it-strategy-development/">IT Strategy Development</a></li>
-                    <li><a href="/services/digital-transformation-planning/">Digital Transformation Planning</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Contact Info</h4>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            ITSthe1 Solutions LLC<br>
-                            38th Floor, The One Tower<br>
-                            Barsha Heights, Dubai<br>
-                            United Arab Emirates
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img
+            src="/images/logo.svg"
+            alt="{{ site.Title }}"
+            class="footer-logo-img"
+            width="150"
+            height="40"
+            loading="lazy"
+          />
         </div>
-        
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p>&copy; {{ now.Year }} ITSthe1 Solutions LLC. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <span class="footer-link-disabled">Privacy Policy</span>
-                    <span class="footer-link-disabled">Terms & Conditions</span>
-                    <span class="footer-link-disabled">Cookies</span>
-                </div>
-            </div>
+        <p class="footer-description">{{ site.Params.description }}</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/company/itsthe1/posts/?feedView=all"
+            class="social-link"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://x.com/itsthe1"
+            class="social-link"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/people/ITSthe1/100063473112704/"
+            class="social-link"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            class="social-link"
+            aria-label="Instagram"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Our Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="/solutions/iptv-ott/">IPTV & OTT Solutions</a></li>
+          <li>
+            <a href="/solutions/digital-transformation/"
+              >Digital Transformation</a
+            >
+          </li>
+          <li><a href="/solutions/web-solutions/">Web Solutions</a></li>
+          <li><a href="/solutions/hospitality/">Hospitality Technology</a></li>
+          <li><a href="/solutions/cyber-security/">Cyber Security</a></li>
+          <li><a href="/solutions/cloud-services/">Cloud Services</a></li>
+          <li><a href="/solutions/web-mobile/">Web & Mobile Development</a></li>
+          <li><a href="/solutions/it-infrastructure/">IT Infrastructure</a></li>
+          <li><a href="/solutions/it-consultancy/">IT Consultancy</a></li>
+          <li><a href="/solutions/network-solutions/">Network Solutions</a></li>
+          <li>
+            <a href="/solutions/workflow-solutions/">Workflow Solutions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li>
+            <a href="/services/it-support-outsourcing/"
+              >IT Support & Outsourcing</a
+            >
+          </li>
+          <li>
+            <a href="/services/co-managed-it-services/"
+              >Co-managed IT Services</a
+            >
+          </li>
+          <li>
+            <a href="/services/it-security-compliance/"
+              >IT Security & Compliance</a
+            >
+          </li>
+          <li><a href="/services/microsoft-365/">Microsoft 365</a></li>
+          <li><a href="/services/microsoft-azure/">Microsoft Azure</a></li>
+          <li>
+            <a href="/services/microsoft-business-applications/"
+              >Microsoft Business Applications</a
+            >
+          </li>
+          <li><a href="/services/cloud-hybrid/">Cloud & Hybrid</a></li>
+          <li><a href="/services/it-consultancy/">IT Consultancy</a></li>
+          <li>
+            <a href="/services/it-strategy-development/"
+              >IT Strategy Development</a
+            >
+          </li>
+          <li>
+            <a href="/services/digital-transformation-planning/"
+              >Digital Transformation Planning</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              ITSthe1 Solutions LLC<br />
+              38th Floor, The One Tower<br />
+              Barsha Heights, Dubai<br />
+              United Arab Emirates
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <a href="tel:{{ site.Params.phone }}">{{ site.Params.phone }}</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <a href="mailto:{{ site.Params.email }}"
+                >{{ site.Params.email }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; {{ now.Year }} ITSthe1 Solutions LLC. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <span class="footer-link-disabled">Privacy Policy</span>
+          <span class="footer-link-disabled">Terms & Conditions</span>
+          <span class="footer-link-disabled">Cookies</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

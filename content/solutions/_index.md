@@ -1,6 +1,6 @@
 ---
 title: "Our Solutions"
-subtitle: "Comprehensive IT & Telecom solutions tailored for modern businesses"
+subtitle: "Comprehensive IT & Telecom solutions for modern businesses"
 description: "Explore ITSthe1's complete range of solutions including Digital Transformation, Cyber Security, Cloud Services, Web & Mobile Development, and specialized Hospitality and IPTV solutions."
 date: 2024-01-01
 draft: false

@@ -1,0 +1,59 @@
+{{/* Dynamic Page Header Partial */}}
+{{ $headerClass := "page-header" }}
+{{ if .Params.headerClass }}
+    {{ $headerClass = printf "page-header %s" .Params.headerClass }}
+{{ else if eq .Section "contact" }}
+    {{ $headerClass = "page-header contact-header" }}
+{{ else if eq .Section "products" }}
+    {{ $headerClass = "page-header products-header" }}
+{{ else if eq .Section "services" }}
+    {{ $headerClass = "page-header services-header" }}
+{{ else if eq .Section "solutions" }}
+    {{ $headerClass = "page-header solutions-header" }}
+{{ else if eq .Section "about" }}
+    {{ $headerClass = "page-header about-header" }}
+{{ end }}
+
+<div class="{{ $headerClass }}">
+    <div class="container">
+        <div class="page-header-content">
+            <h1 class="page-title">{{ .Title }}</h1>
+            
+            {{/* Handle subtitle - check for params first, then content for list pages */}}
+            {{ if .Params.subtitle }}
+                <p class="page-subtitle">{{ .Params.subtitle }}</p>
+            {{ else if and .Content (eq .Kind "section") }}
+                <div class="page-description">{{ .Content }}</div>
+            {{ else if eq .Section "products" }}
+                <p class="page-subtitle">Innovative solutions designed to transform your business</p>
+            {{ else if eq .Section "services" }}
+                <p class="page-subtitle">Professional IT services and support tailored for your business needs</p>
+            {{ else if eq .Section "solutions" }}
+                <p class="page-subtitle">Comprehensive solutions to drive your digital transformation</p>
+            {{ end }}
+            
+            <!-- {{/* Breadcrumb navigation - hide for contact, home, about pages, and main section pages */}} -->
+            {{ if and (ne .Title "Contact Us") (ne .Title "About ITSthe1") (ne .Kind "home") (ne .Kind "section") (not .Params.hideBreadcrumb) }}
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="{{ "/" | relURL }}">Home</a></li>
+                    {{ range .Ancestors.Reverse }}
+                        {{ if not (eq .Kind "home") }}
+                            {{ $title := .Title }}
+                            {{ if eq .Section "products" }}
+                                {{ $title = "Our Products" }}
+                            {{ else if eq .Section "services" }}
+                                {{ $title = "Our Services" }}
+                            {{ else if eq .Section "solutions" }}
+                                {{ $title = "Our Solutions" }}
+                            {{ end }}
+                            <li><a href="{{ .RelPermalink }}">{{ $title }}</a></li>
+                        {{ end }}
+                    {{ end }}
+                    <li class="is-active"><span>{{ .Title }}</span></li>
+                </ul>
+            </nav>
+            {{ end }}
+        </div>
+    </div>
+</div>

@@ -1,19 +1,6 @@
 {{ define "main" }}
-<!-- Enhanced Page Header -->
-<div class="page-header">
-    <div class="container">
-        <div class="page-header-content">
-            <h1 class="page-title">{{ .Title }}</h1>
-            {{ if .Params.subtitle }}
-            <p class="page-subtitle">{{ .Params.subtitle }}</p>
-            {{ else if .Content }}
-            <div class="page-description">{{ .Content }}</div>
-            {{ else }}
-            <p class="page-subtitle">Discover our innovative solutions designed to transform your business</p>
-            {{ end }}
-        </div>
-    </div>
-</div>
+{{/* Use dynamic page header partial */}}
+{{ partial "page-header.html" . }}
 
 <!-- Main Content -->
 <div class="page-content">

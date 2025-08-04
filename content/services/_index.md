@@ -1,6 +1,6 @@
 ---
 title: "Our Services"
-subtitle: "Professional IT services and support tailored for your business needs"
+subtitle: "Professional IT services and support for your business"
 description: "Discover ITSthe1's comprehensive range of professional IT services including support, managed services, security, consulting, and Microsoft solutions designed to optimize your business operations."
 date: 2024-01-01
 draft: false

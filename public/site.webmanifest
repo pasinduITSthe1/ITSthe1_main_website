@@ -1,22 +1,22 @@
 {
-    "name": "ITSthe1 Solutions",
-    "short_name": "ITSthe1",
-    "description": "Leading provider of IT and Telecom solutions, specializing in Digital Transformation, Cyber Security, Cloud Services, Web & Mobile applications, and Hospitality Solutions.",
-    "icons": [
-        {
-            "src": "/favicon-16x16.png",
-            "sizes": "16x16",
-            "type": "image/png"
-        },
-        {
-            "src": "/favicon-32x32.png",
-            "sizes": "32x32",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#FF6B35",
-    "background_color": "#FFFFFF",
-    "display": "standalone",
-    "start_url": "/",
-    "scope": "/"
+  "name": "ITSthe1 Solutions",
+  "short_name": "ITSthe1",
+  "description": "Leading provider of IT and Telecom solutions, specializing in Digital Transformation, Cyber Security, Cloud Services, Web & Mobile applications, and Hospitality Solutions.",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FF6B35",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
 }

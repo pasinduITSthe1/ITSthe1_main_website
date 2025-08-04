@@ -1,13 +1,10 @@
 {{ define "main" }}
-<!-- Enhanced Page Header -->
-<div class="page-header about-header">
+{{/* Use dynamic page header partial */}}
+{{ partial "page-header.html" . }}
+
+<!-- About specific badge overlay -->
+<div class="about-badge-section">
     <div class="container">
-        <div class="page-header-content">
-            <h1 class="page-title">{{ .Title }}</h1>
-            {{ if .Params.subtitle }}
-            <p class="page-subtitle">{{ .Params.subtitle }}</p>
-            {{ end }}
-        </div>
         <div class="header-badge-container">
             <span class="hero-badge">Established 1999</span>
         </div>

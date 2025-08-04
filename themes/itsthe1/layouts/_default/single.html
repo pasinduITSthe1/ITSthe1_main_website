@@ -1,35 +1,6 @@
 {{ define "main" }}
-<div class="page-header">
-    <div class="container">
-        <div class="page-header-content">
-            <h1 class="page-title">{{ .Title }}</h1>
-            {{ if .Params.subtitle }}
-            <p class="page-subtitle">{{ .Params.subtitle }}</p>
-            {{ end }}
-            
-            <!-- Breadcrumb -->
-            <nav class="breadcrumb" aria-label="breadcrumbs">
-                <ul>
-                    <li><a href="{{ "/" | relURL }}">Home</a></li>
-                    {{ range .Ancestors.Reverse }}
-                    {{ if not (eq .Kind "home") }}
-                    {{ $title := .Title }}
-                    {{ if eq .Section "products" }}
-                        {{ $title = "Our Products" }}
-                    {{ else if eq .Section "services" }}
-                        {{ $title = "Our Services" }}
-                    {{ else if eq .Section "solutions" }}
-                        {{ $title = "Our Solutions" }}
-                    {{ end }}
-                    <li><a href="{{ .RelPermalink }}">{{ $title }}</a></li>
-                    {{ end }}
-                    {{ end }}
-                    <li class="is-active"><span>{{ .Title }}</span></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
+{{/* Use dynamic page header partial */}}
+{{ partial "page-header.html" . }}
 
 <div class="page-content">
     <div class="container">
