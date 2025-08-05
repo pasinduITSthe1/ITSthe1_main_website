@@ -9,7 +9,7 @@
 
 The official corporate website for **ITSthe1 Solutions LLC**, a leading provider of IT and Telecom solutions specializing in Digital Transformation, Cyber Security, Cloud Services, Web & Mobile applications, and Hospitality Solutions.
 
-**🌐 Live Website:** [https://www.itsthe1.com](https://www.itsthe1.netlify.app)
+**🌐 Live Website:** [https://www.itsthe1.netlify.app](https://www.itsthe1.netlify.app)
 
 ## 🚀 Features
 
@@ -264,5 +264,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 _Transforming businesses through innovative IT and Telecom solutions_
 
 <p align="center"><strong>Developed by Pasindu Dilshan ❤️</strong></p>
+
 
 
