@@ -2726,7 +2726,7 @@ section.stats-section {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   /* Better spacing for mobile stats */
   .stat-item {
     min-height: 70px;

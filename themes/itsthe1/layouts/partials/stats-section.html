@@ -1,46 +1,17 @@
-{{/* Universal Stats Section Partial */}}
-{{ $stats := false }}
-{{ $statsConfig := dict }}
-
-{{/* Check for stats in different contexts */}}
-{{ if .Params.stats }}
-  {{ $stats = .Params.stats }}
-{{ else if eq .Section "products" }}
-  {{ $statsConfig = dict 
-    "number" (len .Pages) 
-    "label" "Products" 
-  }}
-  {{ $stats = slice 
-    $statsConfig
-    (dict "number" "100+" "label" "Happy Clients")
-    (dict "number" "24/7" "label" "Support")
-    (dict "number" "99.9%" "label" "Uptime")
-  }}
-{{ else if eq .Section "solutions" }}
-  {{ $statsConfig = dict 
-    "number" (len .Pages) 
-    "label" "Solutions" 
-  }}
-  {{ $stats = slice 
-    $statsConfig
-    (dict "number" "15+" "label" "Years Experience")
-    (dict "number" "200+" "label" "Projects Delivered")
-    (dict "number" "50+" "label" "Enterprise Clients")
-  }}
-{{ else if eq .Section "services" }}
-  {{ $statsConfig = dict 
-    "number" (len .Pages) 
-    "label" "Services" 
-  }}
-  {{ $stats = slice 
-    $statsConfig
-    (dict "number" "750+" "label" "Clients Served")
-    (dict "number" "24/7" "label" "Support Available")
-    (dict "number" "99.9%" "label" "Service Uptime")
-  }}
-{{ end }}
-
-{{ if $stats }}
+{{/* Universal Stats Section Partial */}} {{ $stats := false }} {{ $statsConfig
+:= dict }} {{/* Check for stats in different contexts */}} {{ if .Params.stats
+}} {{ $stats = .Params.stats }} {{ else if eq .Section "products" }} {{
+$statsConfig = dict "number" (len .Pages) "label" "Products" }} {{ $stats =
+slice $statsConfig (dict "number" "100+" "label" "Happy Clients") (dict "number"
+"24/7" "label" "Support") (dict "number" "99.9%" "label" "Uptime") }} {{ else if
+eq .Section "solutions" }} {{ $statsConfig = dict "number" (len .Pages) "label"
+"Solutions" }} {{ $stats = slice $statsConfig (dict "number" "15+" "label"
+"Years Experience") (dict "number" "200+" "label" "Projects Delivered") (dict
+"number" "50+" "label" "Enterprise Clients") }} {{ else if eq .Section
+"services" }} {{ $statsConfig = dict "number" (len .Pages) "label" "Services" }}
+{{ $stats = slice $statsConfig (dict "number" "750+" "label" "Clients Served")
+(dict "number" "24/7" "label" "Support Available") (dict "number" "99.9%"
+"label" "Service Uptime") }} {{ end }} {{ if $stats }}
 <div class="stats-section">
   <div class="container">
     <div class="products-stats">
