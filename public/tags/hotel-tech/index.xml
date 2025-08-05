@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hotel-Tech on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:1313/tags/hotel-tech/</link>
+    <link>http://localhost:12435/tags/hotel-tech/</link>
     <description>Recent content in Hotel-Tech on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hotel-tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:12435/tags/hotel-tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hospitality Technology</title>
-      <link>http://localhost:1313/solutions/hospitality/</link>
+      <link>http://localhost:12435/solutions/hospitality/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/solutions/hospitality/</guid>
+      <guid>http://localhost:12435/solutions/hospitality/</guid>
       <description>&lt;h2 id=&#34;hospitality-technology-enhancing-guest-experiences&#34;&gt;Hospitality Technology: Enhancing Guest Experiences&lt;/h2&gt;&#xA;&lt;p&gt;The hospitality industry relies on innovative technology to enhance guest experiences and streamline operations. Our hospitality solutions offer cutting-edge services to improve efficiency and guest satisfaction. Hospitality Technology Solutions encompass a wide range of technologies and services designed to enhance the guest experience in hotels, resorts, and other hospitality establishments.&lt;/p&gt;&#xA;&lt;p&gt;From smart hotel automation to interactive entertainment systems, we provide comprehensive technology solutions that transform the way hotels cater to their guests&amp;rsquo; needs in today&amp;rsquo;s digital age. Our solutions focus on providing convenience, personalization, efficiency, and improved communication throughout the entire guest stay.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1.TV - IPTV for Enterprise &amp; Hospitality</title>
-      <link>http://localhost:1313/products/iptv/</link>
+      <link>http://localhost:12435/products/iptv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/iptv/</guid>
+      <guid>http://localhost:12435/products/iptv/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Introducing &lt;strong&gt;1.TV by ITSthe1 Solutions&lt;/strong&gt;—a comprehensive IPTV platform tailored for the hospitality, healthcare, education, maritime, and multi-dwelling unit (MDU) sectors. Designed to enhance guest and resident experiences while unlocking new revenue streams, 1.TV seamlessly integrates entertainment, information, and interactive services into a unified interface.&lt;/p&gt;&#xA;&lt;p&gt;1.TV is an enterprise-grade IPTV middleware platform that transforms ordinary TVs into interactive digital experience hubs, delivering much more than entertainment—it enhances engagement, drives upselling, and strengthens your brand identity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>1.Hotel - Guest Engagement &amp; Experience Platform</title>
-      <link>http://localhost:1313/products/hospitality-app/</link>
+      <link>http://localhost:12435/products/hospitality-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/hospitality-app/</guid>
+      <guid>http://localhost:12435/products/hospitality-app/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.Hotel by ITSthe1 Solutions&lt;/strong&gt; is a guest-facing application designed to elevate the hospitality experience across hotels, hospitals, resorts, and serviced apartments. Delivered as a &lt;strong&gt;WebApp or native mobile app (iOS &amp;amp; Android)&lt;/strong&gt;, it enables real-time guest interaction, service automation, and property engagement.&lt;/p&gt;&#xA;&lt;p&gt;The solution is &lt;strong&gt;fully integrated with our 1.TV platform&lt;/strong&gt;, using a shared backend system to deliver consistent content across TV and mobile. It also works seamlessly with &lt;strong&gt;1.Support (1.SUP)&lt;/strong&gt;, our staff-facing app, ensuring every guest request is actioned through an automated support ticket workflow.&lt;/p&gt;</description>
     </item>
   </channel>

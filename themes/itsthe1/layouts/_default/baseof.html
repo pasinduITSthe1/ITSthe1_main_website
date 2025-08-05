@@ -63,6 +63,9 @@
     {{ partial "footer.html" . }}
     
     <!-- JavaScript -->
+    <!-- FormSubmit for contact form -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="{{ "/js/formsubmit.js" | relURL }}"></script>
     <script src="{{ "/js/main.js" | relURL }}"></script>
     <script src="{{ "/js/tabs.js" | relURL }}"></script>
     <script src="{{ "/js/chatbot-config.js" | relURL }}"></script>

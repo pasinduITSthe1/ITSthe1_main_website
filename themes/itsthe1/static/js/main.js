@@ -1,4 +1,4 @@
-// Main JavaScript for ITSthe1 Website - Optimized
+﻿// Main JavaScript for ITSthe1 Website - Optimized
 
 // Use more efficient DOM ready function
 function ready(fn) {

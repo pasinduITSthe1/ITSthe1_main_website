@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Verification on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:1313/tags/verification/</link>
+    <link>http://localhost:12435/tags/verification/</link>
     <description>Recent content in Verification on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/verification/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:12435/tags/verification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.ID - Advanced ID &amp; Passport Scanning Solution</title>
-      <link>http://localhost:1313/products/id-scanning/</link>
+      <link>http://localhost:12435/products/id-scanning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/products/id-scanning/</guid>
+      <guid>http://localhost:12435/products/id-scanning/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.ID by ITSthe1 Solutions&lt;/strong&gt; is a cutting-edge identity capture platform designed for the hospitality sector, enabling instant scanning and secure storage of national IDs and passports. Trusted by the &lt;strong&gt;Dubai Tourism Department and UAE State Security&lt;/strong&gt;, ITSthe1 is among the select few authorized to collect and transmit guest identity data directly to government systems.&lt;/p&gt;&#xA;&lt;p&gt;Our advanced ID scanning solution streamlines guest registration processes while ensuring full regulatory compliance, providing a seamless experience for both guests and operators across multiple industries.&lt;/p&gt;</description>
     </item>
   </channel>

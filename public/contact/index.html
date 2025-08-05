@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=12435&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,13 @@
     
     
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/contact/">
+    <meta property="og:url" content="http://localhost:12435/contact/">
     <meta property="og:title" content="Contact Us | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="og:description" content="Contact ITSthe1 for your IT and telecom solution needs. We have offices in Dubai, London, and Colombo to serve you better.">
     
     
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://localhost:1313/contact/">
+    <meta property="twitter:url" content="http://localhost:12435/contact/">
     <meta property="twitter:title" content="Contact Us | ITSthe1 - IT &amp; Telecom Solutions">
     <meta property="twitter:description" content="Contact ITSthe1 for your IT and telecom solution needs. We have offices in Dubai, London, and Colombo to serve you better.">
     
@@ -213,17 +213,7 @@
     <div class="contact-form">
       <a id="name" class="anchor-point"></a>
       <h3>Send us a Message</h3>
-      <form
-        id="contact-form"
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        action="/contact/success/"
-      >
-        
-        <input type="hidden" name="form-name" value="contact" />
-
+      <form id="contact-form" name="contact" method="POST">
         
         <div class="honeypot-field">
           <label>Don't fill this out: <input name="bot-field" /></label>
@@ -607,6 +597,9 @@
 
     
     
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/js/formsubmit.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/tabs.js"></script>
     <script src="/js/chatbot-config.js"></script>
