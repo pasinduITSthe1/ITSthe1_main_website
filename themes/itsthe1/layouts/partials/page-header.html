@@ -19,17 +19,21 @@
         <div class="page-header-content">
             <h1 class="page-title">{{ .Title }}</h1>
             
-            {{/* Handle subtitle - check for params first, then content for list pages */}}
+            {{/* Handle subtitle dynamically - prioritize front matter params */}}
             {{ if .Params.subtitle }}
                 <p class="page-subtitle">{{ .Params.subtitle }}</p>
             {{ else if and .Content (eq .Kind "section") }}
                 <div class="page-description">{{ .Content }}</div>
-            {{ else if eq .Section "products" }}
-                <p class="page-subtitle">Innovative solutions designed to transform your business</p>
-            {{ else if eq .Section "services" }}
-                <p class="page-subtitle">Professional IT services and support tailored for your business needs</p>
-            {{ else if eq .Section "solutions" }}
-                <p class="page-subtitle">Comprehensive solutions to drive your digital transformation</p>
+            {{ else if .Params.description }}
+                <p class="page-subtitle">{{ .Params.description }}</p>
+            {{ else if .Summary }}
+                <p class="page-subtitle">{{ .Summary }}</p>
+            {{ else }}
+                {{/* Use centralized section subtitles from site params */}}
+                {{ $sectionSubtitle := index .Site.Params.sections .Section }}
+                {{ if $sectionSubtitle }}
+                    <p class="page-subtitle">{{ $sectionSubtitle }}</p>
+                {{ end }}
             {{ end }}
             
             {{/* Breadcrumb navigation - removed as requested */}}

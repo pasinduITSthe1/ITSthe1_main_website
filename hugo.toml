@@ -17,6 +17,14 @@ theme = 'itsthe1'
   backgroundColor = '#FFFFFF'
   textColor = '#333333'
 
+  # Section default subtitles (can be overridden in individual pages)
+  [params.sections]
+    products = "Innovative solutions designed to transform your business"
+    services = "Professional IT services and support tailored for your business needs"
+    solutions = "Comprehensive solutions to drive your digital transformation"
+    about = "Your trusted partner in digital transformation and IT excellence"
+    contact = "Get in touch with our expert team for personalized solutions"
+
 [menu]
   [[menu.main]]
     name = 'Home'

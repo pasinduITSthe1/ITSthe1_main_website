@@ -2438,7 +2438,7 @@ section {
 }
 
 .page-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   margin-top: 2rem;
@@ -2447,13 +2447,42 @@ section {
 }
 
 .page-subtitle {
-  font-size: 1.25rem;
+  font-size: 1rem;
   opacity: 0.9;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+/* Ensure all page headers have proper subtitle styling */
+.page-header .page-subtitle,
+[class*="-header"] .page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Specific rule for individual product pages */
+.page-header.products-header .page-subtitle,
+.products-header .page-subtitle {
+  font-size: 1rem !important;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap !important;
 }
 
 /* Enhanced Content Grid */
@@ -2979,6 +3008,11 @@ section {
     padding: 4rem 0 3rem;
   }
 
+  .page-header-content {
+    max-width: 100% !important;
+    padding: 3rem 0.5rem 1rem !important;
+  }
+
   .contact-header {
     padding: 3rem 0 2rem;
   }
@@ -2988,7 +3022,31 @@ section {
   }
 
   .page-subtitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    padding: 0 1rem !important;
+    line-height: 1.4 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  /* Ensure product pages also work on mobile */
+  .products-header .page-subtitle {
+    font-size: 0.9rem !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    padding: 0 1rem !important;
+    line-height: 1.4 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  .products-header .page-header-content {
+    max-width: 100% !important;
+    padding: 3rem 0.5rem 1rem !important;
   }
 
   .breadcrumb ul {
@@ -3065,12 +3123,38 @@ section {
     padding: 3rem 0 2rem;
   }
 
+  .page-header-content {
+    max-width: 100% !important;
+    padding: 2rem 0.75rem 1rem !important;
+  }
+
   .contact-header {
     padding: 4rem 0 3rem;
   }
 
   .page-title {
     font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 0.8rem !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    -webkit-hyphens: auto !important;
+    hyphens: auto !important;
+    padding: 0 1rem !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .products-header .page-header-content {
+    max-width: 100% !important;
+    padding: 2rem 0.75rem 1rem !important;
   }
 
   .stats-grid {
@@ -3084,9 +3168,51 @@ section {
   .card-content {
     padding: 1.25rem;
   }
+}
 
-  .page-cta h2 {
-    font-size: 1.8rem;
+/* Extra small mobile devices */
+@media (max-width: 360px) {
+  .page-subtitle {
+    font-size: 0.75rem !important;
+    padding: 0 0.75rem !important;
+    line-height: 1.25 !important;
+  }
+}
+
+/* Ensure page header container doesn't constrain subtitle */
+.page-header-content .page-subtitle {
+  width: 100% !important;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+/* Mobile specific subtitle fixes */
+@media (max-width: 768px) {
+  .page-header-content .page-subtitle,
+  .products-header .page-header-content .page-subtitle,
+  [class*="-header"] .page-header-content .page-subtitle {
+    font-size: 0.9rem !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    padding: 0 1rem !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header-content .page-subtitle,
+  .products-header .page-header-content .page-subtitle,
+  [class*="-header"] .page-header-content .page-subtitle {
+    font-size: 0.8rem !important;
+    padding: 0 0.75rem !important;
+    line-height: 1.3 !important;
+    overflow: visible !important;
   }
 }
 
@@ -3327,8 +3453,14 @@ hugo a:hover {
 }
 
 .contact-header .page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .contact-header .breadcrumb a {
@@ -3379,12 +3511,18 @@ hugo a:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-weight: 700;
   margin-top: 2rem;
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 
 .products-header .page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .products-header .breadcrumb a {
@@ -3438,8 +3576,14 @@ hugo a:hover {
 }
 
 .solutions-header .page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .solutions-header .breadcrumb a {
@@ -3493,8 +3637,14 @@ hugo a:hover {
 }
 
 .services-header .page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .services-header .breadcrumb a {
@@ -3548,8 +3698,14 @@ hugo a:hover {
 }
 
 .about-header .page-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .about-header .breadcrumb a {
@@ -3673,9 +3829,14 @@ hugo a:hover {
 }
 
 .simple-header .page-subtitle {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.2rem;
-  margin-bottom: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .simple-page {
