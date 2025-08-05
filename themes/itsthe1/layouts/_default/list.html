@@ -7,70 +7,7 @@
     <div class="container">
         {{ if .Pages }}
         <!-- Stats Section -->
-        {{ if eq .Section "products" }}
-        <div class="products-stats">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">{{ len .Pages }}</div>
-                    <div class="stat-label">Products</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Happy Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Support</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99.9%</div>
-                    <div class="stat-label">Uptime</div>
-                </div>
-            </div>
-        </div>
-        {{ else if eq .Section "solutions" }}
-        <div class="products-stats">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">{{ len .Pages }}</div>
-                    <div class="stat-label">Solutions</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">200+</div>
-                    <div class="stat-label">Projects Delivered</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Enterprise Clients</div>
-                </div>
-            </div>
-        </div>
-        {{ else if eq .Section "services" }}
-        <div class="products-stats">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number">{{ len .Pages }}</div>
-                    <div class="stat-label">Services</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">750+</div>
-                    <div class="stat-label">Clients Served</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Support Available</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">99.9%</div>
-                    <div class="stat-label">Service Uptime</div>
-                </div>
-            </div>
-        </div>
-        {{ end }}
+        {{ partial "stats-section.html" . }}
         
         <!-- Enhanced Content Grid -->
         <div class="content-grid">

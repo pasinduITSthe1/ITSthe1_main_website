@@ -11,22 +11,7 @@
 </div>
 
 <!-- Stats Section -->
-{{ if .Params.stats }}
-<section class="stats-section">
-  <div class="container">
-    <div class="products-stats">
-      <div class="stats-grid">
-        {{ range .Params.stats }}
-        <div class="stat-item">
-          <div class="stat-number">{{ .number }}</div>
-          <div class="stat-label">{{ .label }}</div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
+{{ partial "stats-section.html" . }}
 
 <!-- Main Content -->
 <section id="story" class="content-section">
@@ -259,56 +244,6 @@
     border-color: rgba(255, 255, 255, 0.5);
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
-  }
-
-  /* Stats Section */
-  .stats-section {
-    background: var(--white);
-    padding: 40px 0;
-    margin-top: -20px;
-    position: relative;
-    z-index: 3;
-  }
-
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: var(--white);
-    border-radius: var(--radius);
-    overflow: hidden;
-    padding: 1rem;
-  }
-
-  .stat-card {
-    text-align: center;
-    background: transparent;
-    padding: 30px 20px;
-    border-radius: 8px;
-    box-shadow: none;
-    border: none;
-    position: relative;
-    cursor: default;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .stat-number {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--primary);
-    margin-bottom: 8px;
-    line-height: 1;
-  }
-
-  .stat-label {
-    font-size: 1rem;
-    color: var(--text-light);
-    font-weight: 500;
   }
 
   /* Content Section */
