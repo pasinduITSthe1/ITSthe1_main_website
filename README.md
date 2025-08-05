@@ -1,258 +1,267 @@
-# ITSthe1 Website - Hugo Static Site
+# ITSthe1 Solutions LLC - Corporate Website
 
-Modern, responsive website for ITSthe1 IT & Telecom Solutions built with Hugo static site generator.
-
-![Hugo](https://img.shields.io/badge/Hugo-FF4088?style=for-the-badge&logo=hugo&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-badge-id/deploy-status)](https://app.netlify.com/sites/your-netlify-site/deploys)
+[![Hugo](https://img.shields.io/badge/Hugo-0.148.2-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.0.0-339933?style=flat&logo=node.js)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🌟 Overview
 
-This project is a complete redesign of the ITSthe1 company website using Hugo (GoHugo) to create a modern, clean, and professional online presence while maintaining brand consistency with the original orange color scheme.
+The official corporate website for **ITSthe1 Solutions LLC**, a leading provider of IT and Telecom solutions specializing in Digital Transformation, Cyber Security, Cloud Services, Web & Mobile applications, and Hospitality Solutions.
 
-## ✨ Features
+**🌐 Live Website:** [https://www.itsthe1.com](https://www.itsthe1.com)
 
-- ✅ **Modern Design**: Clean, professional layout optimized for user experience  
-- ✅ **Responsive**: Fully responsive design that works on all devices  
-- ✅ **Performance Optimized**: Fast loading times with optimized assets  
-- ✅ **SEO Ready**: Proper meta tags, structured data, and SEO optimization  
-- ✅ **Accessibility**: WCAG compliant design for maximum accessibility  
-- ✅ **Brand Consistent**: Maintains ITSthe1's distinctive orange brand colors  
-- ✅ **Hugo Best Practices**: Follows Hugo templating and structure conventions  
+## 🚀 Features
 
-## 🛠️ Technology Stack
+- **🎨 Modern Design**: Responsive, professional design optimized for all devices
+- **⚡ Fast Performance**: Built with Hugo static site generator for optimal speed
+- **🔍 SEO Optimized**: Structured data, meta tags, and semantic HTML
+- **📱 Mobile First**: Fully responsive design with mobile-first approach
+- **🤖 Interactive Chatbot**: AI-powered customer support chatbot
+- **📧 Contact Forms**: EmailJS-powered contact forms with spam protection
+- **🎯 Business Solutions**: Comprehensive showcase of IT products and services
+- **🏨 Industry Focus**: Specialized solutions for hospitality, healthcare, and SMEs
 
-- **Hugo**: Static site generator (v0.148.2+)
-- **HTML5**: Semantic markup
-- **CSS3**: Modern CSS with custom properties
-- **JavaScript**: Vanilla JS for interactivity
-- **Google Fonts**: Inter & Poppins font families
-- **Font Awesome**: Icon library
+## 🛠️ Tech Stack
+
+- **Static Site Generator**: [Hugo](https://gohugo.io/) v0.148.2
+- **Theme**: Custom ITSthe1 theme
+- **Styling**: CSS3 with custom styling
+- **JavaScript**: Vanilla JS for interactions
+- **Email Service**: EmailJS for contact forms
+- **Deployment**: Netlify with continuous deployment
+- **Image Optimization**: Sharp for image processing
+- **Package Manager**: npm
 
 ## 📁 Project Structure
 
-```txt
-ITSthe1_main_website/
-├── content/
-│   ├── _index.md
-│   ├── about/
-│   │   └── index.md
-│   ├── contact/
-│   │   ├── index.md
-│   │   └── thank-you.md
-│   ├── products/
-│   │   ├── _index.md
-│   │   ├── ai-helper.md
-│   │   ├── crm-sme.md
-│   │   ├── digital-menu.md
-│   │   ├── digital-signage.md
-│   │   ├── erp-garment.md
-│   │   ├── helpdesk.md
-│   │   ├── hospitality-app.md
-│   │   ├── id-scanning.md
-│   │   └── iptv.md
-│   └── solutions/
-├── themes/itsthe1/
-│   ├── layouts/
-│   │   ├── _default/
-│   │   ├── partials/
-│   │   └── index.html
-│   └── static/
-│       ├── css/
-│       ├── js/
-│       └── images/
-├── static/
-│   └── images/
-├── public/
-├── archetypes/
-│   └── default.md
-├── hugo.toml
-└── README.md
+```
+├── archetypes/          # Content templates
+├── content/             # Website content (Markdown)
+│   ├── products/        # Product pages
+│   ├── services/        # Service pages
+│   ├── solutions/       # Solution pages
+│   ├── about/           # About page
+│   └── contact/         # Contact pages
+├── data/                # Data files (YAML)
+├── docs/                # Documentation
+├── public/              # Generated site (auto-generated)
+├── static/              # Static assets
+│   ├── css/             # Stylesheets
+│   ├── js/              # JavaScript files
+│   ├── images/          # Images and media
+│   └── videos/          # Video content
+├── themes/itsthe1/      # Custom Hugo theme
+├── hugo.toml            # Production configuration
+├── hugo.dev.toml        # Development configuration
+├── netlify.toml         # Netlify deployment config
+└── package.json         # npm dependencies and scripts
 ```
 
-## 🚀 Getting Started
+## 🏃‍♂️ Quick Start
 
 ### Prerequisites
 
-- [Hugo Extended](https://gohugo.io/installation/) (v0.148.2 or later)
-- Git
+- [Hugo](https://gohugo.io/installation/) v0.120.0 or higher
+- [Node.js](https://nodejs.org/) v18.0.0 or higher
+- [Git](https://git-scm.com/)
 
 ### Installation
 
-```bash
-git clone https://github.com/your-username/ITSthe1_main_website.git
-cd ITSthe1_main_website
-```
+1. **Clone the repository**
 
-Start development server:
+   ```bash
+   git clone https://github.com/pasinduITSthe1/ITSthe1_main_website.git
+   cd ITSthe1_main_website
+   ```
 
-```bash
-hugo server --buildDrafts
-```
+2. **Install dependencies**
 
-View in browser at: `http://localhost:1313`
+   ```bash
+   npm install
+   ```
 
-### Build for Production
+3. **Start development server**
 
-```bash
-hugo --minify
-```
+   ```bash
+   npm run dev
+   # or
+   hugo server --buildDrafts --watch
+   ```
 
-Output will be in the `public/` directory.
+4. **Open in browser**
+   - Navigate to `http://localhost:1313`
+   - The site will auto-reload on changes
 
-## ⚙️ Configuration
+## 📝 Available Scripts
 
-Edit `hugo.toml` for:
+| Script                    | Description                          |
+| ------------------------- | ------------------------------------ |
+| `npm run dev`             | Start development server with drafts |
+| `npm run build`           | Build production site                |
+| `npm run build:draft`     | Build with draft content             |
+| `npm run clean`           | Clean build directory                |
+| `npm run optimize-images` | Optimize images using Sharp          |
+| `npm run organize-images` | Organize images in directories       |
+| `npm run maintenance`     | Run maintenance tasks                |
 
-- Title, base URL, description
-- Menu structure
-- Colors & branding
+## 🏗️ Development
 
-### Brand Colors
+### Content Management
 
-```toml
-[params]
-  primaryColor = '#FF6B35'
-  secondaryColor = '#2C3E50'
-  accentColor = '#F39C12'
-```
+Content is organized in the `content/` directory using Markdown files with YAML front matter:
 
-## 📝 Content Management
-
-### Add New Pages
-
-```bash
-hugo new about/new-page.md
-hugo new products/new-product.md
-hugo new solutions/new-solution.md
-```
-
-### Front Matter
-
-```yaml
+```markdown
 ---
 title: "Page Title"
-subtitle: "Optional subtitle"
-description: "SEO description"
-featured_image: "/images/page-image.jpg"
+description: "Page description for SEO"
 date: 2024-01-01
 draft: false
+weight: 10
 ---
+
+# Page Content
+
+Your markdown content here...
 ```
 
-### Options
+### Adding New Content
 
-- `title`
-- `subtitle`
-- `description`
-- `featured_image`
-- `tags`
-- `date`
-- `draft`
-- `toc`
-- `sidebar`
-- `share`
+1. **Create new product/service/solution**:
 
-## 🎨 Customization
+   ```bash
+   hugo new products/new-product.md
+   hugo new services/new-service.md
+   hugo new solutions/new-solution.md
+   ```
 
-### Styling
+2. **Edit the created file** with your content
+3. **Set `draft: false`** when ready to publish
 
-`themes/itsthe1/static/css/style.css`:
+### Theme Customization
 
-```css
-:root {
-    --primary-color: #FF6B35;
-    --secondary-color: #2C3E50;
-    --accent-color: #F39C12;
-}
-```
+The custom theme is located in `themes/itsthe1/`. Key directories:
 
-### JavaScript
+- `layouts/` - HTML templates
+- `static/` - Theme-specific static files
+- `assets/` - Processed assets (SCSS, JS)
 
-`themes/itsthe1/static/js/main.js` includes:
+### Configuration
 
-- Mobile nav toggle
-- Smooth scrolling
-- Scroll-to-top button
-- Form validation
-- Animation triggers
-
-## 📄 Pages Included
-
-### Core Pages
-- **Homepage**
-- **About**
-- **Contact**
-- **Solutions**
-
-### Product Pages
-- AI Helper  
-- CRM for SME  
-- Digital Menu  
-- Digital Signage  
-- ERP for Garment  
-- Helpdesk  
-- Hospitality App  
-- ID Scanning  
-- IPTV Solutions  
-
-### Solution Pages
-- Digital Transformation  
-- Cyber Security  
-- Cloud Services  
-- Web & Mobile Development  
-- Hospitality Solutions  
-- IPTV & OTT Solutions  
-
-## 🌐 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- iOS/Android mobile browsers
+- **Production**: `hugo.toml`
+- **Development**: `hugo.dev.toml`
+- **Deployment**: `netlify.toml`
 
 ## 🚀 Deployment
 
-Can be hosted via:
+### Netlify (Recommended)
 
-- **Netlify**
-- **Vercel**
-- **GitHub Pages**
-- **AWS S3**
-- **Traditional Hosting**
+1. **Connect repository** to Netlify
+2. **Build settings**:
+   - Build command: `hugo --minify`
+   - Publish directory: `public`
+   - Hugo version: `0.148.2`
 
-### Netlify Setup
+### Manual Deployment
 
-1. Connect Git repo  
-2. Build command: `hugo --minify`  
-3. Publish dir: `public`  
-4. Deploy  
+```bash
+# Build for production
+npm run build
+
+# Deploy the public/ directory to your hosting provider
+```
+
+## 🧪 Testing
+
+### Local Testing
+
+```bash
+# Test contact forms
+open http://localhost:1313/contact-form.html
+
+# Test email functionality
+open http://localhost:1313/email-test.html
+```
+
+### Production Testing
+
+- **Performance**: Use [PageSpeed Insights](https://pagespeed.web.dev/)
+- **SEO**: Use [SEO Site Checkup](https://seositecheckup.com/)
+- **Accessibility**: Use [WAVE](https://wave.webaim.org/)
+
+## 📊 Business Solutions
+
+### Products
+
+- **AI Helper**: Intelligent business automation
+- **CRM for SME**: Customer relationship management
+- **Digital Menu**: Restaurant digital solutions
+- **Digital Signage**: Display management systems
+- **ERP for Garment**: Industry-specific ERP
+- **Helpdesk**: IT support solutions
+- **Hospitality App**: Hotel management systems
+- **ID Scanning**: Identity verification
+- **IPTV**: Television broadcasting solutions
+
+### Services
+
+- **Cloud & Hybrid Solutions**
+- **Co-managed IT Services**
+- **Digital Transformation Planning**
+- **IT Consultancy**
+- **IT Security & Compliance**
+- **IT Strategy Development**
+- **IT Support Outsourcing**
+- **Microsoft 365**
+- **Microsoft Azure**
 
 ## 🤝 Contributing
 
-1. Fork this repo  
-2. Create feature branch  
-3. Commit and push  
-4. Open a PR  
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+### Content Guidelines
+
+- Use clear, concise language
+- Include relevant keywords for SEO
+- Optimize images before adding
+- Test responsive design
+- Validate HTML and accessibility
 
 ## 📄 License
 
-This project is proprietary to ITSthe1 Solutions LLC.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+## � Support
 
-- **Email**: support@itsthe1.com  
-- **Phone**: +971 4 295 2705  
+- **Website**: [https://www.itsthe1.net](https://www.itsthe1.com)
+- **Email**: [info@itsthe1.com](mailto:info@itsthe1.com)
+- **Phone**: +971 4 235 2209
+- **Documentation**: See [docs/](docs/) directory
+
+## � Roadmap
+
+- [ ] Implement advanced chatbot features
+- [ ] Integrate CMS for easier content management
+- [ ] Enhance mobile app showcase
+- [ ] Add client portal functionality
+- [ ] Implement advanced analytics
+
+## � Acknowledgments
+
+- **Hugo Community** for the excellent static site generator
+- **Netlify** for seamless deployment and hosting
+- **EmailJS** for contact form functionality
+- **Contributors** who help improve this project
 
 ---
 
-**ITSthe1 Solutions LLC**  
-Leading IT & Telecom Solutions Provider  
-Dubai | London | Colombo
+**Built with ❤️ by ITSthe1 Solutions LLC**
 
----
+_Transforming businesses through innovative IT and Telecom solutions_
 
-<p align="center">Made with ❤️ using Hugo</p>
 <p align="center"><strong>Developed by Pasindu Dilshan</strong></p>
+
