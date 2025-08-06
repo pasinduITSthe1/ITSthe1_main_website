@@ -40,7 +40,7 @@ This message was sent from the ITSthe1 website contact form.
     // Create a form element and submit it directly (avoids CORS issues)
     const form = document.createElement("form");
     form.method = "POST";
-    form.action = "https://formsubmit.co/pasindu.d.dev@gmail.com";
+    form.action = "https://formsubmit.co/sales@itsthe1.com";
     form.style.display = "none";
 
     // Add form fields
@@ -113,7 +113,7 @@ Page: ${window.location.href}
 
     // Use a simple fetch to FormSubmit
     const response = await fetch(
-      "https://formsubmit.co/ajax/pasindu.d.dev@gmail.com",
+      "https://formsubmit.co/ajax/sales@itsthe1.com",
       {
         method: "POST",
         headers: {
@@ -163,7 +163,7 @@ async function sendEmailViaEmailJS(formData) {
   try {
     // Prepare template parameters
     const templateParams = {
-      to_email: "pasindu.itsthe1@gmail.com",
+      to_email: "sales@itsthe1.com",
       from_name: formData.name,
       from_email: formData.email,
       phone: formData.phone || "Not provided",
