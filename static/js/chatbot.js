@@ -438,6 +438,43 @@ class ITSthe1Chatbot {
   processMessage(message) {
     const lowerMessage = message.toLowerCase();
 
+    // First check for exact phrase matches to avoid spell correction conflicts
+    if (lowerMessage.includes("tell me about your services") || 
+        lowerMessage.includes("about your services") ||
+        lowerMessage.includes("our services")) {
+      return this.getServicesInfo(lowerMessage);
+    }
+
+    if (lowerMessage.includes("what products do you offer") || 
+        lowerMessage.includes("products do you offer") ||
+        lowerMessage.includes("your products")) {
+      return this.getProductsInfo(lowerMessage);
+    }
+
+    if (lowerMessage.includes("how can i contact you") || 
+        lowerMessage.includes("contact you") ||
+        lowerMessage.includes("contact information")) {
+      return {
+        text: "You can contact ITSthe1 Solutions through several ways:\n\n<strong>Email:</strong> sales@itsthe1.com - Send us your inquiries\n<strong>Phone:</strong> +971 55 220 2171 - Call us for immediate assistance\n<strong>WhatsApp:</strong> Chat with us directly for quick answers\n\nWould you like me to help you with anything specific about our services?",
+        options: {
+          buttons: [
+            {
+              text: "Send Email",
+              action: "link",
+              link: "mailto:sales@itsthe1.com",
+            },
+            { text: "Call Now", action: "link", link: "tel:+971552202171" },
+            {
+              text: "WhatsApp Chat",
+              action: "link",
+              link: "https://wa.me/971552202171",
+            },
+            { text: "Contact Page", action: "link", link: "/contact/" },
+          ],
+        },
+      };
+    }
+
     // Greeting patterns with spell correction
     const greetingMatch = this.matchesPatternWithCorrection(lowerMessage, [
       "hello",
@@ -963,7 +1000,7 @@ class ITSthe1Chatbot {
   findBestMatch(input, searchTerms) {
     let bestMatch = null;
     let bestScore = 0;
-    const threshold = 0.6; // Minimum similarity score
+    const threshold = 0.7; // Increased threshold for more accurate matching
 
     for (const term of searchTerms) {
       const score = this.calculateSimilarity(input, term);
