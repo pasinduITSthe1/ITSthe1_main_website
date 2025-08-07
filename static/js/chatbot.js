@@ -180,6 +180,7 @@ class ITSthe1Chatbot {
     this.createChatbotHTML();
     this.bindEvents();
     this.addWelcomeMessage();
+    this.addInlinePageStyles();
   }
 
   generateId() {
@@ -1194,6 +1195,15 @@ class ITSthe1Chatbot {
     // Extract page title from link for better header
     const pageTitle = this.getPageTitleFromLink(link);
     
+    // Check if this is an internal link that might have iframe restrictions
+    const isInternalLink = link.startsWith('/') || link.includes(window.location.hostname) || link.includes('itsthe1.netlify.app');
+    
+    if (isInternalLink) {
+      // For internal links, show a preview with option to open in new tab
+      this.showInternalLinkPreview(link, pageTitle);
+      return;
+    }
+    
     // Create an enhanced iframe to display the page content
     const iframeHTML = `
       <div class="inline-page-container">
@@ -1230,9 +1240,9 @@ class ITSthe1Chatbot {
             class="inline-page-frame"
             frameborder="0"
             allowfullscreen
-            sandbox="allow-same-origin allow-scripts allow-forms allow-links allow-popups"
+            sandbox="allow-same-origin allow-scripts allow-forms allow-links allow-popups allow-top-navigation"
             onload="this.style.opacity = '1'; this.parentElement.querySelector('.iframe-loading').style.display = 'none'; this.parentElement.querySelector('.iframe-progress').style.width = '100%';"
-            onerror="this.parentElement.innerHTML = '<div class=\\"iframe-error\\"><div class=\\"error-icon\\">⚠️</div><div class=\\"error-text\\">Unable to load page content</div><div class=\\"error-subtitle\\">This page may not allow embedding</div><button onclick=\\"window.open(\\&quot;${link}\\&quot;, \\&quot;_blank\\&quot;)\\" class=\\"error-button\\">Open in New Tab</button></div>'">
+            onerror="this.parentElement.parentElement.querySelector('.iframe-container').innerHTML = '<div class=\\"iframe-error\\"><div class=\\"error-icon\\">⚠️</div><div class=\\"error-text\\">Content cannot be displayed in preview</div><div class=\\"error-subtitle\\">This page restricts embedding for security reasons</div><button onclick=\\"window.open(\\&quot;${link}\\&quot;, \\&quot;_blank\\&quot;)\\" class=\\"error-button\\">Open in New Tab</button></div>'">
           </iframe>
           <div class="iframe-loading">
             <div class="loading-spinner"></div>
@@ -1251,7 +1261,413 @@ class ITSthe1Chatbot {
       ]
     });
 
+    // Set a timeout to check if iframe loaded successfully
+    setTimeout(() => {
+      const iframe = document.querySelector('.inline-page-frame:last-of-type');
+      if (iframe) {
+        // Check if iframe failed to load
+        try {
+          if (iframe.contentDocument === null || iframe.contentWindow.location.href === 'about:blank') {
+            // Iframe failed to load, show error
+            const container = iframe.closest('.iframe-container');
+            container.innerHTML = `
+              <div class="iframe-error">
+                <div class="error-icon">🚫</div>
+                <div class="error-text">Page Preview Not Available</div>
+                <div class="error-subtitle">This page cannot be embedded due to security restrictions</div>
+                <button onclick="window.open('${link}', '_blank')" class="error-button">Open in New Tab</button>
+                <div class="error-hint">Most websites block embedding to prevent clickjacking attacks</div>
+              </div>
+            `;
+          }
+        } catch (e) {
+          // Cross-origin access denied, show fallback
+          const container = iframe.closest('.iframe-container');
+          container.innerHTML = `
+            <div class="iframe-error">
+              <div class="error-icon">🔒</div>
+              <div class="error-text">Preview Blocked</div>
+              <div class="error-subtitle">Security policy prevents embedding this content</div>
+              <button onclick="window.open('${link}', '_blank')" class="error-button">Open in New Tab</button>
+            </div>
+          `;
+        }
+      }
+    }, 5000); // Give iframe 5 seconds to load
+
     // Add enhanced CSS for the inline page if not already added
+    if (!document.getElementById('chatbot-inline-styles')) {
+      const style = document.createElement('style');
+      style.id = 'chatbot-inline-styles';
+      style.textContent = `
+        .inline-page-container {
+          width: 100%;
+          max-width: 650px;
+          height: 450px;
+          border: 1px solid #e1e5e9;
+          border-radius: 12px;
+          overflow: hidden;
+          margin: 15px 0;
+          background: white;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          transition: all 0.3s ease;
+        }
+        
+        .inline-page-container:hover {
+          box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .inline-page-header {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 12px 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .page-info {
+          flex: 1;
+          min-width: 0;
+        }
+        
+        .inline-page-title {
+          font-weight: 600;
+          font-size: 14px;
+          display: block;
+          margin-bottom: 2px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        
+        .header-controls {
+          display: flex;
+          gap: 8px;
+          margin-left: 12px;
+        }
+        
+        .header-controls button {
+          background: rgba(255,255,255,0.2);
+          border: none;
+          color: white;
+          padding: 6px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .header-controls button:hover {
+          background: rgba(255,255,255,0.3);
+          transform: translateY(-1px);
+        }
+        
+        .iframe-container {
+          position: relative;
+          height: calc(100% - 60px);
+          background: #f8f9fa;
+        }
+        
+        .inline-page-frame {
+          width: 100%;
+          height: 100%;
+          border: none;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          background: white;
+        }
+        
+        .iframe-loading {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: #f8f9fa;
+          z-index: 10;
+        }
+        
+        .loading-spinner {
+          width: 40px;
+          height: 40px;
+          border: 3px solid #e3e6ea;
+          border-top: 3px solid #667eea;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+          margin-bottom: 16px;
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+          color: #6c757d;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        
+        .iframe-progress {
+          width: 0%;
+          height: 3px;
+          background: linear-gradient(90deg, #667eea, #764ba2);
+          border-radius: 2px;
+          transition: width 0.3s ease;
+          animation: progress 2s ease-in-out;
+        }
+        
+        @keyframes progress {
+          0% { width: 0%; }
+          50% { width: 70%; }
+          100% { width: 90%; }
+        }
+        
+        .iframe-error {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+          z-index: 15;
+        }
+        
+        .error-icon {
+          font-size: 48px;
+          margin-bottom: 16px;
+        }
+        
+        .error-text {
+          color: #dc3545;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        
+        .error-subtitle {
+          color: #6c757d;
+          font-size: 14px;
+          margin-bottom: 20px;
+          line-height: 1.4;
+        }
+        
+        .error-hint {
+          color: #6c757d;
+          font-size: 12px;
+          font-style: italic;
+          margin-top: 10px;
+          opacity: 0.8;
+        }
+        
+        .error-button {
+          background: #667eea;
+          color: white;
+          border: none;
+          padding: 12px 24px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+          transition: all 0.2s ease;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .error-button:hover {
+          background: #5a67d8;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        @media (max-width: 768px) {
+          .inline-page-container {
+            max-width: 100%;
+            height: 350px;
+            margin: 10px 0;
+          }
+          
+          .inline-page-header {
+            padding: 10px 12px;
+          }
+          
+          .inline-page-title {
+            font-size: 13px;
+          }
+          
+          .header-controls {
+            gap: 6px;
+          }
+          
+          .header-controls button {
+            padding: 5px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .inline-page-container {
+            height: 300px;
+          }
+          
+          .page-info {
+            max-width: 60%;
+          }
+        }
+        
+        /* Mobile view simulation */
+        .inline-page-container.mobile-view {
+          max-width: 375px;
+          height: 500px;
+          margin: 15px auto;
+        }
+        
+        .inline-page-container.mobile-view .iframe-container {
+          background: #000;
+          padding: 10px;
+          border-radius: 0 0 20px 20px;
+        }
+        
+        .inline-page-container.mobile-view .inline-page-frame {
+          border-radius: 15px;
+          border: 2px solid #333;
+        }
+        
+        /* Internal link preview styling */
+        .internal-link-preview {
+          width: 100%;
+          max-width: 650px;
+          border: 1px solid #e1e5e9;
+          border-radius: 12px;
+          overflow: hidden;
+          margin: 15px 0;
+          background: white;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .preview-header {
+          background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+          color: white;
+          padding: 12px 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        
+        .preview-content {
+          padding: 20px;
+          text-align: center;
+        }
+        
+        .preview-icon {
+          font-size: 48px;
+          margin-bottom: 16px;
+        }
+        
+        .preview-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: #2c3e50;
+          margin-bottom: 8px;
+        }
+        
+        .preview-description {
+          color: #6c757d;
+          font-size: 14px;
+          margin-bottom: 20px;
+          line-height: 1.5;
+        }
+        
+        .preview-button {
+          background: #28a745;
+          color: white;
+          border: none;
+          padding: 12px 24px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+          transition: all 0.2s ease;
+          text-decoration: none;
+          display: inline-block;
+        }
+        
+        .preview-button:hover {
+          background: #218838;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        /* Spell correction styling */
+        .spell-correction {
+          background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+          border-left: 4px solid #2196f3;
+          padding: 8px 12px;
+          margin: 8px 0;
+          border-radius: 6px;
+          font-size: 13px;
+          color: #1565c0;
+        }
+        
+        .spell-correction strong {
+          color: #0d47a1;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+  }
+
+  // Method to show internal link preview instead of iframe
+  showInternalLinkPreview(link, pageTitle) {
+    const previewHTML = `
+      <div class="internal-link-preview">
+        <div class="preview-header">
+          <span class="preview-header-title">${pageTitle}</span>
+          <button class="close-inline-page" onclick="this.closest('.message').remove()" title="Close">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="preview-content">
+          <div class="preview-icon">📄</div>
+          <div class="preview-title">${pageTitle}</div>
+          <div class="preview-description">
+            This is an internal page from our website. Click below to open it in a new tab for the best viewing experience.
+          </div>
+          <a href="${link}" target="_blank" class="preview-button">
+            Open Page in New Tab
+          </a>
+        </div>
+      </div>
+    `;
+
+    this.addMessage(previewHTML, "bot", {
+      buttons: [
+        { text: "❌ Close", action: "closeInline" }
+      ]
+    });
+
+    // Add enhanced CSS for the inline page if not already added
+    this.addInlinePageStyles();
+  }
+
+  // Method to add CSS styles for inline page functionality
+  addInlinePageStyles() {
     if (!document.getElementById('chatbot-inline-styles')) {
       const style = document.createElement('style');
       style.id = 'chatbot-inline-styles';
