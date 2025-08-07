@@ -349,7 +349,19 @@ class ITSthe1Chatbot {
         `;
 
     messagesContainer.insertAdjacentHTML("beforeend", messageHTML);
-    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    
+    // Scroll to show the top of the new message
+    const newMessage = document.getElementById(`msg-${messageId}`);
+    if (newMessage) {
+      // Small delay to ensure the message is rendered
+      setTimeout(() => {
+        newMessage.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+      }, 100);
+    }
 
     this.messages.push({
       id: messageId,
@@ -386,9 +398,17 @@ class ITSthe1Chatbot {
 
   showTyping() {
     this.isTyping = true;
-    document.getElementById("chatbot-typing").style.display = "flex";
-    document.getElementById("chatbot-messages").scrollTop =
-      document.getElementById("chatbot-messages").scrollHeight;
+    const typingElement = document.getElementById("chatbot-typing");
+    typingElement.style.display = "flex";
+    
+    // Scroll to show the typing indicator
+    setTimeout(() => {
+      typingElement.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start',
+        inline: 'nearest'
+      });
+    }, 100);
   }
 
   hideTyping() {
@@ -418,18 +438,12 @@ class ITSthe1Chatbot {
   processMessage(message) {
     const lowerMessage = message.toLowerCase();
 
-    // Greeting patterns
-    if (
-      this.matchesPattern(lowerMessage, [
-        "hello",
-        "hi",
-        "hey",
-        "good morning",
-        "good afternoon",
-        "good evening",
-      ])
-    ) {
-      return {
+    // Greeting patterns with spell correction
+    const greetingMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "hello", "hi", "hey", "good morning", "good afternoon", "good evening", "greetings", "howdy"
+    ]);
+    if (greetingMatch.matched) {
+      const response = {
         text: "Hello! Welcome to ITSthe1 Solutions. I'm here to help you learn about our IT services, products, and solutions. What would you like to know about?",
         options: {
           suggestions: [
@@ -440,183 +454,160 @@ class ITSthe1Chatbot {
           ],
         },
       };
+      
+      if (greetingMatch.corrected) {
+        return this.getCorrectedResponse(greetingMatch.original, greetingMatch.correction, () => response);
+      }
+      return response;
     }
 
-    // Services inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "service",
-        "services",
-        "support",
-        "it support",
-        "help",
-      ])
-    ) {
+    // Services inquiries with spell correction
+    const servicesMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "service", "services", "support", "it support", "help", "assistance", "solutions"
+    ]);
+    if (servicesMatch.matched) {
+      if (servicesMatch.corrected) {
+        return this.getCorrectedResponse(servicesMatch.original, servicesMatch.correction, () => this.getServicesInfo(lowerMessage));
+      }
       return this.getServicesInfo(lowerMessage);
     }
 
-    // Products inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "product",
-        "products",
-        "solution",
-        "software",
-      ])
-    ) {
+    // Products inquiries with spell correction
+    const productsMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "product", "products", "solution", "software", "applications", "tools"
+    ]);
+    if (productsMatch.matched) {
+      if (productsMatch.corrected) {
+        return this.getCorrectedResponse(productsMatch.original, productsMatch.correction, () => this.getProductsInfo(lowerMessage));
+      }
       return this.getProductsInfo(lowerMessage);
     }
 
-    // Specific service inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "cloud",
-        "azure",
-        "microsoft",
-        "office 365",
-        "m365",
-      ])
-    ) {
+    // Specific service inquiries with spell correction
+    const cloudMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "cloud", "azure", "microsoft", "office 365", "m365", "cloud services"
+    ]);
+    if (cloudMatch.matched) {
+      if (cloudMatch.corrected) {
+        return this.getCorrectedResponse(cloudMatch.original, cloudMatch.correction, () => this.getCloudServicesInfo());
+      }
       return this.getCloudServicesInfo();
     }
 
-    if (
-      this.matchesPattern(lowerMessage, [
-        "security",
-        "cybersecurity",
-        "cyber security",
-        "protection",
-      ])
-    ) {
+    const securityMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "security", "cybersecurity", "cyber security", "protection", "firewall", "antivirus"
+    ]);
+    if (securityMatch.matched) {
+      if (securityMatch.corrected) {
+        return this.getCorrectedResponse(securityMatch.original, securityMatch.correction, () => this.getSecurityInfo());
+      }
       return this.getSecurityInfo();
     }
 
-    if (
-      this.matchesPattern(lowerMessage, ["iptv", "tv", "streaming", "media"])
-    ) {
+    const iptvMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "iptv", "tv", "streaming", "media", "television", "entertainment"
+    ]);
+    if (iptvMatch.matched) {
+      if (iptvMatch.corrected) {
+        return this.getCorrectedResponse(iptvMatch.original, iptvMatch.correction, () => this.getIPTVInfo());
+      }
       return this.getIPTVInfo();
     }
 
-    // Digital Signage inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "digital signage",
-        "signage",
-        "display",
-        "screen",
-        "kiosk",
-        "interactive display",
-      ])
-    ) {
+    // Digital Signage inquiries with spell correction
+    const signageMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "digital signage", "signage", "display", "screen", "kiosk", "interactive display", "digital display"
+    ]);
+    if (signageMatch.matched) {
+      if (signageMatch.corrected) {
+        return this.getCorrectedResponse(signageMatch.original, signageMatch.correction, () => this.getDigitalSignageInfo());
+      }
       return this.getDigitalSignageInfo();
     }
 
-    // CRM inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "crm",
-        "customer management",
-        "sales pipeline",
-        "lead management",
-        "customer relationship",
-      ])
-    ) {
+    // CRM inquiries with spell correction
+    const crmMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "crm", "customer management", "sales pipeline", "lead management", "customer relationship", "sales management"
+    ]);
+    if (crmMatch.matched) {
+      if (crmMatch.corrected) {
+        return this.getCorrectedResponse(crmMatch.original, crmMatch.correction, () => this.getCRMInfo());
+      }
       return this.getCRMInfo();
     }
 
-    // ERP inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "erp",
-        "garment",
-        "manufacturing",
-        "textile",
-        "production planning",
-        "inventory management",
-      ])
-    ) {
+    // ERP inquiries with spell correction
+    const erpMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "erp", "garment", "manufacturing", "textile", "production planning", "inventory management", "enterprise resource"
+    ]);
+    if (erpMatch.matched) {
+      if (erpMatch.corrected) {
+        return this.getCorrectedResponse(erpMatch.original, erpMatch.correction, () => this.getERPInfo());
+      }
       return this.getERPInfo();
     }
 
-    // Hospitality App inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "hospitality app",
-        "hotel app",
-        "guest app",
-        "mobile check-in",
-        "room service",
-        "guest services",
-      ])
-    ) {
+    // Hospitality App inquiries with spell correction
+    const hospitalityMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "hospitality app", "hotel app", "guest app", "mobile check-in", "room service", "guest services", "hospitality"
+    ]);
+    if (hospitalityMatch.matched) {
+      if (hospitalityMatch.corrected) {
+        return this.getCorrectedResponse(hospitalityMatch.original, hospitalityMatch.correction, () => this.getHospitalityAppInfo());
+      }
       return this.getHospitalityAppInfo();
     }
 
-    // AI Assistant inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "ai assistant",
-        "ai helper",
-        "artificial intelligence",
-        "chatbot",
-        "automation",
-        "virtual assistant",
-      ])
-    ) {
+    // AI Assistant inquiries with spell correction
+    const aiMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "ai assistant", "ai helper", "artificial intelligence", "chatbot", "automation", "virtual assistant", "ai"
+    ]);
+    if (aiMatch.matched) {
+      if (aiMatch.corrected) {
+        return this.getCorrectedResponse(aiMatch.original, aiMatch.correction, () => this.getAIHelperInfo());
+      }
       return this.getAIHelperInfo();
     }
 
-    // Digital Menu inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "digital menu",
-        "qr menu",
-        "restaurant menu",
-        "menu system",
-        "contactless menu",
-      ])
-    ) {
+    // Digital Menu inquiries with spell correction
+    const menuMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "digital menu", "qr menu", "restaurant menu", "menu system", "contactless menu", "menu"
+    ]);
+    if (menuMatch.matched) {
+      if (menuMatch.corrected) {
+        return this.getCorrectedResponse(menuMatch.original, menuMatch.correction, () => this.getDigitalMenuInfo());
+      }
       return this.getDigitalMenuInfo();
     }
 
-    // Helpdesk inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "helpdesk",
-        "help desk",
-        "ticket system",
-        "support system",
-        "it support system",
-      ])
-    ) {
+    // Helpdesk inquiries with spell correction
+    const helpdeskMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "helpdesk", "help desk", "ticket system", "support system", "it support system", "ticketing"
+    ]);
+    if (helpdeskMatch.matched) {
+      if (helpdeskMatch.corrected) {
+        return this.getCorrectedResponse(helpdeskMatch.original, helpdeskMatch.correction, () => this.getHelpdeskInfo());
+      }
       return this.getHelpdeskInfo();
     }
 
-    // ID Scanning inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "id scanning",
-        "identity verification",
-        "document scanning",
-        "access control",
-        "security scanning",
-      ])
-    ) {
+    // ID Scanning inquiries with spell correction
+    const idScanMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "id scanning", "identity verification", "document scanning", "access control", "security scanning", "id verification"
+    ]);
+    if (idScanMatch.matched) {
+      if (idScanMatch.corrected) {
+        return this.getCorrectedResponse(idScanMatch.original, idScanMatch.correction, () => this.getIDScanningInfo());
+      }
       return this.getIDScanningInfo();
     }
 
-    // Contact inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "contact",
-        "phone",
-        "email",
-        "address",
-        "location",
-        "reach",
-      ])
-    ) {
-      return {
+    // Contact inquiries with spell correction
+    const contactMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "contact", "phone", "email", "address", "location", "reach", "call", "communicate"
+    ]);
+    if (contactMatch.matched) {
+      const response = {
         text: "You can contact ITSthe1 Solutions through several ways:\n\n<strong>Email:</strong> sales@itsthe1.com - Send us your inquiries\n<strong>Phone:</strong> +971 55 220 2171 - Call us for immediate assistance\n<strong>WhatsApp:</strong> Chat with us directly for quick answers\n\nWould you like me to help you with anything specific about our services?",
         options: {
           buttons: [
@@ -635,18 +626,19 @@ class ITSthe1Chatbot {
           ],
         },
       };
+      
+      if (contactMatch.corrected) {
+        return this.getCorrectedResponse(contactMatch.original, contactMatch.correction, () => response);
+      }
+      return response;
     }
 
-    // About company
-    if (
-      this.matchesPattern(lowerMessage, [
-        "about",
-        "company",
-        "who are you",
-        "what do you do",
-      ])
-    ) {
-      return {
+    // About company with spell correction
+    const aboutMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "about", "company", "who are you", "what do you do", "information", "details"
+    ]);
+    if (aboutMatch.matched) {
+      const response = {
         text: "ITSthe1 Solutions LLC is a leading provider of IT and Telecom solutions. We specialize in:\n\n<strong>Digital Transformation</strong> - Modernizing business operations\n<strong>Cyber Security</strong> - Advanced protection and compliance\n<strong>Cloud Services</strong> - Secure migration and infrastructure\n<strong>Web & Mobile Applications</strong> - Custom development solutions\n<strong>Hospitality Solutions</strong> - Industry-specific technology\n\nWe serve clients globally across various industries including hospitality, healthcare, and enterprise sectors.",
         options: {
           buttons: [
@@ -655,19 +647,19 @@ class ITSthe1Chatbot {
           ],
         },
       };
+      
+      if (aboutMatch.corrected) {
+        return this.getCorrectedResponse(aboutMatch.original, aboutMatch.correction, () => response);
+      }
+      return response;
     }
 
-    // Pricing inquiries
-    if (
-      this.matchesPattern(lowerMessage, [
-        "price",
-        "pricing",
-        "cost",
-        "how much",
-        "quote",
-      ])
-    ) {
-      return {
+    // Pricing inquiries with spell correction
+    const pricingMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "price", "pricing", "cost", "how much", "quote", "rates", "fees", "charges"
+    ]);
+    if (pricingMatch.matched) {
+      const response = {
         text: "Pricing for our services depends on your specific requirements and business needs. We offer:\n\n<strong>Customized Solutions</strong> - Tailored to your business needs\n<strong>Scalable Pricing Models</strong> - Flexible pricing structures\n<strong>Competitive Rates</strong> - Market-competitive pricing\n<strong>Free Consultations</strong> - Initial assessment at no cost\n\nI'd recommend contacting our team for a personalized quote based on your requirements.",
         options: {
           buttons: [
@@ -676,17 +668,63 @@ class ITSthe1Chatbot {
           ],
         },
       };
+      
+      if (pricingMatch.corrected) {
+        return this.getCorrectedResponse(pricingMatch.original, pricingMatch.correction, () => response);
+      }
+      return response;
     }
 
-    // Default response
+    // Check for common misspellings before default response
+    const commonTerms = [
+      "help", "info", "information", "support", "service", "services", 
+      "product", "products", "solution", "solutions", "price", "pricing",
+      "contact", "about", "company", "cloud", "security", "ai", "iptv",
+      "crm", "erp", "digital", "hospitality", "menu", "helpdesk"
+    ];
+    
+    const words = lowerMessage.split(/\s+/);
+    let foundSuggestion = false;
+    
+    for (const word of words) {
+      const match = this.findBestMatch(word, commonTerms);
+      if (match && match.score >= 0.6) {
+        // Get additional similar terms for better suggestions
+        const similarTerms = this.suggestSimilarTerms(lowerMessage);
+        const suggestionText = similarTerms.length > 0 
+          ? `You might also be interested in: ${similarTerms.join(', ')}`
+          : '';
+        
+        // Found a potential misspelling, provide helpful suggestion
+        return {
+          text: `📝 I think you might be looking for information about "<strong>${match.term}</strong>". ${suggestionText}\n\nHere's what I can help you with:\n\n✅ IT Services & Support\n✅ Cloud Solutions\n✅ Cybersecurity\n✅ Products & Software\n✅ Contact Information\n\nPlease try asking about any of these topics, or click a suggestion below:`,
+          options: {
+            suggestions: [
+              "IT Services",
+              "Cloud Solutions", 
+              "Cybersecurity",
+              "Products",
+              "Contact Us",
+            ],
+          },
+        };
+      }
+    }
+
+    // Default response with enhanced suggestions
+    const inputSuggestions = this.suggestSimilarTerms(lowerMessage);
+    const suggestionText = inputSuggestions.length > 0 
+      ? `\n\n💡 <em>Did you mean: ${inputSuggestions.join(', ')}?</em>` 
+      : '';
+
     return {
-      text: "I'd be happy to help you with information about ITSthe1's services and solutions! I can assist with:\n\n IT Services & Support\n Cloud Solutions\n Cybersecurity\n Products & Software\n Contact Information\n\nWhat specific topic would you like to explore?",
+      text: `I'd be happy to help you with information about ITSthe1's services and solutions! I can assist with:\n\n✅ IT Services & Support\n✅ Cloud Solutions\n✅ Cybersecurity\n✅ Products & Software\n✅ Contact Information${suggestionText}\n\nWhat specific topic would you like to explore?`,
       options: {
         suggestions: [
           "IT Services",
           "Cloud Solutions",
           "Cybersecurity",
-          "Products",
+          "Products", 
           "Contact Us",
         ],
       },
@@ -695,6 +733,136 @@ class ITSthe1Chatbot {
 
   matchesPattern(message, patterns) {
     return patterns.some((pattern) => message.includes(pattern));
+  }
+
+  // Fuzzy string matching for spell correction
+  calculateSimilarity(str1, str2) {
+    // Convert to lowercase for comparison
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
+    
+    // Exact match
+    if (str1 === str2) return 1;
+    
+    // Calculate Levenshtein distance
+    const matrix = [];
+    for (let i = 0; i <= str1.length; i++) {
+      matrix[i] = [i];
+    }
+    for (let j = 0; j <= str2.length; j++) {
+      matrix[0][j] = j;
+    }
+    
+    for (let i = 1; i <= str1.length; i++) {
+      for (let j = 1; j <= str2.length; j++) {
+        if (str1.charAt(i - 1) === str2.charAt(j - 1)) {
+          matrix[i][j] = matrix[i - 1][j - 1];
+        } else {
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j - 1] + 1, // substitution
+            matrix[i][j - 1] + 1,     // insertion
+            matrix[i - 1][j] + 1      // deletion
+          );
+        }
+      }
+    }
+    
+    const distance = matrix[str1.length][str2.length];
+    const maxLength = Math.max(str1.length, str2.length);
+    return (maxLength - distance) / maxLength;
+  }
+
+  // Find best match for a given input
+  findBestMatch(input, searchTerms) {
+    let bestMatch = null;
+    let bestScore = 0;
+    const threshold = 0.6; // Minimum similarity score
+    
+    for (const term of searchTerms) {
+      const score = this.calculateSimilarity(input, term);
+      if (score > bestScore && score >= threshold) {
+        bestScore = score;
+        bestMatch = { term, score };
+      }
+    }
+    
+    return bestMatch;
+  }
+
+  // Enhanced pattern matching with spell correction
+  matchesPatternWithCorrection(message, patterns) {
+    // First try exact matching
+    if (this.matchesPattern(message, patterns)) {
+      return { matched: true, corrected: false };
+    }
+    
+    // Try fuzzy matching for each word in the message
+    const words = message.toLowerCase().split(/\s+/);
+    
+    for (const word of words) {
+      const match = this.findBestMatch(word, patterns);
+      if (match) {
+        return { 
+          matched: true, 
+          corrected: true, 
+          original: word, 
+          correction: match.term,
+          confidence: match.score 
+        };
+      }
+    }
+    
+    return { matched: false, corrected: false };
+  }
+
+  // Get corrected response with user feedback
+  getCorrectedResponse(originalInput, correction, responseFunction) {
+    const response = responseFunction();
+    
+    // Add correction notice to the response
+    const correctionNotice = `<div class="spell-correction">
+      <small>📝 I think you meant "<strong>${correction}</strong>" instead of "${originalInput}". Here's the information:</small>
+    </div><br>`;
+    
+    return {
+      ...response,
+      text: correctionNotice + response.text
+    };
+  }
+
+  // Enhanced method to detect and suggest similar terms
+  suggestSimilarTerms(input) {
+    const allTerms = [
+      // Services
+      "cloud services", "cybersecurity", "it support", "microsoft 365", "azure",
+      "it consultancy", "security", "backup", "network", "infrastructure",
+      
+      // Products  
+      "iptv", "digital signage", "crm", "erp", "ai assistant", "hospitality app",
+      "digital menu", "helpdesk", "id scanning", "pos system",
+      
+      // General
+      "services", "products", "contact", "about", "pricing", "quote",
+      "help", "support", "information", "solutions"
+    ];
+    
+    const suggestions = [];
+    const words = input.toLowerCase().split(/\s+/);
+    
+    for (const word of words) {
+      for (const term of allTerms) {
+        const similarity = this.calculateSimilarity(word, term);
+        if (similarity >= 0.5 && similarity < 1.0) {
+          suggestions.push({ term, similarity });
+        }
+      }
+    }
+    
+    // Sort by similarity and return top 3
+    return suggestions
+      .sort((a, b) => b.similarity - a.similarity)
+      .slice(0, 3)
+      .map(s => s.term);
   }
 
   getServicesInfo(message) {
@@ -1020,6 +1188,353 @@ class ITSthe1Chatbot {
 
     return null;
   }
+
+  // Method to open page content inline within the chatbot
+  openPageInline(link) {
+    // Extract page title from link for better header
+    const pageTitle = this.getPageTitleFromLink(link);
+    
+    // Create an enhanced iframe to display the page content
+    const iframeHTML = `
+      <div class="inline-page-container">
+        <div class="inline-page-header">
+          <div class="page-info">
+            <span class="inline-page-title">${pageTitle}</span>
+          </div>
+          <div class="header-controls">
+            <button class="refresh-page" onclick="this.closest('.inline-page-container').querySelector('.inline-page-frame').src = this.closest('.inline-page-container').querySelector('.inline-page-frame').src" title="Refresh Page">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <polyline points="1 20 1 14 7 14"></polyline>
+                <path d="m3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </svg>
+            </button>
+            <button class="expand-page" onclick="window.open('${link}', '_blank')" title="Open in New Tab">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15,3 21,3 21,9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </button>
+            <button class="close-inline-page" onclick="this.closest('.message').remove()" title="Close">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="iframe-container">
+          <iframe 
+            src="${link}" 
+            class="inline-page-frame"
+            frameborder="0"
+            allowfullscreen
+            sandbox="allow-same-origin allow-scripts allow-forms allow-links allow-popups"
+            onload="this.style.opacity = '1'; this.parentElement.querySelector('.iframe-loading').style.display = 'none'; this.parentElement.querySelector('.iframe-progress').style.width = '100%';"
+            onerror="this.parentElement.innerHTML = '<div class=\\"iframe-error\\"><div class=\\"error-icon\\">⚠️</div><div class=\\"error-text\\">Unable to load page content</div><div class=\\"error-subtitle\\">This page may not allow embedding</div><button onclick=\\"window.open(\\&quot;${link}\\&quot;, \\&quot;_blank\\&quot;)\\" class=\\"error-button\\">Open in New Tab</button></div>'">
+          </iframe>
+          <div class="iframe-loading">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Loading page content...</div>
+            <div class="iframe-progress"></div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Add the enhanced iframe as a message
+    this.addMessage(iframeHTML, "bot", {
+      buttons: [
+        { text: "📱 Mobile View", action: "mobileView", link: link },
+        { text: "❌ Close", action: "closeInline" }
+      ]
+    });
+
+    // Add enhanced CSS for the inline page if not already added
+    if (!document.getElementById('chatbot-inline-styles')) {
+      const style = document.createElement('style');
+      style.id = 'chatbot-inline-styles';
+      style.textContent = `
+        .inline-page-container {
+          width: 100%;
+          max-width: 650px;
+          height: 450px;
+          border: 1px solid #e1e5e9;
+          border-radius: 12px;
+          overflow: hidden;
+          margin: 15px 0;
+          background: white;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          transition: all 0.3s ease;
+        }
+        
+        .inline-page-container:hover {
+          box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        
+        .inline-page-header {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 12px 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .page-info {
+          flex: 1;
+          min-width: 0;
+        }
+        
+        .inline-page-title {
+          font-weight: 600;
+          font-size: 14px;
+          display: block;
+          margin-bottom: 2px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        
+        .header-controls {
+          display: flex;
+          gap: 8px;
+          margin-left: 12px;
+        }
+        
+        .header-controls button {
+          background: rgba(255,255,255,0.2);
+          border: none;
+          color: white;
+          padding: 6px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .header-controls button:hover {
+          background: rgba(255,255,255,0.3);
+          transform: translateY(-1px);
+        }
+        
+        .iframe-container {
+          position: relative;
+          height: calc(100% - 60px);
+          background: #f8f9fa;
+        }
+        
+        .inline-page-frame {
+          width: 100%;
+          height: 100%;
+          border: none;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          background: white;
+        }
+        
+        .iframe-loading {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background: #f8f9fa;
+          z-index: 10;
+        }
+        
+        .loading-spinner {
+          width: 40px;
+          height: 40px;
+          border: 3px solid #e3e6ea;
+          border-top: 3px solid #667eea;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+          margin-bottom: 16px;
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+          color: #6c757d;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        
+        .iframe-progress {
+          width: 0%;
+          height: 3px;
+          background: linear-gradient(90deg, #667eea, #764ba2);
+          border-radius: 2px;
+          transition: width 0.3s ease;
+          animation: progress 2s ease-in-out;
+        }
+        
+        @keyframes progress {
+          0% { width: 0%; }
+          50% { width: 70%; }
+          100% { width: 90%; }
+        }
+        
+        .iframe-error {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+          background: #f8f9fa;
+          z-index: 15;
+        }
+        
+        .error-icon {
+          font-size: 48px;
+          margin-bottom: 16px;
+        }
+        
+        .error-text {
+          color: #dc3545;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        
+        .error-subtitle {
+          color: #6c757d;
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        
+        .error-button {
+          background: #667eea;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+          transition: all 0.2s ease;
+        }
+        
+        .error-button:hover {
+          background: #5a67d8;
+          transform: translateY(-1px);
+        }
+        
+        @media (max-width: 768px) {
+          .inline-page-container {
+            max-width: 100%;
+            height: 350px;
+            margin: 10px 0;
+          }
+          
+          .inline-page-header {
+            padding: 10px 12px;
+          }
+          
+          .inline-page-title {
+            font-size: 13px;
+          }
+          
+          .inline-page-url {
+            font-size: 10px;
+          }
+          
+          .header-controls {
+            gap: 6px;
+          }
+          
+          .header-controls button {
+            padding: 5px;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .inline-page-container {
+            height: 300px;
+          }
+          
+          .page-info {
+            max-width: 60%;
+          }
+        }
+        
+        /* Mobile view simulation */
+        .inline-page-container.mobile-view {
+          max-width: 375px;
+          height: 500px;
+          margin: 15px auto;
+        }
+        
+        .inline-page-container.mobile-view .iframe-container {
+          background: #000;
+          padding: 10px;
+          border-radius: 0 0 20px 20px;
+        }
+        
+        .inline-page-container.mobile-view .inline-page-frame {
+          border-radius: 15px;
+          border: 2px solid #333;
+        }
+        
+        /* Spell correction styling */
+        .spell-correction {
+          background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+          border-left: 4px solid #2196f3;
+          padding: 8px 12px;
+          margin: 8px 0;
+          border-radius: 6px;
+          font-size: 13px;
+          color: #1565c0;
+        }
+        
+        .spell-correction strong {
+          color: #0d47a1;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+  }
+
+  // Helper method to extract page title from link
+  getPageTitleFromLink(link) {
+    const linkParts = link.split('/').filter(part => part);
+    const lastPart = linkParts[linkParts.length - 1] || linkParts[linkParts.length - 2] || 'Page';
+    
+    // Convert kebab-case to title case
+    return lastPart
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
+
+  // Helper method to format URL for display
+  formatURL(link) {
+    try {
+      const url = new URL(link, window.location.origin);
+      return url.pathname;
+    } catch {
+      return link.length > 40 ? link.substring(0, 37) + '...' : link;
+    }
+  }
 }
 
 // Initialize chatbot when DOM is loaded
@@ -1045,14 +1560,59 @@ document.addEventListener("DOMContentLoaded", function () {
             window.chatbotInstance.showTyping();
             setTimeout(() => {
               window.chatbotInstance.hideTyping();
+              // Add "Open Page" button to the detailed info
+              const detailedInfoWithButton = {
+                ...detailedInfo,
+                options: {
+                  ...detailedInfo.options,
+                  buttons: [
+                    ...(detailedInfo.options?.buttons || []),
+                    { text: "Open Page", action: "openPage", link: link }
+                  ]
+                }
+              };
               window.chatbotInstance.addMessage(
-                detailedInfo.text,
+                detailedInfoWithButton.text,
                 "bot",
-                detailedInfo.options
+                detailedInfoWithButton.options
               );
             }, 1000);
           }
         }
+      }
+
+      if (action === "openPage" && link) {
+        // Handle opening page content inline
+        if (window.chatbotInstance) {
+          window.chatbotInstance.showTyping();
+          setTimeout(() => {
+            window.chatbotInstance.hideTyping();
+            window.chatbotInstance.openPageInline(link);
+          }, 500);
+        }
+      }
+
+      if (action === "closeInline") {
+        // Handle closing inline content
+        const messageElement = e.target.closest('.message');
+        if (messageElement) {
+          messageElement.remove();
+        }
+      }
+
+      if (action === "mobileView" && link) {
+        // Handle mobile view toggle
+        const iframe = e.target.closest('.message').querySelector('.inline-page-frame');
+        if (iframe) {
+          const container = iframe.closest('.inline-page-container');
+          container.classList.toggle('mobile-view');
+          e.target.textContent = container.classList.contains('mobile-view') ? '🖥️ Desktop View' : '📱 Mobile View';
+        }
+      }
+
+      if (action === "link" && !window.chatbotInstance.getDetailedInfo(link)) {
+        // For links that don't have detailed info, open in new tab
+        window.open(link, '_blank');
       }
     }
 
