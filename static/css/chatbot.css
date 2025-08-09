@@ -325,6 +325,14 @@
   animation: pulse 2s infinite;
 }
 
+.chatbot-header-controls {
+  display: flex;
+  gap: 8px;
+  margin-left: 16px;
+  z-index: 1;
+}
+
+.chatbot-clear,
 .chatbot-minimize {
   background: none;
   border: none;
@@ -333,12 +341,17 @@
   padding: 8px;
   border-radius: 50%;
   transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.chatbot-clear:hover,
 .chatbot-minimize:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.chatbot-clear svg,
 .chatbot-minimize svg {
   width: 16px;
   height: 16px;

@@ -179,7 +179,34 @@ class ITSthe1Chatbot {
   init() {
     this.createChatbotHTML();
     this.bindEvents();
-    this.addWelcomeMessage();
+    // Load existing chat history or add welcome message
+    this.loadChatHistory();
+  }
+
+  loadChatHistory() {
+    // Try to load chat history from localStorage
+    const savedMessages = localStorage.getItem('itsthe1-chatbot-messages');
+    if (savedMessages) {
+      try {
+        const messages = JSON.parse(savedMessages);
+        this.messages = messages;
+        // Restore messages to the UI
+        messages.forEach(msg => {
+          this.displayMessage(msg.content, msg.sender, msg.options);
+        });
+      } catch (e) {
+        // If parsing fails, start fresh
+        this.addWelcomeMessage();
+      }
+    } else {
+      // No saved history, add welcome message
+      this.addWelcomeMessage();
+    }
+  }
+
+  saveChatHistory() {
+    // Save messages to localStorage
+    localStorage.setItem('itsthe1-chatbot-messages', JSON.stringify(this.messages));
   }
 
   generateId() {
@@ -213,11 +240,18 @@ class ITSthe1Chatbot {
                             <h4>ONE Assistant</h4>
                             <span class="status">Online</span>
                         </div>
-                        <button class="chatbot-minimize" id="chatbot-minimize">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
+                        <div class="chatbot-header-controls">
+                            <button class="chatbot-clear" id="chatbot-clear" title="Clear Chat History">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6h14zM10 11v6M14 11v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="chatbot-minimize" id="chatbot-minimize">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     
                     <div class="chatbot-messages" id="chatbot-messages">
@@ -258,12 +292,14 @@ class ITSthe1Chatbot {
   bindEvents() {
     const toggle = document.getElementById("chatbot-toggle");
     const minimize = document.getElementById("chatbot-minimize");
+    const clear = document.getElementById("chatbot-clear");
     const input = document.getElementById("chatbot-input");
     const sendButton = document.getElementById("chatbot-send");
     const quickActions = document.querySelectorAll(".quick-action");
 
     toggle.addEventListener("click", () => this.toggleChat());
     minimize.addEventListener("click", () => this.toggleChat());
+    clear.addEventListener("click", () => this.clearChatHistory());
 
     input.addEventListener("keypress", (e) => {
       if (e.key === "Enter" && !e.shiftKey) {
@@ -300,6 +336,28 @@ class ITSthe1Chatbot {
     }
   }
 
+  clearChatHistory() {
+    // Clear the messages container
+    const messagesContainer = document.getElementById("chatbot-messages");
+    messagesContainer.innerHTML = "";
+    
+    // Clear the messages array
+    this.messages = [];
+    
+    // Clear localStorage
+    localStorage.removeItem('itsthe1-chatbot-messages');
+    
+    // Add welcome message back
+    this.addWelcomeMessage();
+    
+    // Show a confirmation message
+    setTimeout(() => {
+      this.addMessage("Chat history cleared! How can I help you today?", "bot", {
+        suggestions: ["Our Services", "Products", "Contact Us"]
+      });
+    }, 500);
+  }
+
   showNotification() {
     if (!this.isOpen) {
       const notification = document.getElementById("chatbot-notification");
@@ -315,11 +373,26 @@ class ITSthe1Chatbot {
 
   addWelcomeMessage() {
     const welcomeMessage =
-      "Hi! I'm your ONE virtual assistant. I can help you learn about our services, products, and solutions. How can I assist you today?";
+      "Hi! I'm your ONE virtual assistant. I can help you learn about our services, products, and solutions. When you ask for details, I'll provide information and navigate you to the relevant pages. How can I assist you today?";
     this.addMessage(welcomeMessage, "bot");
   }
 
   addMessage(content, sender, options = {}) {
+    this.displayMessage(content, sender, options);
+
+    this.messages.push({
+      id: this.generateId(),
+      content,
+      sender,
+      timestamp: new Date(),
+      options,
+    });
+
+    // Save to localStorage
+    this.saveChatHistory();
+  }
+
+  displayMessage(content, sender, options = {}) {
     const messagesContainer = document.getElementById("chatbot-messages");
     const messageId = this.generateId();
 
@@ -362,14 +435,6 @@ class ITSthe1Chatbot {
         });
       }, 100);
     }
-
-    this.messages.push({
-      id: messageId,
-      content,
-      sender,
-      timestamp: new Date(),
-      options,
-    });
   }
 
   createButtons(buttons) {
@@ -439,21 +504,27 @@ class ITSthe1Chatbot {
     const lowerMessage = message.toLowerCase();
 
     // First check for exact phrase matches to avoid spell correction conflicts
-    if (lowerMessage.includes("tell me about your services") || 
-        lowerMessage.includes("about your services") ||
-        lowerMessage.includes("our services")) {
+    if (
+      lowerMessage.includes("tell me about your services") ||
+      lowerMessage.includes("about your services") ||
+      lowerMessage.includes("our services")
+    ) {
       return this.getServicesInfo(lowerMessage);
     }
 
-    if (lowerMessage.includes("what products do you offer") || 
-        lowerMessage.includes("products do you offer") ||
-        lowerMessage.includes("your products")) {
+    if (
+      lowerMessage.includes("what products do you offer") ||
+      lowerMessage.includes("products do you offer") ||
+      lowerMessage.includes("your products")
+    ) {
       return this.getProductsInfo(lowerMessage);
     }
 
-    if (lowerMessage.includes("how can i contact you") || 
-        lowerMessage.includes("contact you") ||
-        lowerMessage.includes("contact information")) {
+    if (
+      lowerMessage.includes("how can i contact you") ||
+      lowerMessage.includes("contact you") ||
+      lowerMessage.includes("contact information")
+    ) {
       return {
         text: "You can contact ITSthe1 Solutions through several ways:\n\n<strong>Email:</strong> sales@itsthe1.com - Send us your inquiries\n<strong>Phone:</strong> +971 55 220 2171 - Call us for immediate assistance\n<strong>WhatsApp:</strong> Chat with us directly for quick answers\n\nWould you like me to help you with anything specific about our services?",
         options: {
@@ -1123,25 +1194,30 @@ class ITSthe1Chatbot {
       "<strong>Co-managed IT Services</strong> - Flexible IT management partnership with your team",
     ];
 
+    // Automatically navigate to services page
+    setTimeout(() => {
+      window.location.href = "/services/";
+    }, 2000);
+
     return {
       text: `Here are our main IT services:\n\n${services.join(
         "\n"
-      )}\n\nWhich service interests you most?`,
+      )}\n\nWhich service interests you most? I'll take you to our complete services page now.`,
       options: {
         buttons: [
           {
             text: "IT Support",
-            action: "link",
+            action: "navigate",
             link: "/services/it-support-outsourcing/",
           },
           {
             text: "Cloud Services",
-            action: "link",
+            action: "navigate",
             link: "/services/cloud-hybrid/",
           },
           {
             text: "Cybersecurity",
-            action: "link",
+            action: "navigate",
             link: "/services/it-security-compliance/",
           },
         ],
@@ -1170,26 +1246,31 @@ class ITSthe1Chatbot {
       "• <strong>ID Scanning Solutions</strong> - Advanced identity verification and access control",
     ];
 
+    // Automatically navigate to products page
+    setTimeout(() => {
+      window.location.href = "/products/";
+    }, 2000);
+
     return {
       text: `Our comprehensive product portfolio includes:\n\n${products.join(
         "\n"
-      )}\n\nWhich product category interests you most? Click below for detailed information:`,
+      )}\n\nWhich product category interests you most? I'll take you to our complete products page now.`,
       options: {
         buttons: [
-          { text: "IPTV Solutions", action: "link", link: "/products/iptv/" },
+          { text: "IPTV Solutions", action: "navigate", link: "/products/iptv/" },
           {
             text: "AI Assistant",
-            action: "link",
+            action: "navigate",
             link: "/products/ai-helper/",
           },
           {
             text: "Hospitality App",
-            action: "link",
+            action: "navigate",
             link: "/products/hospitality-app/",
           },
           {
             text: "Digital Signage",
-            action: "link",
+            action: "navigate",
             link: "/products/digital-signage/",
           },
         ],
@@ -1204,18 +1285,23 @@ class ITSthe1Chatbot {
   }
 
   getCloudServicesInfo() {
+    // Automatically navigate to cloud services page
+    setTimeout(() => {
+      window.location.href = "/services/cloud-hybrid/";
+    }, 2000);
+
     return {
-      text: "Our Cloud & Microsoft Solutions include:\n\n<strong>Microsoft Azure Services</strong>\n Cloud migration & management\n Infrastructure as a Service (IaaS)\n Platform as a Service (PaaS)\n\n<strong>Microsoft 365</strong>\n Complete productivity suite\n Email & collaboration tools\n Security & compliance\n\n<strong>Hybrid Solutions</strong>\n On-premises + cloud integration\n Seamless data synchronization\n Scalable infrastructure",
+      text: "Our Cloud & Microsoft Solutions include:\n\n<strong>Microsoft Azure Services</strong>\n Cloud migration & management\n Infrastructure as a Service (IaaS)\n Platform as a Service (PaaS)\n\n<strong>Microsoft 365</strong>\n Complete productivity suite\n Email & collaboration tools\n Security & compliance\n\n<strong>Hybrid Solutions</strong>\n On-premises + cloud integration\n Seamless data synchronization\n Scalable infrastructure\n\nI'll take you to the detailed cloud services page now.",
       options: {
         buttons: [
           {
             text: "Azure Services",
-            action: "link",
+            action: "navigate",
             link: "/services/microsoft-azure/",
           },
           {
             text: "Microsoft 365",
-            action: "link",
+            action: "navigate",
             link: "/services/microsoft-365/",
           },
         ],
@@ -1224,15 +1310,15 @@ class ITSthe1Chatbot {
   }
 
   getSecurityInfo() {
+    // Automatically navigate to security page
+    setTimeout(() => {
+      window.location.href = "/services/it-security-compliance/";
+    }, 2000);
+
     return {
-      text: "Our Cybersecurity & Compliance services:\n\n<strong>Security Solutions</strong>\n Advanced threat protection\n Network security monitoring\n Endpoint security management\n\n<strong>Compliance Services</strong>\n Regulatory compliance audits\n Data protection policies\n Risk assessment & management\n\n<strong>Proactive Protection</strong>\n 24/7 security monitoring\n Incident response planning\n Security awareness training",
+      text: "Our Cybersecurity & Compliance services:\n\n<strong>Security Solutions</strong>\n Advanced threat protection\n Network security monitoring\n Endpoint security management\n\n<strong>Compliance Services</strong>\n Regulatory compliance audits\n Data protection policies\n Risk assessment & management\n\n<strong>Proactive Protection</strong>\n 24/7 security monitoring\n Incident response planning\n Security awareness training\n\nI'll take you to our detailed security services page now.",
       options: {
         buttons: [
-          {
-            text: "Security Services",
-            action: "link",
-            link: "/services/it-security-compliance/",
-          },
           { text: "Get Assessment", action: "link", link: "/contact/" },
         ],
       },
@@ -1240,15 +1326,24 @@ class ITSthe1Chatbot {
   }
 
   getIPTVInfo() {
+    // Automatically navigate to IPTV page
+    setTimeout(() => {
+      window.location.href = "/products/iptv/";
+    }, 2000);
+
     return {
-      text: "Our IPTV Solutions offer:\n\n<strong>Enterprise IPTV</strong>\n Custom channel packages\n Interactive TV services\n Content management systems\n\n<strong>Hospitality IPTV</strong>\n Guest entertainment systems\n Hotel information channels\n Multi-language support\n\n<strong>Key Features</strong>\n High-definition streaming\n Scalable infrastructure\n 24/7 technical support",
+      text: "Our IPTV Solutions offer:\n\n<strong>Enterprise IPTV</strong>\n Custom channel packages\n Interactive TV services\n Content management systems\n\n<strong>Hospitality IPTV</strong>\n Guest entertainment systems\n Hotel information channels\n Multi-language support\n\n<strong>Key Features</strong>\n High-definition streaming\n Scalable infrastructure\n 24/7 technical support\n\nI'll take you to the detailed IPTV page now with all specifications and features.",
       options: {
         buttons: [
-          { text: "IPTV Details", action: "link", link: "/products/iptv/" },
           {
             text: "Hospitality Solutions",
-            action: "link",
+            action: "navigate",
             link: "/solutions/hospitality/",
+          },
+          {
+            text: "Contact Sales",
+            action: "link", 
+            link: "/contact/"
           },
         ],
       },
@@ -1316,11 +1411,20 @@ class ITSthe1Chatbot {
   }
 
   getAIHelperInfo() {
+    // Automatically navigate to AI Helper page
+    setTimeout(() => {
+      window.location.href = "/products/ai-helper/";
+    }, 2000);
+
     return {
-      text: "Our AI Helper Assistant provides:\n\n<strong>AI Capabilities</strong>\n Natural language processing (50+ languages)\n Machine learning and predictive analytics\n Sentiment analysis and emotion detection\n\n<strong>Business Applications</strong>\n 24/7 customer support automation\n Sales lead qualification\n HR and finance process automation\n\n<strong>Performance</strong>\n 95% accuracy in query understanding\n 80% reduction in response time\n Handles 10,000+ concurrent conversations",
+      text: "Our AI Helper Assistant provides:\n\n<strong>AI Capabilities</strong>\n Natural language processing (50+ languages)\n Machine learning and predictive analytics\n Sentiment analysis and emotion detection\n\n<strong>Business Applications</strong>\n 24/7 customer support automation\n Sales lead qualification\n HR and finance process automation\n\n<strong>Performance</strong>\n 95% accuracy in query understanding\n 80% reduction in response time\n Handles 10,000+ concurrent conversations\n\nI'll take you to the complete AI Helper page now with detailed features and use cases.",
       options: {
         buttons: [
-          { text: "AI Details", action: "link", link: "/products/ai-helper/" },
+          {
+            text: "Request Demo",
+            action: "link",
+            link: "/contact/"
+          },
         ],
         suggestions: ["Capabilities", "Integration", "Pricing"],
       },
@@ -1376,21 +1480,32 @@ class ITSthe1Chatbot {
   }
 
   handleQuickAction(action) {
-    const input = document.getElementById("chatbot-input");
-
+    let message;
+    
     switch (action) {
       case "services":
-        input.value = "Tell me about your services";
+        message = "Tell me about your services";
         break;
       case "products":
-        input.value = "What products do you offer?";
+        message = "What products do you offer?";
         break;
       case "contact":
-        input.value = "How can I contact you?";
+        message = "How can I contact you?";
         break;
+      default:
+        message = action;
     }
 
-    this.sendMessage();
+    // Add user message and process it directly
+    this.addMessage(message, "user");
+    this.showTyping();
+
+    // Simulate AI processing delay
+    setTimeout(() => {
+      const response = this.processMessage(message);
+      this.hideTyping();
+      this.addMessage(response.text, "bot", response.options);
+    }, 1000 + Math.random() * 1000);
   }
 
   // Method to get detailed information about a specific topic
@@ -1441,6 +1556,7 @@ class ITSthe1Chatbot {
   openPageInline(link) {
     // Extract page title from link for better header
     const pageTitle = this.getPageTitleFromLink(link);
+    const pageSubtitle = this.getPageSubtitleFromLink(link);
 
     // Create an enhanced iframe to display the page content
     const iframeHTML = `
@@ -1448,24 +1564,25 @@ class ITSthe1Chatbot {
         <div class="inline-page-header">
           <div class="page-info">
             <span class="inline-page-title">${pageTitle}</span>
+            <div class="inline-page-subtitle">${pageSubtitle}</div>
           </div>
           <div class="header-controls">
             <button class="refresh-page" onclick="this.closest('.inline-page-container').querySelector('.inline-page-frame').src = this.closest('.inline-page-container').querySelector('.inline-page-frame').src" title="Refresh Page">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="23 4 23 10 17 10"></polyline>
                 <polyline points="1 20 1 14 7 14"></polyline>
                 <path d="m3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
               </svg>
             </button>
             <button class="expand-page" onclick="window.open('${link}', '_blank')" title="Open in New Tab">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15,3 21,3 21,9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </button>
             <button class="close-inline-page" onclick="this.closest('.message').remove()" title="Close">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
@@ -1484,7 +1601,7 @@ class ITSthe1Chatbot {
           </iframe>
           <div class="iframe-loading">
             <div class="loading-spinner"></div>
-            <div class="loading-text">Loading page content...</div>
+            <div class="loading-text">Loading ${pageTitle}...</div>
             <div class="iframe-progress"></div>
           </div>
         </div>
@@ -1494,8 +1611,9 @@ class ITSthe1Chatbot {
     // Add the enhanced iframe as a message
     this.addMessage(iframeHTML, "bot", {
       buttons: [
+        { text: "🔄 Refresh", action: "refreshInline", link: link },
         { text: "📱 Mobile View", action: "mobileView", link: link },
-        { text: "❌ Close", action: "closeInline" },
+        { text: "❌ Close Preview", action: "closeInline" },
       ],
     });
 
@@ -1506,73 +1624,117 @@ class ITSthe1Chatbot {
       style.textContent = `
         .inline-page-container {
           width: 100%;
-          max-width: 650px;
-          height: 450px;
-          border: 1px solid #e1e5e9;
-          border-radius: 12px;
+          max-width: 700px;
+          height: 500px;
+          border: 2px solid #667eea;
+          border-radius: 16px;
           overflow: hidden;
-          margin: 15px 0;
+          margin: 20px 0;
           background: white;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15), 0 0 0 1px rgba(102, 126, 234, 0.1);
           transition: all 0.3s ease;
+          position: relative;
         }
         
         .inline-page-container:hover {
-          box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+          box-shadow: 0 12px 48px rgba(102, 126, 234, 0.25), 0 0 0 2px rgba(102, 126, 234, 0.2);
+          transform: translateY(-2px);
+        }
+        
+        .inline-page-container::before {
+          content: "📄 Live Website Preview";
+          position: absolute;
+          top: -12px;
+          left: 16px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 4px 12px;
+          border-radius: 8px;
+          font-size: 11px;
+          font-weight: 600;
+          z-index: 20;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
         }
         
         .inline-page-header {
           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
           color: white;
-          padding: 12px 16px;
+          padding: 16px 20px;
           display: flex;
           justify-content: space-between;
           align-items: center;
           border-bottom: 1px solid rgba(255,255,255,0.1);
+          position: relative;
+          z-index: 15;
+        }
+        
+        .inline-page-header::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+          pointer-events: none;
         }
         
         .page-info {
           flex: 1;
           min-width: 0;
+          z-index: 1;
         }
         
         .inline-page-title {
-          font-weight: 600;
-          font-size: 14px;
+          font-weight: 700;
+          font-size: 16px;
           display: block;
-          margin-bottom: 2px;
+          margin-bottom: 4px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          letter-spacing: -0.01em;
+        }
+        
+        .inline-page-subtitle {
+          font-size: 12px;
+          opacity: 0.8;
+          font-weight: 400;
         }
         
         .header-controls {
           display: flex;
-          gap: 8px;
-          margin-left: 12px;
+          gap: 10px;
+          margin-left: 16px;
+          z-index: 1;
         }
         
         .header-controls button {
-          background: rgba(255,255,255,0.2);
-          border: none;
+          background: rgba(255,255,255,0.15);
+          border: 1px solid rgba(255,255,255,0.2);
           color: white;
-          padding: 6px;
-          border-radius: 6px;
+          padding: 8px;
+          border-radius: 8px;
           cursor: pointer;
           transition: all 0.2s ease;
           display: flex;
           align-items: center;
           justify-content: center;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
         }
         
         .header-controls button:hover {
-          background: rgba(255,255,255,0.3);
+          background: rgba(255,255,255,0.25);
+          border-color: rgba(255,255,255,0.3);
           transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         
         .iframe-container {
           position: relative;
-          height: calc(100% - 60px);
+          height: calc(100% - 72px);
           background: #f8f9fa;
         }
         
@@ -1581,7 +1743,7 @@ class ITSthe1Chatbot {
           height: 100%;
           border: none;
           opacity: 0;
-          transition: opacity 0.5s ease;
+          transition: opacity 0.8s ease;
           background: white;
         }
         
@@ -1595,18 +1757,18 @@ class ITSthe1Chatbot {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background: #f8f9fa;
+          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
           z-index: 10;
         }
         
         .loading-spinner {
-          width: 40px;
-          height: 40px;
-          border: 3px solid #e3e6ea;
-          border-top: 3px solid #667eea;
+          width: 48px;
+          height: 48px;
+          border: 4px solid #e3e6ea;
+          border-top: 4px solid #667eea;
           border-radius: 50%;
           animation: spin 1s linear infinite;
-          margin-bottom: 16px;
+          margin-bottom: 20px;
         }
         
         @keyframes spin {
@@ -1615,25 +1777,28 @@ class ITSthe1Chatbot {
         }
         
         .loading-text {
-          color: #6c757d;
-          font-size: 14px;
-          font-weight: 500;
-          margin-bottom: 20px;
+          color: #495057;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 24px;
+          text-align: center;
+          letter-spacing: -0.01em;
         }
         
         .iframe-progress {
           width: 0%;
-          height: 3px;
+          height: 4px;
           background: linear-gradient(90deg, #667eea, #764ba2);
           border-radius: 2px;
           transition: width 0.3s ease;
-          animation: progress 2s ease-in-out;
+          animation: progress 3s ease-in-out;
         }
         
         @keyframes progress {
           0% { width: 0%; }
-          50% { width: 70%; }
-          100% { width: 90%; }
+          30% { width: 40%; }
+          60% { width: 75%; }
+          100% { width: 95%; }
         }
         
         .iframe-error {
@@ -1777,6 +1942,30 @@ class ITSthe1Chatbot {
       .join(" ");
   }
 
+  // Helper method to get page subtitle/description
+  getPageSubtitleFromLink(link) {
+    const descriptions = {
+      "/services/": "Complete IT services overview",
+      "/products/": "Our complete product portfolio",
+      "/services/it-support-outsourcing/": "24/7 IT support and management",
+      "/services/cloud-hybrid/": "Cloud migration and hybrid solutions",
+      "/services/it-security-compliance/": "Advanced cybersecurity protection",
+      "/services/microsoft-365/": "Complete Microsoft 365 solutions",
+      "/services/microsoft-azure/": "Azure cloud services and migration",
+      "/products/iptv/": "Enterprise and hospitality IPTV solutions",
+      "/products/ai-helper/": "Intelligent business automation platform",
+      "/products/digital-signage/": "Interactive digital display solutions",
+      "/products/hospitality-app/": "Mobile guest experience platform",
+      "/products/crm-sme/": "Customer relationship management for SMEs",
+      "/products/erp-garment/": "ERP solutions for garment industry",
+      "/solutions/hospitality/": "Complete hospitality technology solutions",
+      "/contact/": "Get in touch with our team",
+      "/about/": "About ITSthe1 Solutions",
+    };
+
+    return descriptions[link] || "Detailed information and features";
+  }
+
   // Helper method to format URL for display
   formatURL(link) {
     try {
@@ -1801,45 +1990,30 @@ document.addEventListener("DOMContentLoaded", function () {
       const action = e.target.dataset.action;
       const link = e.target.dataset.link;
 
-      if (action === "link" && link) {
-        // Get the chatbot instance
-        const chatbotInput = document.getElementById("chatbot-input");
-        if (chatbotInput && window.chatbotInstance) {
-          // Show detailed information instead of navigating
-          const detailedInfo = window.chatbotInstance.getDetailedInfo(link);
-          if (detailedInfo) {
-            window.chatbotInstance.showTyping();
-            setTimeout(() => {
-              window.chatbotInstance.hideTyping();
-              // Add "Open Page" button to the detailed info
-              const detailedInfoWithButton = {
-                ...detailedInfo,
-                options: {
-                  ...detailedInfo.options,
-                  buttons: [
-                    ...(detailedInfo.options?.buttons || []),
-                    { text: "Open Page", action: "openPage", link: link },
-                  ],
-                },
-              };
-              window.chatbotInstance.addMessage(
-                detailedInfoWithButton.text,
-                "bot",
-                detailedInfoWithButton.options
-              );
-            }, 1000);
-          }
-        }
+      if (action === "navigate" && link) {
+        // Handle direct navigation to pages
+        window.location.href = link;
       }
 
       if (action === "openPage" && link) {
-        // Handle opening page content inline
+        // Handle opening page content inline directly
         if (window.chatbotInstance) {
           window.chatbotInstance.showTyping();
           setTimeout(() => {
             window.chatbotInstance.hideTyping();
+            window.chatbotInstance.addMessage(`Opening ${window.chatbotInstance.getPageTitleFromLink(link)} page:`, "bot");
             window.chatbotInstance.openPageInline(link);
           }, 500);
+        }
+      }
+
+      if (action === "link" && link) {
+        // For external links (like contact, email, etc.), open in new tab
+        if (link.startsWith("mailto:") || link.startsWith("tel:") || link.startsWith("https://")) {
+          window.open(link, "_blank");
+        } else {
+          // For internal pages, navigate directly to the page
+          window.location.href = link;
         }
       }
 
@@ -1848,6 +2022,25 @@ document.addEventListener("DOMContentLoaded", function () {
         const messageElement = e.target.closest(".message");
         if (messageElement) {
           messageElement.remove();
+        }
+      }
+
+      if (action === "refreshInline" && link) {
+        // Handle refreshing inline content
+        const iframe = e.target
+          .closest(".message")
+          .querySelector(".inline-page-frame");
+        if (iframe) {
+          const loadingEl = iframe.parentElement.querySelector('.iframe-loading');
+          const progressEl = iframe.parentElement.querySelector('.iframe-progress');
+          
+          // Show loading state
+          if (loadingEl) loadingEl.style.display = 'flex';
+          if (progressEl) progressEl.style.width = '0%';
+          iframe.style.opacity = '0';
+          
+          // Refresh the iframe
+          iframe.src = iframe.src;
         }
       }
 
@@ -1864,19 +2057,22 @@ document.addEventListener("DOMContentLoaded", function () {
             : "📱 Mobile View";
         }
       }
-
-      if (action === "link" && !window.chatbotInstance.getDetailedInfo(link)) {
-        // For links that don't have detailed info, open in new tab
-        window.open(link, "_blank");
-      }
     }
 
     if (e.target.classList.contains("suggestion-chip")) {
       const suggestion = e.target.dataset.suggestion;
-      const input = document.getElementById("chatbot-input");
-      if (input) {
-        input.value = suggestion;
-        input.focus();
+      
+      // Add user message and process it directly
+      if (window.chatbotInstance) {
+        window.chatbotInstance.addMessage(suggestion, "user");
+        window.chatbotInstance.showTyping();
+
+        // Simulate AI processing delay
+        setTimeout(() => {
+          const response = window.chatbotInstance.processMessage(suggestion);
+          window.chatbotInstance.hideTyping();
+          window.chatbotInstance.addMessage(response.text, "bot", response.options);
+        }, 1000 + Math.random() * 1000);
       }
     }
   });
