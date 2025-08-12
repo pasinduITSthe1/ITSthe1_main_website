@@ -56,6 +56,38 @@ class ITSthe1Chatbot {
             " <strong>IT Consultancy Services</strong>\n\n<strong>Consulting Areas:</strong>\n Digital transformation strategy\n IT infrastructure assessment\n Technology roadmap development\n Process optimization\n Vendor selection and management\n Project management and implementation\n\n<strong>Our Approach:</strong>\n Comprehensive business analysis\n Custom solution design\n Implementation planning\n Change management support\n Ongoing optimization\n\n<strong>Outcome:</strong> Strategic IT alignment that drives business growth and operational efficiency.",
           link: "/services/it-consultancy/",
         },
+        "co-managed it services": {
+          title: "Co-managed IT Services",
+          description:
+            "Strategic partnership combining your internal IT team with our specialists for enhanced technology solutions and support.",
+          summary:
+            "<strong>Co-managed IT Services</strong>\n\n<strong>Partnership Approach:</strong>\n• Flexible collaboration with your existing IT team\n• Specialized expertise augmentation\n• Project-based and ongoing support\n• Knowledge transfer and skills development\n• Strategic guidance and best practices\n• 24/7 monitoring and emergency response\n\n<strong>Service Models:</strong>\n• <strong>Co-managed IT:</strong> Shared responsibility model\n• <strong>IT Partnership:</strong> Strategic collaboration\n• <strong>Hybrid Support:</strong> Flexible engagement options\n\n<strong>Benefits:</strong>\n• Access to specialized skills without full-time hiring\n• Reduced IT workload and stress\n• Enhanced security and compliance\n• Improved technology performance\n• Cost-effective expertise expansion\n\n<strong>Perfect For:</strong> Organizations with existing IT teams looking to enhance capabilities and coverage.",
+          link: "/services/co-managed-it-services/",
+        },
+        "digital transformation planning": {
+          title: "Digital Transformation Planning",
+          description:
+            "Strategic digital transformation planning to help organizations modernize operations and drive innovation-led growth.",
+          summary:
+            "<strong>Digital Transformation Planning</strong>\n\n<strong>Planning Services:</strong>\n• Comprehensive digital readiness assessment\n• Technology roadmap development\n• Process optimization and automation strategies\n• Data-driven decision making frameworks\n• Change management and adoption planning\n• ROI measurement and success metrics\n\n<strong>Transformation Areas:</strong>\n• <strong>Digital Transformation:</strong> End-to-end modernization\n• <strong>Digital Strategy:</strong> Technology-enabled business growth\n• <strong>Business Modernization:</strong> Process and workflow optimization\n\n<strong>Methodology:</strong>\n• Current state analysis and gap assessment\n• Future state vision and strategy development\n• Phased implementation roadmap\n• Risk mitigation and contingency planning\n• Training and change management\n• Continuous improvement and optimization\n\n<strong>Outcome:</strong> Clear, actionable digital transformation strategy that drives innovation and competitive advantage.",
+          link: "/services/digital-transformation-planning/",
+        },
+        "it strategy development": {
+          title: "IT Strategy Development",
+          description:
+            "Comprehensive IT strategy planning to align technology initiatives with business objectives and drive transformation success.",
+          summary:
+            "<strong>IT Strategy Development</strong>\n\n<strong>Strategic Planning:</strong>\n• Business-IT alignment assessment\n• Technology vision and mission development\n• Investment prioritization and budgeting\n• Governance framework establishment\n• Risk management and compliance strategies\n• Vendor and technology evaluation\n\n<strong>Key Components:</strong>\n• <strong>IT Strategy:</strong> Long-term technology direction\n• <strong>Strategic Planning:</strong> Detailed implementation roadmap\n• <strong>Technology Roadmap:</strong> Phased technology adoption plan\n\n<strong>Deliverables:</strong>\n• Comprehensive IT strategy document\n• 3-5 year technology roadmap\n• Budget and resource planning\n• Performance metrics and KPIs\n• Implementation timeline and milestones\n• Risk assessment and mitigation plans\n\n<strong>Benefits:</strong>\n• Clear technology direction and priorities\n• Optimized IT investments and ROI\n• Enhanced business-IT alignment\n• Reduced technology risks and costs\n• Improved operational efficiency\n\n<strong>Ideal For:</strong> Organizations seeking strategic IT direction and technology optimization.",
+          link: "/services/it-strategy-development/",
+        },
+        "microsoft business applications": {
+          title: "Microsoft Business Applications",
+          description:
+            "Expert implementation of Microsoft Dynamics 365 and Power Platform solutions for streamlined business processes.",
+          summary:
+            "<strong>Microsoft Business Applications</strong>\n\n<strong>Dynamics 365 Solutions:</strong>\n• Sales and Customer Service modules\n• Finance and Operations implementation\n• Marketing automation and customer insights\n• Field Service and Project Service Automation\n• Supply Chain and Commerce solutions\n• Human Resources and Talent management\n\n<strong>Power Platform:</strong>\n• <strong>Microsoft Dynamics 365:</strong> Complete business applications suite\n• <strong>Power Platform:</strong> Low-code/no-code development platform\n• <strong>Business Applications:</strong> Integrated productivity solutions\n\n<strong>Power Platform Components:</strong>\n• Power Apps - Custom application development\n• Power Automate - Workflow automation\n• Power BI - Business intelligence and analytics\n• Power Virtual Agents - Chatbot development\n• Power Pages - External-facing websites\n\n<strong>Implementation Services:</strong>\n• Requirements analysis and solution design\n• Data migration and system integration\n• Custom development and configuration\n• User training and change management\n• Ongoing support and optimization\n\n<strong>Benefits:</strong>\n• Streamlined business processes\n• Improved data visibility and insights\n• Enhanced customer relationship management\n• Increased operational efficiency\n• Scalable, cloud-based solutions\n\n<strong>Perfect For:</strong> Organizations looking to modernize business processes with Microsoft's integrated platform.",
+          link: "/services/microsoft-business-applications/",
+        },
       },
       products: {
         iptv: {
@@ -185,13 +217,13 @@ class ITSthe1Chatbot {
 
   loadChatHistory() {
     // Try to load chat history from localStorage
-    const savedMessages = localStorage.getItem('itsthe1-chatbot-messages');
+    const savedMessages = localStorage.getItem("itsthe1-chatbot-messages");
     if (savedMessages) {
       try {
         const messages = JSON.parse(savedMessages);
         this.messages = messages;
         // Restore messages to the UI
-        messages.forEach(msg => {
+        messages.forEach((msg) => {
           this.displayMessage(msg.content, msg.sender, msg.options);
         });
       } catch (e) {
@@ -206,7 +238,10 @@ class ITSthe1Chatbot {
 
   saveChatHistory() {
     // Save messages to localStorage
-    localStorage.setItem('itsthe1-chatbot-messages', JSON.stringify(this.messages));
+    localStorage.setItem(
+      "itsthe1-chatbot-messages",
+      JSON.stringify(this.messages)
+    );
   }
 
   generateId() {
@@ -340,21 +375,25 @@ class ITSthe1Chatbot {
     // Clear the messages container
     const messagesContainer = document.getElementById("chatbot-messages");
     messagesContainer.innerHTML = "";
-    
+
     // Clear the messages array
     this.messages = [];
-    
+
     // Clear localStorage
-    localStorage.removeItem('itsthe1-chatbot-messages');
-    
+    localStorage.removeItem("itsthe1-chatbot-messages");
+
     // Add welcome message back
     this.addWelcomeMessage();
-    
+
     // Show a confirmation message
     setTimeout(() => {
-      this.addMessage("Chat history cleared! How can I help you today?", "bot", {
-        suggestions: ["Our Services", "Products", "Contact Us"]
-      });
+      this.addMessage(
+        "Chat history cleared! How can I help you today?",
+        "bot",
+        {
+          suggestions: ["Our Services", "Products", "Contact Us"],
+        }
+      );
     }, 500);
   }
 
@@ -618,6 +657,20 @@ class ITSthe1Chatbot {
           () => this.getProductsInfo(lowerMessage)
         );
       }
+      return this.getProductsInfo(lowerMessage);
+    }
+
+    // Specific product name matching for suggestion buttons
+    if (lowerMessage === "crm for sme") {
+      return this.getCRMInfo();
+    }
+    if (lowerMessage === "erp garment") {
+      return this.getERPInfo();
+    }
+    if (lowerMessage === "digital menu") {
+      return this.getDigitalMenuInfo();
+    }
+    if (lowerMessage === "all products") {
       return this.getProductsInfo(lowerMessage);
     }
 
@@ -915,6 +968,103 @@ class ITSthe1Chatbot {
       return response;
     }
 
+    // Co-managed IT Services inquiries with spell correction
+    const comanagedMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "co-managed",
+      "co managed",
+      "comanaged",
+      "partnership",
+      "it partnership",
+      "hybrid support",
+      "shared responsibility",
+      "augmentation",
+    ]);
+    if (comanagedMatch.matched) {
+      const response = this.getComanagedITInfo();
+
+      if (comanagedMatch.corrected) {
+        return this.getCorrectedResponse(
+          comanagedMatch.original,
+          comanagedMatch.correction,
+          () => response
+        );
+      }
+      return response;
+    }
+
+    // Digital Transformation Planning inquiries with spell correction
+    const digitalTransformMatch = this.matchesPatternWithCorrection(
+      lowerMessage,
+      [
+        "digital transformation",
+        "transformation planning",
+        "digital strategy",
+        "business modernization",
+        "modernization",
+        "innovation",
+        "digital roadmap",
+      ]
+    );
+    if (digitalTransformMatch.matched) {
+      const response = this.getDigitalTransformationPlanningInfo();
+
+      if (digitalTransformMatch.corrected) {
+        return this.getCorrectedResponse(
+          digitalTransformMatch.original,
+          digitalTransformMatch.correction,
+          () => response
+        );
+      }
+      return response;
+    }
+
+    // IT Strategy Development inquiries with spell correction
+    const strategyMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "it strategy",
+      "strategy development",
+      "strategic planning",
+      "technology roadmap",
+      "roadmap",
+      "technology strategy",
+      "strategic it",
+    ]);
+    if (strategyMatch.matched) {
+      const response = this.getITStrategyInfo();
+
+      if (strategyMatch.corrected) {
+        return this.getCorrectedResponse(
+          strategyMatch.original,
+          strategyMatch.correction,
+          () => response
+        );
+      }
+      return response;
+    }
+
+    // Microsoft Business Applications inquiries with spell correction
+    const businessAppsMatch = this.matchesPatternWithCorrection(lowerMessage, [
+      "dynamics 365",
+      "power platform",
+      "business applications",
+      "microsoft dynamics",
+      "power apps",
+      "power automate",
+      "power bi",
+      "dynamics",
+    ]);
+    if (businessAppsMatch.matched) {
+      const response = this.getMicrosoftBusinessAppsInfo();
+
+      if (businessAppsMatch.corrected) {
+        return this.getCorrectedResponse(
+          businessAppsMatch.original,
+          businessAppsMatch.correction,
+          () => response
+        );
+      }
+      return response;
+    }
+
     // Pricing inquiries with spell correction
     const pricingMatch = this.matchesPatternWithCorrection(lowerMessage, [
       "price",
@@ -1135,6 +1285,12 @@ class ITSthe1Chatbot {
       "microsoft 365",
       "azure",
       "it consultancy",
+      "co-managed it services",
+      "digital transformation planning",
+      "it strategy development",
+      "microsoft business applications",
+      "dynamics 365",
+      "power platform",
       "security",
       "backup",
       "network",
@@ -1191,7 +1347,10 @@ class ITSthe1Chatbot {
       "<strong>IT Security & Compliance</strong> - Advanced cybersecurity protection and compliance management",
       "<strong>Microsoft 365 & Azure</strong> - Complete Microsoft solutions for productivity and cloud services",
       "<strong>IT Consultancy</strong> - Strategic technology consulting and digital transformation planning",
-      "<strong>Co-managed IT Services</strong> - Flexible IT management partnership with your team",
+      "<strong>Co-managed IT Services</strong> - Strategic partnership combining your internal IT team with our specialists",
+      "<strong>Digital Transformation Planning</strong> - Strategic planning to modernize operations and drive innovation",
+      "<strong>IT Strategy Development</strong> - Comprehensive planning to align technology with business objectives",
+      "<strong>Microsoft Business Applications</strong> - Expert implementation of Dynamics 365 and Power Platform solutions",
     ];
 
     // Automatically navigate to services page
@@ -1220,30 +1379,47 @@ class ITSthe1Chatbot {
             action: "navigate",
             link: "/services/it-security-compliance/",
           },
+          {
+            text: "Co-managed IT",
+            action: "navigate",
+            link: "/services/co-managed-it-services/",
+          },
+          {
+            text: "Digital Transformation",
+            action: "navigate",
+            link: "/services/digital-transformation-planning/",
+          },
+          {
+            text: "Microsoft Solutions",
+            action: "navigate",
+            link: "/services/microsoft-business-applications/",
+          },
         ],
-        suggestions: ["Microsoft 365", "IT Consulting", "Learn More"],
+        suggestions: ["IT Strategy", "Microsoft 365", "All Services"],
       },
     };
   }
 
   getProductsInfo(message) {
     const products = [
-      "<strong>Hospitality Solutions:</strong>",
-      "• <strong>IPTV Solutions</strong> - Complete entertainment platform for hotels and enterprises",
-      "• <strong>Hospitality Mobile App</strong> - Guest experience platform with mobile check-in/out",
-      "• <strong>Digital Menu Solutions</strong> - Interactive QR code and kiosk ordering systems",
+      "<strong>Entertainment & Hospitality:</strong>",
+      "• <strong>1.TV - IPTV for Enterprise & Hospitality</strong> - Enterprise-grade IPTV middleware platform for hotels, hospitals, cruise ships, universities, and corporate facilities",
+      "• <strong>1.Hotel - Guest Engagement & Experience Platform</strong> - Guest-facing application platform delivered as WebApp or native mobile app",
+      "• <strong>Menu - Digital Menu</strong> - Interactive digital menu system with real-time updates and multi-language support",
+      "",
+      "<strong>Digital Signage & Meeting Solutions:</strong>",
+      "• <strong>1.DS & 1.MS - Digital Signage Solutions</strong> - Comprehensive digital signage platform and intelligent meeting room solutions",
       "",
       "<strong>AI & Automation:</strong>",
-      "• <strong>AI Helper Assistant</strong> - Intelligent business automation with NLP and ML",
-      "• <strong>Digital Signage</strong> - Interactive displays with analytics and content management",
+      "• <strong>AI - AI Helper for Hospitality Staff</strong> - AI-driven assistance for guest services and operational efficiency",
+      "• <strong>1.Support - Smart Support Ticketing & Workflow Automation</strong> - Centralized support ticketing and workflow management system",
       "",
       "<strong>Business Management:</strong>",
-      "• <strong>CRM for SME</strong> - Complete customer relationship management platform",
-      "• <strong>ERP for Garment Industry</strong> - Specialized manufacturing and supply chain solution",
-      "• <strong>IT Helpdesk Solutions</strong> - Comprehensive support ticketing and management system",
+      "• <strong>CRM - CRM for SME</strong> - Affordable and powerful CRM solution designed specifically for SMEs",
+      "• <strong>ERP - ERP for the Garment Industry</strong> - Comprehensive ERP solution tailored for garment manufacturers",
       "",
       "<strong>Security & Verification:</strong>",
-      "• <strong>ID Scanning Solutions</strong> - Advanced identity verification and access control",
+      "• <strong>1.ID - Advanced ID & Passport Scanning Solution</strong> - Cutting-edge identity capture platform authorized by Dubai Tourism Department",
     ];
 
     // Automatically navigate to products page
@@ -1257,27 +1433,37 @@ class ITSthe1Chatbot {
       )}\n\nWhich product category interests you most? I'll take you to our complete products page now.`,
       options: {
         buttons: [
-          { text: "IPTV Solutions", action: "navigate", link: "/products/iptv/" },
+          { text: "1.TV IPTV", action: "navigate", link: "/products/iptv/" },
           {
-            text: "AI Assistant",
-            action: "navigate",
-            link: "/products/ai-helper/",
-          },
-          {
-            text: "Hospitality App",
+            text: "1.Hotel Platform",
             action: "navigate",
             link: "/products/hospitality-app/",
           },
           {
-            text: "Digital Signage",
+            text: "1.DS Digital Signage",
             action: "navigate",
             link: "/products/digital-signage/",
           },
+          {
+            text: "AI Helper",
+            action: "navigate",
+            link: "/products/ai-helper/",
+          },
+          {
+            text: "1.ID Scanning",
+            action: "navigate",
+            link: "/products/id-scanning/",
+          },
+          {
+            text: "1.Support System",
+            action: "navigate",
+            link: "/products/helpdesk/",
+          },
         ],
         suggestions: [
-          "CRM Solutions",
-          "ERP Systems",
-          "Security Products",
+          "CRM for SME",
+          "ERP Garment",
+          "Digital Menu",
           "All Products",
         ],
       },
@@ -1332,7 +1518,7 @@ class ITSthe1Chatbot {
     }, 2000);
 
     return {
-      text: "Our IPTV Solutions offer:\n\n<strong>Enterprise IPTV</strong>\n Custom channel packages\n Interactive TV services\n Content management systems\n\n<strong>Hospitality IPTV</strong>\n Guest entertainment systems\n Hotel information channels\n Multi-language support\n\n<strong>Key Features</strong>\n High-definition streaming\n Scalable infrastructure\n 24/7 technical support\n\nI'll take you to the detailed IPTV page now with all specifications and features.",
+      text: "1.TV - IPTV for Enterprise & Hospitality:\n\n<strong>Enterprise-Grade Platform</strong>\n✓ Designed for hotels, hospitals, cruise ships\n✓ Universities and corporate facilities\n✓ More than entertainment—enhancing engagement\n\n<strong>Key Benefits</strong>\n✓ Driving revenue and strengthening brand identity\n✓ Interactive services and content management\n✓ Multi-language support and customization\n\n<strong>Applications</strong>\n✓ Guest entertainment systems\n✓ Corporate communications\n✓ Educational content delivery\n\nI'll take you to the detailed IPTV page now with all specifications and features.",
       options: {
         buttons: [
           {
@@ -1341,9 +1527,19 @@ class ITSthe1Chatbot {
             link: "/solutions/hospitality/",
           },
           {
-            text: "Contact Sales",
-            action: "link", 
-            link: "/contact/"
+            text: "IPTV",
+            action: "navigate",
+            link: "/products/iptv/",
+          },
+          {
+            text: "Entertainment",
+            action: "navigate",
+            link: "/solutions/iptv-ott/",
+          },
+          {
+            text: "Learn More",
+            action: "link",
+            link: "/contact/",
           },
         ],
       },
@@ -1352,13 +1548,28 @@ class ITSthe1Chatbot {
 
   getDigitalSignageInfo() {
     return {
-      text: "Our Digital Signage Solutions provide:\n\n<strong>Interactive Features</strong>\n Multi-touch displays and gesture control\n Real-time content management\n Social media integration\n\n<strong>Smart Analytics</strong>\n Viewer engagement tracking\n Demographic analysis\n ROI measurement\n\n<strong>Applications</strong>\n Retail promotions and wayfinding\n Corporate communications\n Menu boards and pricing displays",
+      text: "1.DS & 1.MS - Digital Signage Solutions:\n\n<strong>Comprehensive Platform</strong>\n✓ Digital signage and intelligent meeting room solutions\n✓ Enhanced viewer engagement and operational efficiency\n✓ Improved visitor experience across diverse industries\n\n<strong>Key Features</strong>\n✓ Real-time content management and scheduling\n✓ Interactive displays with touch capabilities\n✓ Advanced analytics and performance tracking\n\n<strong>Applications</strong>\n✓ Corporate communications and wayfinding\n✓ Retail promotions and advertising\n✓ Meeting room booking and management",
       options: {
         buttons: [
           {
-            text: "Signage Details",
+            text: "Digital Signage",
             action: "link",
             link: "/products/digital-signage/",
+          },
+          {
+            text: "Meeting Rooms",
+            action: "navigate",
+            link: "/solutions/workflow-solutions/",
+          },
+          {
+            text: "Interactive Display",
+            action: "navigate",
+            link: "/solutions/digital-transformation/",
+          },
+          {
+            text: "Learn More",
+            action: "link",
+            link: "/contact/",
           },
         ],
         suggestions: ["Interactive Features", "Analytics", "Other Products"],
@@ -1367,42 +1578,69 @@ class ITSthe1Chatbot {
   }
 
   getCRMInfo() {
+    // Automatically navigate to CRM product page
+    setTimeout(() => {
+      window.location.href = "/products/crm-sme/";
+    }, 2000);
+
     return {
-      text: "Our CRM for SME includes:\n\n<strong>Sales Management</strong>\n Visual sales pipeline\n Lead scoring and tracking\n Quote and proposal generation\n\n<strong>Marketing Automation</strong>\n Email campaigns and drip sequences\n Lead nurturing workflows\n Social media scheduling\n\n<strong>SME Benefits</strong>\n Affordable pricing starting at $15/user\n No setup fees or long-term contracts\n 24/7 customer support",
+      text: "CRM - CRM for SME:\n\n<strong>Affordable & Powerful Solution</strong>\n✓ Designed specifically for small and medium enterprises\n✓ Comprehensive customer relationship management\n✓ Drive business growth and improve efficiency\n\n<strong>Key Features</strong>\n✓ Sales pipeline management and lead tracking\n✓ Customer communication history and notes\n✓ Automated follow-ups and task management\n\n<strong>SME Benefits</strong>\n✓ Cost-effective solution with scalable pricing\n✓ Easy integration with existing business tools\n✓ Dedicated support and training for SMEs\n\nI'll take you to the detailed CRM product page now.",
       options: {
         buttons: [
-          { text: "CRM Details", action: "link", link: "/products/crm-sme/" },
+          {
+            text: "Learn More",
+            action: "navigate",
+            link: "/products/crm-sme/",
+          },
         ],
-        suggestions: ["Pricing", "Features", "Demo Request"],
       },
     };
   }
 
   getERPInfo() {
+    // Automatically navigate to ERP product page
+    setTimeout(() => {
+      window.location.href = "/products/erp-garment/";
+    }, 2000);
+
     return {
-      text: "Our ERP for Garment Industry offers:\n\n<strong>Design & Production</strong>\n CAD integration and pattern design\n Production planning and scheduling\n Quality control workflows\n\n<strong>Supply Chain</strong>\n Fabric and trim inventory management\n Vendor relationship management\n Multi-warehouse operations\n\n<strong>Industry Expertise</strong>\n Fashion trend analysis\n Compliance with international standards\n Sustainable manufacturing tracking",
+      text: "ERP - ERP for the Garment Industry:\n\n<strong>Comprehensive Solution</strong>\n✓ Tailored specifically for garment manufacturers\n✓ Complete coverage from production planning to supply chain\n✓ Streamlined operations and improved efficiency\n\n<strong>Key Modules</strong>\n✓ Production planning and scheduling optimization\n✓ Inventory management for fabrics and materials\n✓ Quality control and compliance tracking\n\n<strong>Industry Benefits</strong>\n✓ Reduced production costs and waste\n✓ Improved delivery times and customer satisfaction\n✓ Enhanced visibility across the entire supply chain\n\nI'll take you to the detailed ERP product page now.",
       options: {
         buttons: [
           {
-            text: "ERP Details",
-            action: "link",
+            text: "Learn More",
+            action: "navigate",
             link: "/products/erp-garment/",
           },
         ],
-        suggestions: ["Manufacturing", "Compliance", "Other Solutions"],
       },
     };
   }
 
   getHospitalityAppInfo() {
     return {
-      text: "Our Hospitality Mobile App features:\n\n<strong>Guest Services</strong>\n Digital check-in/check-out\n Room controls via smartphone\n 24/7 concierge chat support\n\n<strong>Revenue Generation</strong>\n Room service and dining orders\n Spa and activity bookings\n Loyalty program integration\n\n<strong>Proven Results</strong>\n 95% guest satisfaction improvement\n 30% increase in ancillary revenue\n 40% reduction in front desk calls",
+      text: "1.Hotel - Guest Engagement & Experience Platform:\n\n<strong>Comprehensive Platform</strong>\n✓ Guest-facing application delivered as WebApp or native mobile app\n✓ Fully integrated with 1.TV and 1.Support systems\n✓ Complete hospitality ecosystem management\n\n<strong>Key Features</strong>\n✓ Digital check-in/check-out and room controls\n✓ Concierge services and guest communication\n✓ Room service ordering and facility booking\n\n<strong>Integration Benefits</strong>\n✓ Seamless experience across all hotel platforms\n✓ Centralized guest data and preferences\n✓ Enhanced operational efficiency and guest satisfaction",
       options: {
         buttons: [
           {
-            text: "App Details",
+            text: "Hospitality",
+            action: "navigate",
+            link: "/solutions/hospitality/",
+          },
+          {
+            text: "Mobile App",
             action: "link",
             link: "/products/hospitality-app/",
+          },
+          {
+            text: "Guest Services",
+            action: "navigate",
+            link: "/solutions/digital-transformation/",
+          },
+          {
+            text: "Learn More",
+            action: "link",
+            link: "/contact/",
           },
         ],
         suggestions: ["Guest Features", "ROI Benefits", "Demo"],
@@ -1417,13 +1655,28 @@ class ITSthe1Chatbot {
     }, 2000);
 
     return {
-      text: "Our AI Helper Assistant provides:\n\n<strong>AI Capabilities</strong>\n Natural language processing (50+ languages)\n Machine learning and predictive analytics\n Sentiment analysis and emotion detection\n\n<strong>Business Applications</strong>\n 24/7 customer support automation\n Sales lead qualification\n HR and finance process automation\n\n<strong>Performance</strong>\n 95% accuracy in query understanding\n 80% reduction in response time\n Handles 10,000+ concurrent conversations\n\nI'll take you to the complete AI Helper page now with detailed features and use cases.",
+      text: "AI - AI Helper for Hospitality Staff:\n\n<strong>AI-Driven Assistance</strong>\n✓ Empower your hospitality staff with intelligent support\n✓ Enhanced guest services and operational efficiency\n✓ Personalized experiences for every guest\n\n<strong>Key Capabilities</strong>\n✓ Real-time guest preference analysis\n✓ Automated task prioritization and scheduling\n✓ Multilingual communication support\n\n<strong>Benefits</strong>\n✓ Improved staff productivity and satisfaction\n✓ Enhanced guest experience and loyalty\n✓ Reduced training time for new staff\n\nI'll take you to the complete AI Helper page now with detailed features and use cases.",
       options: {
         buttons: [
           {
+            text: "Artificial Intelligence",
+            action: "navigate",
+            link: "/solutions/digital-transformation/",
+          },
+          {
+            text: "Hospitality",
+            action: "navigate",
+            link: "/solutions/hospitality/",
+          },
+          {
+            text: "Staff Assistant",
+            action: "link",
+            link: "/products/ai-helper/",
+          },
+          {
             text: "Request Demo",
             action: "link",
-            link: "/contact/"
+            link: "/contact/",
           },
         ],
         suggestions: ["Capabilities", "Integration", "Pricing"],
@@ -1432,30 +1685,49 @@ class ITSthe1Chatbot {
   }
 
   getDigitalMenuInfo() {
+    // Automatically navigate to Digital Menu product page
+    setTimeout(() => {
+      window.location.href = "/products/digital-menu/";
+    }, 2000);
+
     return {
-      text: "Our Digital Menu Solutions include:\n\n<strong>QR Code Menus</strong>\n Contactless smartphone access\n Instant updates without reprinting\n Multi-language support with photos\n\n<strong>Interactive Kiosks</strong>\n Self-service ordering stations\n Payment processing integration\n Upselling and combo suggestions\n\n<strong>Revenue Impact</strong>\n 20% average order value increase\n Dynamic pricing capabilities\n Customer analytics and insights",
+      text: "Menu - Digital Menu:\n\n<strong>Transform Your Dining Experience</strong>\n✓ Interactive digital menu system\n✓ Real-time updates and modifications\n✓ Multi-language support for global guests\n\n<strong>Key Features</strong>\n✓ QR code access for contactless ordering\n✓ Dynamic pricing and promotional content\n✓ Rich media integration with photos and videos\n\n<strong>Benefits</strong>\n✓ Reduced printing costs and environmental impact\n✓ Instant menu updates and seasonal changes\n✓ Enhanced customer engagement and satisfaction\n\nI'll take you to the detailed Digital Menu product page now.",
       options: {
         buttons: [
           {
-            text: "Menu Details",
-            action: "link",
+            text: "Learn More",
+            action: "navigate",
             link: "/products/digital-menu/",
           },
         ],
-        suggestions: ["Restaurant Tech", "Hospitality", "Contact Sales"],
       },
     };
   }
 
   getHelpdeskInfo() {
     return {
-      text: "Our IT Helpdesk Solutions offer:\n\n<strong>Multi-Channel Support</strong>\n Email, phone, chat, and web portal\n Self-service knowledge base\n Mobile app for technicians\n\n<strong>Automation Features</strong>\n AI-powered ticket categorization\n Automated routing and escalation\n SLA tracking and reporting\n\n<strong>Results</strong>\n 50% reduction in resolution time\n 95% customer satisfaction rating\n First call resolution improvement",
+      text: "1.Support - Smart Support Ticketing & Workflow Automation:\n\n<strong>Centralized System</strong>\n✓ Support ticketing and workflow management\n✓ Real-time ticket creation and tracking\n✓ SLA-based monitoring and alerts\n\n<strong>Advanced Features</strong>\n✓ Multi-level escalation workflows\n✓ Comprehensive analytics and reporting\n✓ Fully integrated with 1.TV and 1.Hotel platforms\n\n<strong>Benefits</strong>\n✓ Streamlined support operations\n✓ Improved response times and efficiency\n✓ Enhanced customer satisfaction tracking",
       options: {
         buttons: [
           {
-            text: "Helpdesk Details",
+            text: "Helpdesk",
             action: "link",
             link: "/products/helpdesk/",
+          },
+          {
+            text: "IT Support",
+            action: "navigate",
+            link: "/services/it-support-outsourcing/",
+          },
+          {
+            text: "Ticketing",
+            action: "navigate",
+            link: "/solutions/workflow-solutions/",
+          },
+          {
+            text: "Learn More",
+            action: "link",
+            link: "/contact/",
           },
         ],
         suggestions: ["IT Support", "Automation", "Demo"],
@@ -1465,13 +1737,28 @@ class ITSthe1Chatbot {
 
   getIDScanningInfo() {
     return {
-      text: "Our ID Scanning Solutions provide:\n\n<strong>Advanced Technology</strong>\n Multi-format ID support (passport, license, national ID)\n Biometric verification (fingerprint, facial recognition)\n Real-time fraud detection\n\n<strong>Applications</strong>\n Hotel guest registration\n Age verification for retail\n Healthcare patient identification\n Financial KYC compliance\n\n<strong>Security</strong>\n End-to-end encryption\n 99.9% accuracy rate\n Compliance with data protection regulations",
+      text: "1.ID - Advanced ID & Passport Scanning Solution:\n\n<strong>Cutting-Edge Technology</strong>\n✓ Instant scanning and secure storage of national IDs and passports\n✓ Authorized by Dubai Tourism Department and UAE State Security\n✓ Direct government data transmission capabilities\n\n<strong>Security Features</strong>\n✓ End-to-end encryption and secure data handling\n✓ Real-time verification and fraud detection\n✓ Compliance with international security standards\n\n<strong>Applications</strong>\n✓ Hotel guest registration and check-in\n✓ Government facility access control\n✓ Financial institution KYC compliance",
       options: {
         buttons: [
           {
-            text: "Scanning Details",
+            text: "Security",
+            action: "navigate",
+            link: "/solutions/cyber-security/",
+          },
+          {
+            text: "Document Scanning",
             action: "link",
             link: "/products/id-scanning/",
+          },
+          {
+            text: "Verification",
+            action: "navigate",
+            link: "/services/it-security-compliance/",
+          },
+          {
+            text: "Learn More",
+            action: "link",
+            link: "/contact/",
           },
         ],
         suggestions: ["Security", "Compliance", "Industries"],
@@ -1479,9 +1766,118 @@ class ITSthe1Chatbot {
     };
   }
 
+  getComanagedITInfo() {
+    // Automatically navigate to co-managed services page
+    setTimeout(() => {
+      window.location.href = "/services/co-managed-it-services/";
+    }, 2000);
+
+    return {
+      text: "Our Co-managed IT Services provide:\n\n<strong>Partnership Approach</strong>\n Strategic collaboration with your existing IT team\n Flexible engagement models and shared responsibility\n Specialized expertise augmentation\n\n<strong>Service Models</strong>\n Co-managed IT partnerships\n Hybrid support solutions\n Knowledge transfer and skills development\n\n<strong>Benefits</strong>\n Access to specialized skills without full-time hiring\n Reduced IT workload and operational stress\n Enhanced security and compliance coverage\n Cost-effective expertise expansion\n\nI'll take you to the detailed co-managed services page now.",
+      options: {
+        buttons: [
+          {
+            text: "Partnership Details",
+            action: "navigate",
+            link: "/services/co-managed-it-services/",
+          },
+          {
+            text: "Contact Sales",
+            action: "link",
+            link: "/contact/",
+          },
+        ],
+        suggestions: ["IT Support", "Consulting", "Hybrid Models"],
+      },
+    };
+  }
+
+  getDigitalTransformationPlanningInfo() {
+    // Automatically navigate to digital transformation planning page
+    setTimeout(() => {
+      window.location.href = "/services/digital-transformation-planning/";
+    }, 2000);
+
+    return {
+      text: "Our Digital Transformation Planning includes:\n\n<strong>Strategic Planning</strong>\n Comprehensive digital readiness assessment\n Technology roadmap development\n Process optimization and automation strategies\n\n<strong>Transformation Areas</strong>\n Digital strategy and business modernization\n Innovation-led growth initiatives\n Data-driven decision making frameworks\n\n<strong>Methodology</strong>\n Current state analysis and gap assessment\n Future state vision and strategy development\n Phased implementation roadmap\n Change management and training\n\nI'll take you to the complete transformation planning page now.",
+      options: {
+        buttons: [
+          {
+            text: "Planning Details",
+            action: "navigate",
+            link: "/services/digital-transformation-planning/",
+          },
+          {
+            text: "Request Assessment",
+            action: "link",
+            link: "/contact/",
+          },
+        ],
+        suggestions: ["Strategy", "Innovation", "Modernization"],
+      },
+    };
+  }
+
+  getITStrategyInfo() {
+    // Automatically navigate to IT strategy development page
+    setTimeout(() => {
+      window.location.href = "/services/it-strategy-development/";
+    }, 2000);
+
+    return {
+      text: "Our IT Strategy Development offers:\n\n<strong>Strategic Planning</strong>\n Business-IT alignment assessment\n Technology vision and mission development\n Investment prioritization and budgeting\n\n<strong>Key Components</strong>\n Long-term technology direction\n Detailed implementation roadmap\n Technology adoption and governance frameworks\n\n<strong>Deliverables</strong>\n Comprehensive IT strategy document\n 3-5 year technology roadmap\n Budget and resource planning\n Performance metrics and KPIs\n Risk assessment and mitigation plans\n\nI'll take you to the detailed strategy development page now.",
+      options: {
+        buttons: [
+          {
+            text: "Strategy Details",
+            action: "navigate",
+            link: "/services/it-strategy-development/",
+          },
+          {
+            text: "Strategy Consultation",
+            action: "link",
+            link: "/contact/",
+          },
+        ],
+        suggestions: ["Strategic Planning", "Roadmap", "Technology"],
+      },
+    };
+  }
+
+  getMicrosoftBusinessAppsInfo() {
+    // Automatically navigate to Microsoft business applications page
+    setTimeout(() => {
+      window.location.href = "/services/microsoft-business-applications/";
+    }, 2000);
+
+    return {
+      text: "Our Microsoft Business Applications include:\n\n<strong>Dynamics 365 Solutions</strong>\n Sales and Customer Service modules\n Finance and Operations implementation\n Marketing automation and customer insights\n Field Service and Project Service Automation\n\n<strong>Power Platform</strong>\n Power Apps - Custom application development\n Power Automate - Workflow automation\n Power BI - Business intelligence and analytics\n Power Virtual Agents - Chatbot development\n\n<strong>Benefits</strong>\n Streamlined business processes\n Improved data visibility and insights\n Enhanced customer relationship management\n Increased operational efficiency\n Scalable, cloud-based solutions\n\nI'll take you to the complete business applications page now.",
+      options: {
+        buttons: [
+          {
+            text: "Dynamics 365",
+            action: "navigate",
+            link: "/services/microsoft-business-applications/",
+          },
+          {
+            text: "Power Platform",
+            action: "navigate",
+            link: "/services/microsoft-business-applications/",
+          },
+          {
+            text: "Implementation Demo",
+            action: "link",
+            link: "/contact/",
+          },
+        ],
+        suggestions: ["Dynamics", "Power Platform", "CRM Integration"],
+      },
+    };
+  }
+
   handleQuickAction(action) {
     let message;
-    
+
     switch (action) {
       case "services":
         message = "Tell me about your services";
@@ -2001,7 +2397,12 @@ document.addEventListener("DOMContentLoaded", function () {
           window.chatbotInstance.showTyping();
           setTimeout(() => {
             window.chatbotInstance.hideTyping();
-            window.chatbotInstance.addMessage(`Opening ${window.chatbotInstance.getPageTitleFromLink(link)} page:`, "bot");
+            window.chatbotInstance.addMessage(
+              `Opening ${window.chatbotInstance.getPageTitleFromLink(
+                link
+              )} page:`,
+              "bot"
+            );
             window.chatbotInstance.openPageInline(link);
           }, 500);
         }
@@ -2009,7 +2410,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (action === "link" && link) {
         // For external links (like contact, email, etc.), open in new tab
-        if (link.startsWith("mailto:") || link.startsWith("tel:") || link.startsWith("https://")) {
+        if (
+          link.startsWith("mailto:") ||
+          link.startsWith("tel:") ||
+          link.startsWith("https://")
+        ) {
           window.open(link, "_blank");
         } else {
           // For internal pages, navigate directly to the page
@@ -2031,14 +2436,16 @@ document.addEventListener("DOMContentLoaded", function () {
           .closest(".message")
           .querySelector(".inline-page-frame");
         if (iframe) {
-          const loadingEl = iframe.parentElement.querySelector('.iframe-loading');
-          const progressEl = iframe.parentElement.querySelector('.iframe-progress');
-          
+          const loadingEl =
+            iframe.parentElement.querySelector(".iframe-loading");
+          const progressEl =
+            iframe.parentElement.querySelector(".iframe-progress");
+
           // Show loading state
-          if (loadingEl) loadingEl.style.display = 'flex';
-          if (progressEl) progressEl.style.width = '0%';
-          iframe.style.opacity = '0';
-          
+          if (loadingEl) loadingEl.style.display = "flex";
+          if (progressEl) progressEl.style.width = "0%";
+          iframe.style.opacity = "0";
+
           // Refresh the iframe
           iframe.src = iframe.src;
         }
@@ -2061,7 +2468,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (e.target.classList.contains("suggestion-chip")) {
       const suggestion = e.target.dataset.suggestion;
-      
+
       // Add user message and process it directly
       if (window.chatbotInstance) {
         window.chatbotInstance.addMessage(suggestion, "user");
@@ -2071,7 +2478,11 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
           const response = window.chatbotInstance.processMessage(suggestion);
           window.chatbotInstance.hideTyping();
-          window.chatbotInstance.addMessage(response.text, "bot", response.options);
+          window.chatbotInstance.addMessage(
+            response.text,
+            "bot",
+            response.options
+          );
         }, 1000 + Math.random() * 1000);
       }
     }
