@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ITSM on ITSthe1 - IT &amp; Telecom Solutions</title>
-    <link>http://localhost:1529/tags/itsm/</link>
+    <link>http://localhost:1313/tags/itsm/</link>
     <description>Recent content in ITSM on ITSthe1 - IT &amp; Telecom Solutions</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1529/tags/itsm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/itsm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.Support - Smart Support Ticketing &amp; Workflow Automation</title>
-      <link>http://localhost:1529/products/helpdesk/</link>
+      <link>http://localhost:1313/products/helpdesk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1529/products/helpdesk/</guid>
+      <guid>http://localhost:1313/products/helpdesk/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.Support by ITSthe1 Solutions&lt;/strong&gt; is a centralized support ticketing and workflow management system designed for hotels, hospitals, resorts, MDUs, universities, corporate offices, and service-based enterprises. Whether used independently or &lt;strong&gt;fully integrated with our 1.TV (in-room entertainment system) and 1.Hotel (guest mobile app)&lt;/strong&gt;, it enables real-time ticket creation, SLA-based task tracking, multi-level escalation, and operational performance analytics across departments with comprehensive reporting to monitor Key Performance Indicators (KPIs).&lt;/p&gt;&#xA;&lt;p&gt;Transform your service operations with intelligent automation, seamless integrations, and data-driven insights that enhance both staff efficiency and customer satisfaction.&lt;/p&gt;</description>
     </item>
   </channel>
