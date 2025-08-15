@@ -16,19 +16,6 @@
   --chatbot-border-light: rgba(255, 107, 53, 0.3);
 }
 
-/* Screen reader only text */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .chatbot-container {
   position: fixed;
   bottom: 20px; /* Position at bottom with standard spacing */
@@ -62,13 +49,7 @@
   font-weight: 600;
   animation: chatbotPulse 4s ease-in-out infinite;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-}
-
-.chatbot-toggle:focus {
-  outline: 2px solid #fff;
-  outline-offset: 2px;
 }
 
 .chatbot-toggle::before {
@@ -129,8 +110,8 @@
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,8 +231,8 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .chatbot-container.active .chatbot-window {
@@ -294,8 +275,8 @@
   height: 48px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,9 +365,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #e5e7eb #f9fafb;
 }
 
-/* Webkit scrollbar support for better cross-browser compatibility */
 .chatbot-messages::-webkit-scrollbar {
   width: 4px;
 }
@@ -398,14 +380,6 @@
 .chatbot-messages::-webkit-scrollbar-thumb {
   background: #e5e7eb;
   border-radius: 2px;
-}
-
-/* Modern browsers scrollbar (where supported) */
-@supports (scrollbar-width: thin) {
-  .chatbot-messages {
-    scrollbar-width: thin;
-    scrollbar-color: #e5e7eb #f9fafb;
-  }
 }
 
 /* Message Styles */
@@ -572,17 +546,11 @@
   gap: 8px;
   margin-bottom: 12px;
   overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .quick-actions::-webkit-scrollbar {
   display: none;
-}
-
-/* For modern browsers that support scrollbar-width */
-@supports (scrollbar-width: none) {
-  .quick-actions {
-    scrollbar-width: none;
-  }
 }
 
 .quick-action {
@@ -981,52 +949,6 @@
   .message-button {
     border: 2px solid #333;
   }
-}
-
-/* Focus management for accessibility */
-.chatbot-toggle:focus,
-.chatbot-clear:focus,
-.chatbot-minimize:focus,
-.send-button:focus,
-.quick-action:focus,
-.message-button:focus,
-.suggestion-chip:focus {
-  outline: 2px solid #667eea;
-  outline-offset: 2px;
-}
-
-.chatbot-input-container input:focus {
-  outline: 2px solid #667eea;
-  outline-offset: 1px;
-}
-
-/* Better button interaction states */
-.quick-action:hover,
-.message-button:hover,
-.suggestion-chip:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.quick-action:active,
-.message-button:active,
-.suggestion-chip:active {
-  transform: translateY(0);
-}
-
-/* Ensure adequate color contrast */
-.chatbot-toggle {
-  color: #ffffff;
-}
-
-.message-text {
-  color: #1e293b;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-}
-
-.user-message .message-text {
-  color: #ffffff;
-  background: linear-gradient(135deg, #ff6b35 0%, #f39c12 100%);
 }
 
 /* Mobile safe area support */

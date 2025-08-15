@@ -48,12 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Header Scroll Effect with throttling for better performance
+  // Header Scroll Effect
   const header = document.getElementById("header");
   let lastScroll = 0;
-  let ticking = false;
 
-  function updateHeader() {
+  window.addEventListener("scroll", function () {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
@@ -65,41 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     lastScroll = currentScroll;
-    ticking = false;
-  }
+  });
 
-  function requestHeaderUpdate() {
-    if (!ticking) {
-      requestAnimationFrame(updateHeader);
-      ticking = true;
-    }
-  }
-
-  window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
-
-  // Scroll to Top Button with improved performance
+  // Scroll to Top Button
   const scrollToTopBtn = document.getElementById("scrollToTop");
 
   if (scrollToTopBtn) {
-    let scrollTicking = false;
-
-    function updateScrollButton() {
+    window.addEventListener("scroll", function () {
       if (window.pageYOffset > 300) {
         scrollToTopBtn.classList.add("visible");
       } else {
         scrollToTopBtn.classList.remove("visible");
       }
-      scrollTicking = false;
-    }
-
-    function requestScrollUpdate() {
-      if (!scrollTicking) {
-        requestAnimationFrame(updateScrollButton);
-        scrollTicking = true;
-      }
-    }
-
-    window.addEventListener("scroll", requestScrollUpdate, { passive: true });
+    });
 
     scrollToTopBtn.addEventListener("click", function () {
       window.scrollTo({
@@ -284,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Lazy Loading for Images with improved performance
+  // Lazy Loading for Images
   if ("IntersectionObserver" in window) {
     const imageObserver = new IntersectionObserver(function (
       entries,
@@ -294,30 +271,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.isIntersecting) {
           const img = entry.target;
           if (img.dataset.src) {
-            // Create a new image to preload
-            const newImg = new Image();
-            newImg.onload = function() {
-              img.src = img.dataset.src;
-              img.classList.remove("lazy");
-              img.classList.add("loaded");
-            };
-            newImg.onerror = function() {
-              img.classList.add("error");
-            };
-            newImg.src = img.dataset.src;
+            img.src = img.dataset.src;
+            img.classList.remove("lazy");
             observer.unobserve(img);
           }
         }
       });
-    }, {
-      // Load images 50px before they come into view
-      rootMargin: '50px'
     });
 
     const lazyImages = document.querySelectorAll("img[data-src]");
     lazyImages.forEach(function (img) {
-      // Add loading attribute for better performance
-      img.loading = "lazy";
       imageObserver.observe(img);
     });
   }

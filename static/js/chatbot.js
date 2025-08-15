@@ -217,37 +217,31 @@ class ITSthe1Chatbot {
 
   loadChatHistory() {
     // Try to load chat history from localStorage
-    try {
-      const savedMessages = localStorage.getItem("itsthe1-chatbot-messages");
-      if (savedMessages) {
+    const savedMessages = localStorage.getItem("itsthe1-chatbot-messages");
+    if (savedMessages) {
+      try {
         const messages = JSON.parse(savedMessages);
         this.messages = messages;
         // Restore messages to the UI
         messages.forEach((msg) => {
           this.displayMessage(msg.content, msg.sender, msg.options);
         });
-      } else {
-        // No saved history, add welcome message
+      } catch (e) {
+        // If parsing fails, start fresh
         this.addWelcomeMessage();
       }
-    } catch (e) {
-      console.warn("Failed to load chat history:", e);
-      // If parsing fails or localStorage is unavailable, start fresh
+    } else {
+      // No saved history, add welcome message
       this.addWelcomeMessage();
     }
   }
 
   saveChatHistory() {
-    // Save messages to localStorage with error handling
-    try {
-      localStorage.setItem(
-        "itsthe1-chatbot-messages",
-        JSON.stringify(this.messages)
-      );
-    } catch (error) {
-      console.warn("Failed to save chat history:", error);
-      // Gracefully handle storage errors (e.g., quota exceeded)
-    }
+    // Save messages to localStorage
+    localStorage.setItem(
+      "itsthe1-chatbot-messages",
+      JSON.stringify(this.messages)
+    );
   }
 
   generateId() {
@@ -257,9 +251,9 @@ class ITSthe1Chatbot {
   createChatbotHTML() {
     const chatbotHTML = `
             <div id="itsthe1-chatbot" class="chatbot-container">
-                <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open ONE Assistant Chatbot" role="button" tabindex="0">
+                <div class="chatbot-toggle" id="chatbot-toggle">
                     <div class="chatbot-toggle-content">
-                        <div class="chatbot-toggle-avatar" aria-hidden="true">
+                        <div class="chatbot-toggle-avatar">
                             <div class="avatar-fallback">🎧</div>
                         </div>
                         <div class="chatbot-toggle-text">
@@ -267,40 +261,40 @@ class ITSthe1Chatbot {
                             <div class="toggle-subtitle">How can I help you today?</div>
                         </div>
                     </div>
-                    <div class="chatbot-notification" id="chatbot-notification" style="display: none;" role="alert" aria-live="polite">
+                    <div class="chatbot-notification" id="chatbot-notification" style="display: none;">
                         <span>How can I help you today?</span>
                     </div>
-                </button>
+                </div>
                 
-                <div class="chatbot-window" id="chatbot-window" role="dialog" aria-labelledby="chatbot-title" aria-describedby="chatbot-messages">
+                <div class="chatbot-window" id="chatbot-window">
                     <div class="chatbot-header">
-                        <div class="chatbot-avatar" aria-hidden="true">
+                        <div class="chatbot-avatar">
                             <div class="avatar-fallback">🎧</div>
                         </div>
                         <div class="chatbot-info">
-                            <h4 id="chatbot-title">ONE Assistant</h4>
-                            <span class="status" aria-live="polite">Online</span>
+                            <h4>ONE Assistant</h4>
+                            <span class="status">Online</span>
                         </div>
                         <div class="chatbot-header-controls">
-                            <button class="chatbot-clear" id="chatbot-clear" title="Clear Chat History" aria-label="Clear chat history">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <button class="chatbot-clear" id="chatbot-clear" title="Clear Chat History">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6h14zM10 11v6M14 11v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
-                            <button class="chatbot-minimize" id="chatbot-minimize" aria-label="Close chatbot">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <button class="chatbot-minimize" id="chatbot-minimize">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
                         </div>
                     </div>
                     
-                    <div class="chatbot-messages" id="chatbot-messages" role="log" aria-live="polite" aria-label="Chat conversation">
+                    <div class="chatbot-messages" id="chatbot-messages">
                         <!-- Messages will be added here -->
                     </div>
                     
-                    <div class="chatbot-typing" id="chatbot-typing" style="display: none;" aria-live="polite" aria-label="Assistant is typing">
-                        <div class="typing-indicator" aria-hidden="true">
+                    <div class="chatbot-typing" id="chatbot-typing" style="display: none;">
+                        <div class="typing-indicator">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -309,16 +303,15 @@ class ITSthe1Chatbot {
                     </div>
                     
                     <div class="chatbot-input-area">
-                        <div class="quick-actions" id="quick-actions" role="group" aria-label="Quick action buttons">
-                            <button class="quick-action" data-action="services" aria-label="Ask about our services">Our Services</button>
-                            <button class="quick-action" data-action="products" aria-label="Ask about our products">Products</button>
-                            <button class="quick-action" data-action="contact" aria-label="Get contact information">Contact Us</button>
+                        <div class="quick-actions" id="quick-actions">
+                            <button class="quick-action" data-action="services">Our Services</button>
+                            <button class="quick-action" data-action="products">Products</button>
+                            <button class="quick-action" data-action="contact">Contact Us</button>
                         </div>
                         <div class="chatbot-input-container">
-                            <label for="chatbot-input" class="sr-only">Type your message</label>
-                            <input type="text" id="chatbot-input" placeholder="Type your message..." maxlength="500" aria-label="Message input">
-                            <button id="chatbot-send" class="send-button" aria-label="Send message">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <input type="text" id="chatbot-input" placeholder="Type your message..." maxlength="500">
+                            <button id="chatbot-send" class="send-button">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
@@ -374,34 +367,8 @@ class ITSthe1Chatbot {
 
     if (this.isOpen) {
       notification.style.display = "none";
-      // Set focus to input for better accessibility
-      requestAnimationFrame(() => {
-        const input = document.getElementById("chatbot-input");
-        if (input) {
-          input.focus();
-        }
-      });
-      // Announce to screen readers
-      this.announceToScreenReader("Chatbot opened");
-    } else {
-      this.announceToScreenReader("Chatbot closed");
+      document.getElementById("chatbot-input").focus();
     }
-  }
-
-  announceToScreenReader(message) {
-    const announcement = document.createElement("div");
-    announcement.setAttribute("aria-live", "polite");
-    announcement.setAttribute("aria-atomic", "true");
-    announcement.className = "sr-only";
-    announcement.textContent = message;
-    document.body.appendChild(announcement);
-    
-    // Remove after announcement
-    setTimeout(() => {
-      if (announcement.parentNode) {
-        announcement.parentNode.removeChild(announcement);
-      }
-    }, 1000);
   }
 
   clearChatHistory() {
@@ -412,12 +379,8 @@ class ITSthe1Chatbot {
     // Clear the messages array
     this.messages = [];
 
-    // Clear localStorage with error handling
-    try {
-      localStorage.removeItem("itsthe1-chatbot-messages");
-    } catch (error) {
-      console.warn("Failed to clear chat history from storage:", error);
-    }
+    // Clear localStorage
+    localStorage.removeItem("itsthe1-chatbot-messages");
 
     // Add welcome message back
     this.addWelcomeMessage();
@@ -432,9 +395,6 @@ class ITSthe1Chatbot {
         }
       );
     }, 500);
-
-    // Announce to screen readers
-    this.announceToScreenReader("Chat history cleared");
   }
 
   showNotification() {
@@ -522,22 +482,22 @@ class ITSthe1Chatbot {
         (button) =>
           `<button class="message-button" data-action="${
             button.action
-          }" data-link="${button.link || ""}" aria-label="${button.text} - ${button.action === 'link' ? 'Opens in new tab' : 'Navigate to page'}">${button.text}</button>`
+          }" data-link="${button.link || ""}">${button.text}</button>`
       )
       .join("");
 
-    return `<div class="message-buttons" role="group" aria-label="Action buttons">${buttonsHTML}</div>`;
+    return `<div class="message-buttons">${buttonsHTML}</div>`;
   }
 
   createSuggestions(suggestions) {
     const suggestionsHTML = suggestions
       .map(
         (suggestion) =>
-          `<button class="suggestion-chip" data-suggestion="${suggestion}" aria-label="Ask about ${suggestion}">${suggestion}</button>`
+          `<button class="suggestion-chip" data-suggestion="${suggestion}">${suggestion}</button>`
       )
       .join("");
 
-    return `<div class="suggestions" role="group" aria-label="Suggested topics">${suggestionsHTML}</div>`;
+    return `<div class="suggestions">${suggestionsHTML}</div>`;
   }
 
   showTyping() {
